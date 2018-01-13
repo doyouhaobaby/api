@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\cache\file | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_cache_file" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../queryyetsimple/cache.html">cache</a></li><li class="backslash">\</li><li>file</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            file
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>file</strong>        extends <a href="../../queryyetsimple/cache/acache.html"><abbr title="queryyetsimple\cache\acache">acache</abbr></a>        implements
+        <a href="../../queryyetsimple/cache/iconnect.html"><abbr title="queryyetsimple\cache\iconnect">iconnect</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>文件缓存</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../queryyetsimple/support/option.html"><abbr title="queryyetsimple\support\option">option</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    类配置复用
+                </div>
+            </div>
+            </div>
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>HEADER</td>
+                <td class="last">
+                    <p><em>缓存文件头部</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HEADER_LENGTH</td>
+                <td class="last">
+                    <p><em>缓存文件头部长度</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_hHandle">
+                                        protected                                        <abbr title="queryyetsimple\cache\handle">handle</abbr>
+                </td>
+                <td>$hHandle</td>
+                <td class="last">缓存服务句柄</td>
+                <td><small>from&nbsp;<a href="../../queryyetsimple/cache/acache.html#property_hHandle"><abbr title="queryyetsimple\cache\acache">acache</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrOption">
+                                        protected                                        array
+                </td>
+                <td>$arrOption</td>
+                <td class="last">配置</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $arrOption = [])
+        
+                                            <p>构造函数</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/cache/acache.html#method___construct"><abbr title="queryyetsimple\cache\acache">acache</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_put">put</a>(string|array $mixKey, mixed $mixValue = null)
+        
+                                            <p>批量插入</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/cache/acache.html#method_put"><abbr title="queryyetsimple\cache\acache">acache</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handle">handle</a>()
+        
+                                            <p>返回缓存句柄</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/cache/acache.html#method_handle"><abbr title="queryyetsimple\cache\acache">acache</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>()
+        
+                                            <p>关闭</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/cache/acache.html#method_close"><abbr title="queryyetsimple\cache\acache">acache</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheName">getCacheName</a>(string $sCacheName, string $strPrefix = &#039;&#039;)
+        
+                                            <p>获取缓存名字
+去掉特殊缓存名字字符</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\cache\number">number</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cacheTime">cacheTime</a>(string $sId, int $intDefaultTime)
+        
+                                            <p>读取缓存时间配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/cache/acache.html#method_cacheTime"><abbr title="queryyetsimple\cache\acache">acache</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkForce">checkForce</a>()
+        
+                                            <p>强制不启用缓存</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/cache/acache.html#method_checkForce"><abbr title="queryyetsimple\cache\acache">acache</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_option">option</a>(string $name, mixed $value)
+        
+                                            <p>修改单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_option"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_optionArray">optionArray</a>(string $name, array $value)
+        
+                                            <p>修改数组配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_optionArray"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_options">options</a>(array $option = [])
+        
+                                            <p>修改多个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_options"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $name, mixed $defaults = null)
+        
+                                            <p>获取单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_getOption"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>(array $option = [])
+        
+                                            <p>获取所有配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_getOptions"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteOption">deleteOption</a>(string $name)
+        
+                                            <p>删除单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_deleteOption"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteOptions">deleteOptions</a>(array $option = [])
+        
+                                            <p>删除多个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_deleteOptions"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $sCacheName, mixed $mixDefault = false, array $arrOption = [])
+        
+                                            <p>获取缓存</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(string $sCacheName, mixed $mixData, array $arrOption = [])
+        
+                                            <p>设置缓存</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delele">delele</a>(string $sCacheName, array $arrOption = [])
+        
+                                            <p>清除缓存</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isExpired">isExpired</a>(string $sCacheName, array $arrOption)
+        
+                                            <p>验证缓存是否过期</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCachePath">getCachePath</a>(string $sCacheName, array $arrOption)
+        
+                                            <p>获取缓存路径</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeData">writeData</a>(string $sFileName, string $sData)
+        
+                                            <p>写入缓存数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exist">exist</a>(string $sCacheName, array $arrOption)
+        
+                                            <p>验证缓存是否存在</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../queryyetsimple/cache/acache.html#method___construct"><abbr title="queryyetsimple\cache\acache">acache</abbr></a> at         line 46</div>
+        <code>                    void
+    <strong>__construct</strong>(array $arrOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_put">
+        <div class="location">in <a href="../../queryyetsimple/cache/acache.html#method_put"><abbr title="queryyetsimple\cache\acache">acache</abbr></a> at         line 58</div>
+        <code>                    void
+    <strong>put</strong>(string|array $mixKey, mixed $mixValue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>批量插入</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$mixKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">in <a href="../../queryyetsimple/cache/acache.html#method_handle"><abbr title="queryyetsimple\cache\acache">acache</abbr></a> at         line 76</div>
+        <code>                    mixed
+    <strong>handle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回缓存句柄</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">in <a href="../../queryyetsimple/cache/acache.html#method_close"><abbr title="queryyetsimple\cache\acache">acache</abbr></a> at         line 86</div>
+        <code>                    void
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>关闭</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheName">
+        <div class="location">at         line 237</div>
+        <code>            protected        string
+    <strong>getCacheName</strong>(string $sCacheName, string $strPrefix = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取缓存名字
+去掉特殊缓存名字字符</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCacheName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strPrefix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cacheTime">
+        <div class="location">in <a href="../../queryyetsimple/cache/acache.html#method_cacheTime"><abbr title="queryyetsimple\cache\acache">acache</abbr></a> at         line 109</div>
+        <code>            protected        <abbr title="queryyetsimple\cache\number">number</abbr>
+    <strong>cacheTime</strong>(string $sId, int $intDefaultTime)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>读取缓存时间配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intDefaultTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\cache\number">number</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkForce">
+        <div class="location">in <a href="../../queryyetsimple/cache/acache.html#method_checkForce"><abbr title="queryyetsimple\cache\acache">acache</abbr></a> at         line 134</div>
+        <code>            protected        boolean
+    <strong>checkForce</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>强制不启用缓存</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_option">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_option"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 40</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>option</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_optionArray">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_optionArray"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 53</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>optionArray</strong>(string $name, array $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改数组配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_options">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_options"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 65</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>options</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改多个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_getOption"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 83</div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $name, mixed $defaults = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$defaults</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_getOptions"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 94</div>
+        <code>                    mixed
+    <strong>getOptions</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取所有配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteOption">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_deleteOption"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 105</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>deleteOption</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteOptions">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_deleteOptions"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 119</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>deleteOptions</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除多个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at         line 76</div>
+        <code>                    mixed
+    <strong>get</strong>(string $sCacheName, mixed $mixDefault = false, array $arrOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取缓存</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCacheName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixDefault</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">at         line 140</div>
+        <code>                    void
+    <strong>set</strong>(string $sCacheName, mixed $mixData, array $arrOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置缓存</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCacheName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixData</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delele">
+        <div class="location">at         line 159</div>
+        <code>                    void
+    <strong>delele</strong>(string $sCacheName, array $arrOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>清除缓存</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCacheName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isExpired">
+        <div class="location">at         line 175</div>
+        <code>            protected        boolean
+    <strong>isExpired</strong>(string $sCacheName, array $arrOption)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证缓存是否过期</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCacheName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCachePath">
+        <div class="location">at         line 192</div>
+        <code>            protected        string
+    <strong>getCachePath</strong>(string $sCacheName, array $arrOption)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取缓存路径</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCacheName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeData">
+        <div class="location">at         line 211</div>
+        <code>            protected        void
+    <strong>writeData</strong>(string $sFileName, string $sData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>写入缓存数据</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sFileName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exist">
+        <div class="location">at         line 224</div>
+        <code>            protected        boolean
+    <strong>exist</strong>(string $sCacheName, array $arrOption)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证缓存是否存在</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCacheName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

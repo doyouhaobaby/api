@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\database\manager | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_database_manager" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../queryyetsimple/database.html">database</a></li><li class="backslash">\</li><li>manager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            manager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>manager</strong>        extends <a href="../../queryyetsimple/support/manager.html"><abbr title="queryyetsimple\support\manager">manager</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>database 入口</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_objContainer">
+                                        protected                                        <a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a>
+                </td>
+                <td>$objContainer</td>
+                <td class="last">IOC Container</td>
+                <td><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#property_objContainer"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrConnect">
+                                        protected                                        object[]
+                </td>
+                <td>$arrConnect</td>
+                <td class="last">连接对象</td>
+                <td><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#property_arrConnect"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a> $objContainer)
+        
+                                            <p>构造函数</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method___construct"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_container">container</a>()
+        
+                                            <p>返回 IOC 容器</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_container"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connect">connect</a>(array|string|null $mixOption = null)
+        
+                                            <p>连接 connect 并返回连接对象</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_connect"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reconnect">reconnect</a>(array|string $mixOption = [])
+        
+                                            <p>重新连接</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_reconnect"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disconnect">disconnect</a>(array|string $mixOption = [])
+        
+                                            <p>删除连接</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_disconnect"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnects">getConnects</a>()
+        
+                                            <p>取回所有连接</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_getConnects"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultDriver">getDefaultDriver</a>()
+        
+                                            <p>返回默认驱动</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_getDefaultDriver"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultDriver">setDefaultDriver</a>(string $strName)
+        
+                                            <p>设置默认驱动</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_setDefaultDriver"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptionNamespace">getOptionNamespace</a>()
+        
+                                            <p>取得配置命名空间</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createConnect">createConnect</a>(object $objConnect)
+        
+                                            <p>创建连接对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptionName">getOptionName</a>(string $strOptionName = null)
+        
+                                            <p>取得连接名字</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_getOptionName"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeConnect">makeConnect</a>(string $strConnect, array $arrOption = [])
+        
+                                            <p>创建连接</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_makeConnect"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createConnectCommon">createConnectCommon</a>(string $strConnect, array $arrOption = [])
+        
+                                            <p>创建连接对象公共入口</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_createConnectCommon"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseOptionAndUnique">parseOptionAndUnique</a>(array|string $mixOption = [])
+        
+                                            <p>分析连接参数以及其唯一值</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_parseOptionAndUnique"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseOptionParameter">parseOptionParameter</a>(array|string $mixOption = [])
+        
+                                            <p>分析连接参数</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_parseOptionParameter"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUnique">getUnique</a>(array $arrOption)
+        
+                                            <p>取得唯一值</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_getUnique"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $strConnect, array $arrExtendOption = null)
+        
+                                            <p>读取默认配置</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptionCommon">getOptionCommon</a>()
+        
+                                            <p>读取连接全局配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_getOptionCommon"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterOptionCommon">filterOptionCommon</a>(array $arrOption)
+        
+                                            <p>过滤全局配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_filterOptionCommon"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterOptionCommonItem">filterOptionCommonItem</a>()
+        
+                                            <p>过滤全局配置项</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_filterOptionCommonItem"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptionConnect">getOptionConnect</a>(string $strConnect)
+        
+                                            <p>读取连接配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_getOptionConnect"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_optionFilterNull">optionFilterNull</a>(array $arrOption)
+        
+                                            <p>清除配置 null</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method_optionFilterNull"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $sMethod, array $arrArgs)
+        
+                                            <p>call</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/manager.html#method___call"><abbr title="queryyetsimple\support\manager">manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/database/mysql.html"><abbr title="queryyetsimple\database\mysql">mysql</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeConnectMysql">makeConnectMysql</a>(array $arrOption = [])
+        
+                                            <p>创建 mysql 连接</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseOption">parseOption</a>(array $arrOption)
+        
+                                            <p>分析数据库配置参数</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method___construct"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 56</div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a> $objContainer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a></td>
+                <td>$objContainer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_container">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_container"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 66</div>
+        <code>                    <a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a>
+    <strong>container</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回 IOC 容器</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connect">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_connect"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 77</div>
+        <code>                    object
+    <strong>connect</strong>(array|string|null $mixOption = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>连接 connect 并返回连接对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string|null</td>
+                <td>$mixOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reconnect">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_reconnect"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 95</div>
+        <code>                    object
+    <strong>reconnect</strong>(array|string $mixOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>重新连接</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$mixOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disconnect">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_disconnect"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 107</div>
+        <code>                    void
+    <strong>disconnect</strong>(array|string $mixOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除连接</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$mixOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnects">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_getConnects"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 121</div>
+        <code>                    object[]
+    <strong>getConnects</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回所有连接</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultDriver">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_getDefaultDriver"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 131</div>
+        <code>                    string
+    <strong>getDefaultDriver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回默认驱动</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultDriver">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_setDefaultDriver"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 142</div>
+        <code>                    void
+    <strong>setDefaultDriver</strong>(string $strName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置默认驱动</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptionNamespace">
+        <div class="location">at         line 43</div>
+        <code>            protected        string
+    <strong>getOptionNamespace</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得配置命名空间</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createConnect">
+        <div class="location">at         line 54</div>
+        <code>            protected        object
+    <strong>createConnect</strong>(object $objConnect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建连接对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$objConnect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptionName">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_getOptionName"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 168</div>
+        <code>            protected        string
+    <strong>getOptionName</strong>(string $strOptionName = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得连接名字</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strOptionName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeConnect">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_makeConnect"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 180</div>
+        <code>            protected        object
+    <strong>makeConnect</strong>(string $strConnect, array $arrOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建连接</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strConnect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createConnectCommon">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_createConnectCommon"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 195</div>
+        <code>            protected        object
+    <strong>createConnectCommon</strong>(string $strConnect, array $arrOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建连接对象公共入口</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strConnect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseOptionAndUnique">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_parseOptionAndUnique"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 206</div>
+        <code>            protected        array
+    <strong>parseOptionAndUnique</strong>(array|string $mixOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析连接参数以及其唯一值</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$mixOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseOptionParameter">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_parseOptionParameter"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 220</div>
+        <code>            protected        array
+    <strong>parseOptionParameter</strong>(array|string $mixOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析连接参数</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$mixOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUnique">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_getUnique"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 239</div>
+        <code>            protected        string
+    <strong>getUnique</strong>(array $arrOption)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得唯一值</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">at         line 77</div>
+        <code>            protected        array
+    <strong>getOption</strong>(string $strConnect, array $arrExtendOption = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>读取默认配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strConnect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrExtendOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptionCommon">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_getOptionCommon"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 261</div>
+        <code>            protected        array
+    <strong>getOptionCommon</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>读取连接全局配置</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterOptionCommon">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_filterOptionCommon"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 274</div>
+        <code>            protected        array
+    <strong>filterOptionCommon</strong>(array $arrOption)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>过滤全局配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterOptionCommonItem">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_filterOptionCommonItem"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 290</div>
+        <code>            protected        array
+    <strong>filterOptionCommonItem</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>过滤全局配置项</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptionConnect">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_getOptionConnect"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 304</div>
+        <code>            protected        array
+    <strong>getOptionConnect</strong>(string $strConnect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>读取连接配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strConnect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_optionFilterNull">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method_optionFilterNull"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 315</div>
+        <code>            protected        array
+    <strong>optionFilterNull</strong>(array $arrOption)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>清除配置 null</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../queryyetsimple/support/manager.html#method___call"><abbr title="queryyetsimple\support\manager">manager</abbr></a> at         line 329</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $sMethod, array $arrArgs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>call</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMethod</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeConnectMysql">
+        <div class="location">at         line 65</div>
+        <code>            protected        <a href="../../queryyetsimple/database/mysql.html"><abbr title="queryyetsimple\database\mysql">mysql</abbr></a>
+    <strong>makeConnectMysql</strong>(array $arrOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建 mysql 连接</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/database/mysql.html"><abbr title="queryyetsimple\database\mysql">mysql</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseOption">
+        <div class="location">at         line 88</div>
+        <code>            protected        array
+    <strong>parseOption</strong>(array $arrOption)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析数据库配置参数</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

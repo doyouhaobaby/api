@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\queue\runners\redis | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_queue_runners_redis" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../../queryyetsimple/queue.html">queue</a></li><li class="backslash">\</li><li><a href="../../../queryyetsimple/queue/runners.html">runners</a></li><li class="backslash">\</li><li>redis</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            redis
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>redis</strong>        extends <a href="../../../queryyetsimple/queue/runners/arunner.html"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a>        implements
+        <abbr title="queryyetsimple\queue\runners\irunner">irunner</abbr>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>redis runner</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_objWork">
+                                        protected                                        <a href="../../../queryyetsimple/queue/console/work.html"><abbr title="queryyetsimple\queue\console\work">work</abbr></a>
+                </td>
+                <td>$objWork</td>
+                <td class="last">work 命令</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/queue/runners/arunner.html#property_objWork"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objQueue">
+                                        protected                                        <a href="../../../queryyetsimple/queue/queues/iqueue.html"><abbr title="queryyetsimple\queue\queues\iqueue">iqueue</abbr></a>
+                </td>
+                <td>$objQueue</td>
+                <td class="last">消息队列</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/queue/runners/arunner.html#property_objQueue"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_intSleep">
+                                        protected                                        int
+                </td>
+                <td>$intSleep</td>
+                <td class="last">任务不可用等待时间</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/queue/runners/arunner.html#property_intSleep"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_intTries">
+                                        protected                                        int
+                </td>
+                <td>$intTries</td>
+                <td class="last">任务最大尝试次数</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/queue/runners/arunner.html#property_intTries"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_queue_name">
+                                                                                string
+                </td>
+                <td>$queue_name</td>
+                <td class="last">消息队列名字</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_workCommand">workCommand</a>(<a href="../../../queryyetsimple/queue/console/work.html"><abbr title="queryyetsimple\queue\console\work">work</abbr></a> $objWork)
+        
+                                            <p>work 命名</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/queue/runners/arunner.html#method_workCommand"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_workJob">workJob</a>()
+        
+                                            <p>{@inheritdoc}</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/queue/runners/arunner.html#method_workJob"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_beforeLoop">beforeLoop</a>()
+        
+                                            <p>{@inheritdoc}</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/queue/runners/arunner.html#method_beforeLoop"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_failedJob">failedJob</a>(<a href="../../../queryyetsimple/queue/jobs/ijob.html"><abbr title="queryyetsimple\queue\jobs\ijob">ijob</abbr></a> $objJob)
+        
+                                            <p>记录错误任务</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/queue/runners/arunner.html#method_failedJob"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateJob">updateJob</a>(<a href="../../../queryyetsimple/queue/jobs/ijob.html"><abbr title="queryyetsimple\queue\jobs\ijob">ijob</abbr></a> $objJob, mixed $mixResultData = null)
+        
+                                            <p>更新任务数据</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/queue/runners/arunner.html#method_updateJob"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkRestart">checkRestart</a>()
+        
+                                            <p>验证是否需要重启</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/queue/runners/arunner.html#method_checkRestart"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_workCommand">
+        <div class="location">in <a href="../../../queryyetsimple/queue/runners/arunner.html#method_workCommand"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a> at         line 73</div>
+        <code>                    void
+    <strong>workCommand</strong>(<a href="../../../queryyetsimple/queue/console/work.html"><abbr title="queryyetsimple\queue\console\work">work</abbr></a> $objWork)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>work 命名</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../queryyetsimple/queue/console/work.html"><abbr title="queryyetsimple\queue\console\work">work</abbr></a></td>
+                <td>$objWork</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_workJob">
+        <div class="location">in <a href="../../../queryyetsimple/queue/runners/arunner.html#method_workJob"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a> at         line 84</div>
+        <code>                    
+    <strong>workJob</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>{@inheritdoc}</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_beforeLoop">
+        <div class="location">in <a href="../../../queryyetsimple/queue/runners/arunner.html#method_beforeLoop"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a> at         line 148</div>
+        <code>            protected        
+    <strong>beforeLoop</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>{@inheritdoc}</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_failedJob">
+        <div class="location">in <a href="../../../queryyetsimple/queue/runners/arunner.html#method_failedJob"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a> at         line 162</div>
+        <code>            protected        void
+    <strong>failedJob</strong>(<a href="../../../queryyetsimple/queue/jobs/ijob.html"><abbr title="queryyetsimple\queue\jobs\ijob">ijob</abbr></a> $objJob)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>记录错误任务</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../queryyetsimple/queue/jobs/ijob.html"><abbr title="queryyetsimple\queue\jobs\ijob">ijob</abbr></a></td>
+                <td>$objJob</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateJob">
+        <div class="location">in <a href="../../../queryyetsimple/queue/runners/arunner.html#method_updateJob"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a> at         line 190</div>
+        <code>            protected        bool|void
+    <strong>updateJob</strong>(<a href="../../../queryyetsimple/queue/jobs/ijob.html"><abbr title="queryyetsimple\queue\jobs\ijob">ijob</abbr></a> $objJob, mixed $mixResultData = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>更新任务数据</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../queryyetsimple/queue/jobs/ijob.html"><abbr title="queryyetsimple\queue\jobs\ijob">ijob</abbr></a></td>
+                <td>$objJob</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixResultData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkRestart">
+        <div class="location">in <a href="../../../queryyetsimple/queue/runners/arunner.html#method_checkRestart"><abbr title="queryyetsimple\queue\runners\arunner">arunner</abbr></a> at         line 217</div>
+        <code>            protected        void
+    <strong>checkRestart</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证是否需要重启</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

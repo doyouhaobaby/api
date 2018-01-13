@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\pipeline\pipeline | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_pipeline_pipeline" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../queryyetsimple/pipeline.html">pipeline</a></li><li class="backslash">\</li><li>pipeline</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            pipeline
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>pipeline</strong>        implements
+        <a href="../../queryyetsimple/pipeline/ipipeline.html"><abbr title="queryyetsimple\pipeline\ipipeline">ipipeline</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>管道实现类</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_objContainer">
+                                        protected                                        <a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a>
+                </td>
+                <td>$objContainer</td>
+                <td class="last">容器</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrPassed">
+                                        protected                                        array
+                </td>
+                <td>$arrPassed</td>
+                <td class="last">管道传递的对象</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrStage">
+                                        protected                                        array
+                </td>
+                <td>$arrStage</td>
+                <td class="last">管道中所有执行工序</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objGenerator">
+                                        protected                                        <a target="_blank" href="http://php.net/Generator">Generator</a>
+                </td>
+                <td>$objGenerator</td>
+                <td class="last">迭代器</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a> $objContainer)
+        
+                                            <p>创建一个管道</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\pipeline\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p>管道初始化</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\pipeline\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_send">send</a>(mixed $mixPassed)
+        
+                                            <p>将传输对象传入管道</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\pipeline\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_through">through</a>(<abbr title="queryyetsimple\pipeline\dynamic">dynamic</abbr>|array $mixStage)
+        
+                                            <p>设置管道中的执行工序</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_then">then</a>(callable $calEnd = null)
+        
+                                            <p>执行管道工序响应结果</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_traverseGenerator">traverseGenerator</a>()
+        
+                                            <p>遍历迭代器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Generator">Generator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stageGenerator">stageGenerator</a>(array $arrStage)
+        
+                                            <p>工序迭代器
+添加一个空的迭代器，第一次迭代 next 自动移除</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stageCallback">stageCallback</a>(mixed $mixStage)
+        
+                                            <p>工序回调</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parse">parse</a>(string $strStage)
+        
+                                            <p>解析工序</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 72</div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a> $objContainer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建一个管道</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a></td>
+                <td>$objContainer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at         line 82</div>
+        <code>                    <abbr title="queryyetsimple\pipeline\$this">$this</abbr>
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>管道初始化</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\pipeline\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send">
+        <div class="location">at         line 97</div>
+        <code>                    <abbr title="queryyetsimple\pipeline\$this">$this</abbr>
+    <strong>send</strong>(mixed $mixPassed)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>将传输对象传入管道</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixPassed</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\pipeline\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_through">
+        <div class="location">at         line 113</div>
+        <code>                    <abbr title="queryyetsimple\pipeline\$this">$this</abbr>
+    <strong>through</strong>(<abbr title="queryyetsimple\pipeline\dynamic">dynamic</abbr>|array $mixStage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置管道中的执行工序</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="queryyetsimple\pipeline\dynamic">dynamic</abbr>|array</td>
+                <td>$mixStage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\pipeline\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_then">
+        <div class="location">at         line 130</div>
+        <code>                    mixed
+    <strong>then</strong>(callable $calEnd = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>执行管道工序响应结果</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$calEnd</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_traverseGenerator">
+        <div class="location">at         line 147</div>
+        <code>            protected        void
+    <strong>traverseGenerator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>遍历迭代器</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stageGenerator">
+        <div class="location">at         line 167</div>
+        <code>            protected        <a target="_blank" href="http://php.net/Generator">Generator</a>
+    <strong>stageGenerator</strong>(array $arrStage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>工序迭代器
+添加一个空的迭代器，第一次迭代 next 自动移除</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrStage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Generator">Generator</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stageCallback">
+        <div class="location">at         line 181</div>
+        <code>            protected        null|callable
+    <strong>stageCallback</strong>(mixed $mixStage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>工序回调</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixStage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parse">
+        <div class="location">at         line 215</div>
+        <code>            protected        array
+    <strong>parse</strong>(string $strStage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>解析工序</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strStage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

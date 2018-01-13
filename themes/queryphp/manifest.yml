@@ -1,9 +1,0 @@
-name: queryphp
-parent: default
-
-global:
-    'layout/base.twig': 'layout/base.twig'
-    'namespaces.twig': 'namespaces.twig'
-
-static:
-    'css/queryphp.css': 'css/queryphp.css'

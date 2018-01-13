@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\view\parser | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_view_parser" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../queryyetsimple/view.html">view</a></li><li class="backslash">\</li><li>parser</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            parser
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>parser</strong>        implements
+        <a href="../../queryyetsimple/view/iparser.html"><abbr title="queryyetsimple\view\iparser">iparser</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>分析模板</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../queryyetsimple/support/option.html"><abbr title="queryyetsimple\support\option">option</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    类配置复用
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_objCompiler">
+                                        protected                                        <a href="../../queryyetsimple/view/icompiler.html"><abbr title="queryyetsimple\view\icompiler">icompiler</abbr></a>
+                </td>
+                <td>$objCompiler</td>
+                <td class="last">编译器</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_oNodeStack">
+                                        protected                                        <abbr title="queryyetsimple\view\stack">stack</abbr>
+                </td>
+                <td>$oNodeStack</td>
+                <td class="last">成对节点栈</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bJsNode">
+                                        protected                                        boolean
+                </td>
+                <td>$bJsNode</td>
+                <td class="last">js 和 node 共用分析器</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrCompilers">
+                                        protected                                        array
+                </td>
+                <td>$arrCompilers</td>
+                <td class="last">编译器</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrParses">
+                                        protected                                        array
+                </td>
+                <td>$arrParses</td>
+                <td class="last">分析器</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrTag">
+                                        protected                                        array
+                </td>
+                <td>$arrTag</td>
+                <td class="last">分析器定界符</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrThemeTree">
+                                        protected                                        array
+                </td>
+                <td>$arrThemeTree</td>
+                <td class="last">模板树结构</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrThemeStruct">
+                                        protected                                        array
+                </td>
+                <td>$arrThemeStruct</td>
+                <td class="last">模板项结构</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_strSourceFile">
+                                        protected                                        string
+                </td>
+                <td>$strSourceFile</td>
+                <td class="last">当前编译源文件</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_stringCachePath">
+                                        protected                                        array
+                </td>
+                <td>$stringCachePath</td>
+                <td class="last">当前编译缓存文件</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrOption">
+                                        protected                                        array
+                </td>
+                <td>$arrOption</td>
+                <td class="last">配置</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_option">option</a>(string $name, mixed $value)
+        
+                                            <p>修改单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_option"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_optionArray">optionArray</a>(string $name, array $value)
+        
+                                            <p>修改数组配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_optionArray"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_options">options</a>(array $option = [])
+        
+                                            <p>修改多个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_options"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $name, mixed $defaults = null)
+        
+                                            <p>获取单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_getOption"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>(array $option = [])
+        
+                                            <p>获取所有配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_getOptions"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteOption">deleteOption</a>(string $name)
+        
+                                            <p>删除单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_deleteOption"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteOptions">deleteOptions</a>(array $option = [])
+        
+                                            <p>删除多个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_deleteOptions"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../queryyetsimple/view/icompiler.html"><abbr title="queryyetsimple\view\icompiler">icompiler</abbr></a> $objCompiler, array $arrOption = [])
+        
+                                            <p>构造函数</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\view\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerCompilers">registerCompilers</a>()
+        
+                                            <p>注册视图编译器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\view\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerParsers">registerParsers</a>()
+        
+                                            <p>注册视图分析器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doCombile">doCombile</a>(string $sFile, string $sCachePath, boolean $bReturn = false)
+        
+                                            <p>执行编译</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_revertEncode">revertEncode</a>(string $sContent)
+        
+                                            <p>code 编译编码，后还原</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_globalEncode">globalEncode</a>(string $sContent)
+        
+                                            <p>tagself 编译编码，后还原</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_globalParse">globalParse</a>(string $sCompiled)
+        
+                                            <p>全局编译器 tagself</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_jsvarParse">jsvarParse</a>(string $sCompiled)
+        
+                                            <p>javascript 变量分析器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_codeParse">codeParse</a>(string $sCompiled)
+        
+                                            <p>code 方式分析器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_jsParse">jsParse</a>(string $sCompiled)
+        
+                                            <p>javascript 分析器 与 node 公用分析器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_nodeParse">nodeParse</a>(string $sCompiled)
+        
+                                            <p>node 分析器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_revertParse">revertParse</a>(string $sCompiled)
+        
+                                            <p>code 还原分析器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_globalrevertParse">globalrevertParse</a>(string $sCompiled)
+        
+                                            <p>tagself 还原分析器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findNodeTag">findNodeTag</a>(string $sCompiled)
+        
+                                            <p>查找成对节点</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_packNode">packNode</a>(string $sCompiled)
+        
+                                            <p>装配节点</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findHeadTag">findHeadTag</a>(array $arrTag, array $arrTailTag)
+        
+                                            <p>查找 node 标签</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerParser">registerParser</a>(string $sTag)
+        
+                                            <p>注册分析器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerCompiler">registerCompiler</a>($sType, $mixName, $sTag)
+        
+                                            <p>注册编译器 code和node编译器注册</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileThemeTree">compileThemeTree</a>()
+        
+                                            <p>逐个编译模板树</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileTheme">compileTheme</a>(array $arrTheme)
+        
+                                            <p>分析模板调用编译器编译</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeCacheFile">makeCacheFile</a>(string $sCachePath, string $sCompiled)
+        
+                                            <p>创建缓存文件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTag">getTag</a>(string $sType)
+        
+                                            <p>取得模板分析器定界符</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTheme">addTheme</a>(array $arrTheme)
+        
+                                            <p>将模板结构加入树结构中去</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearThemeTree">clearThemeTree</a>()
+        
+                                            <p>清理模板树对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_topTheme">topTheme</a>(array $arrTheme)
+        
+                                            <p>添加顶层树对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addThemeTree">addThemeTree</a>(array $arrTop, array $arrNew)
+        
+                                            <p>将新的模板加入到树结构中去</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPosition">getPosition</a>(string $sContent, string $sFind, int $nStart)
+        
+                                            <p>分析匹配标签的位置</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_positionRelative">positionRelative</a>(array $arrOne, array $arrTwo)
+        
+                                            <p>对比两个模板相对位置
+这个和两个时间段之间的关系一样，其中交叉在模板引擎中是不被支持，因为无法实现
+除掉交叉，剩下包含、被包含、前面和后面，通过位置组装成一颗树结构</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultStruct">getDefaultStruct</a>()
+        
+                                            <p>取得默认模板项结构</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_escapeCharacter">escapeCharacter</a>(string $sTxt)
+        
+                                            <p>转移正则表达式特殊字符</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLocation">getLocation</a>(array $arrPosition)
+        
+                                            <p>取得模板位置</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLocationSource">getLocationSource</a>(array $arrPosition)
+        
+                                            <p>取得模板位置源码</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_option">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_option"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 40</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>option</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_optionArray">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_optionArray"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 53</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>optionArray</strong>(string $name, array $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改数组配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_options">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_options"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 65</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>options</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改多个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_getOption"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 83</div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $name, mixed $defaults = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$defaults</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_getOptions"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 94</div>
+        <code>                    mixed
+    <strong>getOptions</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取所有配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteOption">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_deleteOption"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 105</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>deleteOption</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteOptions">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_deleteOptions"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 119</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>deleteOptions</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除多个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 182</div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../queryyetsimple/view/icompiler.html"><abbr title="queryyetsimple\view\icompiler">icompiler</abbr></a> $objCompiler, array $arrOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../queryyetsimple/view/icompiler.html"><abbr title="queryyetsimple\view\icompiler">icompiler</abbr></a></td>
+                <td>$objCompiler</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerCompilers">
+        <div class="location">at         line 193</div>
+        <code>                    <abbr title="queryyetsimple\view\$this">$this</abbr>
+    <strong>registerCompilers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册视图编译器</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\view\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerParsers">
+        <div class="location">at         line 206</div>
+        <code>                    <abbr title="queryyetsimple\view\$this">$this</abbr>
+    <strong>registerParsers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册视图分析器</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\view\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doCombile">
+        <div class="location">at         line 222</div>
+        <code>                    string
+    <strong>doCombile</strong>(string $sFile, string $sCachePath, boolean $bReturn = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>执行编译</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sFile</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCachePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$bReturn</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_revertEncode">
+        <div class="location">at         line 270</div>
+        <code>        static            string
+    <strong>revertEncode</strong>(string $sContent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>code 编译编码，后还原</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sContent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_globalEncode">
+        <div class="location">at         line 282</div>
+        <code>        static            string
+    <strong>globalEncode</strong>(string $sContent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>tagself 编译编码，后还原</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sContent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_globalParse">
+        <div class="location">at         line 294</div>
+        <code>            protected        void
+    <strong>globalParse</strong>(string $sCompiled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>全局编译器 tagself</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCompiled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsvarParse">
+        <div class="location">at         line 326</div>
+        <code>            protected        void
+    <strong>jsvarParse</strong>(string $sCompiled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>javascript 变量分析器</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCompiled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_codeParse">
+        <div class="location">at         line 358</div>
+        <code>            protected        void
+    <strong>codeParse</strong>(string $sCompiled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>code 方式分析器</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCompiled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsParse">
+        <div class="location">at         line 400</div>
+        <code>            protected        void
+    <strong>jsParse</strong>(string $sCompiled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>javascript 分析器 与 node 公用分析器</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCompiled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_nodeParse">
+        <div class="location">at         line 413</div>
+        <code>            protected        void
+    <strong>nodeParse</strong>(string $sCompiled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>node 分析器</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCompiled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_revertParse">
+        <div class="location">at         line 426</div>
+        <code>            protected        void
+    <strong>revertParse</strong>(string $sCompiled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>code 还原分析器</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCompiled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_globalrevertParse">
+        <div class="location">at         line 455</div>
+        <code>            protected        void
+    <strong>globalrevertParse</strong>(string $sCompiled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>tagself 还原分析器</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCompiled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findNodeTag">
+        <div class="location">at         line 486</div>
+        <code>            protected        void
+    <strong>findNodeTag</strong>(string $sCompiled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>查找成对节点</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCompiled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_packNode">
+        <div class="location">at         line 553</div>
+        <code>            protected        void
+    <strong>packNode</strong>(string $sCompiled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>装配节点</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCompiled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findHeadTag">
+        <div class="location">at         line 652</div>
+        <code>            protected        boolean
+    <strong>findHeadTag</strong>(array $arrTag, array $arrTailTag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>查找 node 标签</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrTag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrTailTag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerParser">
+        <div class="location">at         line 666</div>
+        <code>            protected        void
+    <strong>registerParser</strong>(string $sTag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册分析器</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sTag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerCompiler">
+        <div class="location">at         line 679</div>
+        <code>            protected        void
+    <strong>registerCompiler</strong>($sType, $mixName, $sTag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册编译器 code和node编译器注册</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$sType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mixName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$sTag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileThemeTree">
+        <div class="location">at         line 694</div>
+        <code>            protected        string
+    <strong>compileThemeTree</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>逐个编译模板树</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileTheme">
+        <div class="location">at         line 711</div>
+        <code>            protected        void
+    <strong>compileTheme</strong>(array $arrTheme)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析模板调用编译器编译</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrTheme</td>
+                <td>待编译的模板</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeCacheFile">
+        <div class="location">at         line 739</div>
+        <code>            protected        void
+    <strong>makeCacheFile</strong>(string $sCachePath, string $sCompiled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建缓存文件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sCachePath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCompiled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTag">
+        <div class="location">at         line 751</div>
+        <code>            protected        array
+    <strong>getTag</strong>(string $sType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得模板分析器定界符</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTheme">
+        <div class="location">at         line 762</div>
+        <code>            protected        void
+    <strong>addTheme</strong>(array $arrTheme)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>将模板结构加入树结构中去</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrTheme</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearThemeTree">
+        <div class="location">at         line 773</div>
+        <code>            protected        void
+    <strong>clearThemeTree</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>清理模板树对象</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_topTheme">
+        <div class="location">at         line 784</div>
+        <code>            protected        void
+    <strong>topTheme</strong>(array $arrTheme)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>添加顶层树对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrTheme</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addThemeTree">
+        <div class="location">at         line 796</div>
+        <code>            protected        array
+    <strong>addThemeTree</strong>(array $arrTop, array $arrNew)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>将新的模板加入到树结构中去</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrTop</td>
+                <td>顶层模板</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrNew</td>
+                <td>待加入的模板</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPosition">
+        <div class="location">at         line 868</div>
+        <code>            protected        array
+    <strong>getPosition</strong>(string $sContent, string $sFind, int $nStart)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析匹配标签的位置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sContent</td>
+                <td>待编译的模板</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sFind</td>
+                <td>匹配的标签</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$nStart</td>
+                <td>起始查找的位置</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>start 标签开始的位置（字节数）</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_positionRelative">
+        <div class="location">at         line 949</div>
+        <code>            protected        string
+    <strong>positionRelative</strong>(array $arrOne, array $arrTwo)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>对比两个模板相对位置
+这个和两个时间段之间的关系一样，其中交叉在模板引擎中是不被支持，因为无法实现
+除掉交叉，剩下包含、被包含、前面和后面，通过位置组装成一颗树结构</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrOne</td>
+                <td>待分析的第一个模板</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrTwo</td>
+                <td>待分析的第二个模板</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultStruct">
+        <div class="location">at         line 1052</div>
+        <code>            protected        array
+    <strong>getDefaultStruct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得默认模板项结构</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_escapeCharacter">
+        <div class="location">at         line 1063</div>
+        <code>            protected        string
+    <strong>escapeCharacter</strong>(string $sTxt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>转移正则表达式特殊字符</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sTxt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLocation">
+        <div class="location">at         line 1074</div>
+        <code>            protected        string
+    <strong>getLocation</strong>(array $arrPosition)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得模板位置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrPosition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLocationSource">
+        <div class="location">at         line 1085</div>
+        <code>            protected        string
+    <strong>getLocationSource</strong>(array $arrPosition)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得模板位置源码</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrPosition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

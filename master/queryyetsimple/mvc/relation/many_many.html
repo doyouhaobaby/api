@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\mvc\relation\many_many | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_mvc_relation_many_many" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../../queryyetsimple/mvc.html">mvc</a></li><li class="backslash">\</li><li><a href="../../../queryyetsimple/mvc/relation.html">relation</a></li><li class="backslash">\</li><li>many_many</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            many_many
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>many_many</strong>        extends <a href="../../../queryyetsimple/mvc/relation/relation.html"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>关联模型 many_many</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_objSelect">
+                                        protected                                        <a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+                </td>
+                <td>$objSelect</td>
+                <td class="last">查询对象</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#property_objSelect"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objTargetModel">
+                                        protected                                        <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </td>
+                <td>$objTargetModel</td>
+                <td class="last">关联目标模型</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#property_objTargetModel"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objSourceModel">
+                                        protected                                        <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </td>
+                <td>$objSourceModel</td>
+                <td class="last">源模型</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#property_objSourceModel"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_strTargetKey">
+                                        protected                                        string
+                </td>
+                <td>$strTargetKey</td>
+                <td class="last">目标关联字段</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#property_strTargetKey"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_strSourceKey">
+                                        protected                                        string
+                </td>
+                <td>$strSourceKey</td>
+                <td class="last">源关联字段</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#property_strSourceKey"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_booRelationCondition">
+                    static                    protected                                        boolean
+                </td>
+                <td>$booRelationCondition</td>
+                <td class="last">是否初始化查询</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#property_booRelationCondition"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objMiddleSelect">
+                                        protected                                        <a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+                </td>
+                <td>$objMiddleSelect</td>
+                <td class="last">中间表查询对象</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objMiddleModel">
+                                        protected                                        <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </td>
+                <td>$objMiddleModel</td>
+                <td class="last">中间表模型</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_strMiddleTargetKey">
+                                        protected                                        string
+                </td>
+                <td>$strMiddleTargetKey</td>
+                <td class="last">目标中间表关联字段</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_strMiddleSourceKey">
+                                        protected                                        string
+                </td>
+                <td>$strMiddleSourceKey</td>
+                <td class="last">源中间表关联字段</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrMiddleMap">
+                                        protected                                        array
+                </td>
+                <td>$arrMiddleMap</td>
+                <td class="last">中间表隐射数据</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a> $objTargetModel, <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a> $objSourceModel, <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a> $objMiddleModel, string $strTargetKey, string $strSourceKey, string $strMiddleTargetKey, string $strMiddleSourceKey)
+        
+                                            <p>构造函数</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelect">getSelect</a>()
+        
+                                            <p>返回查询</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#method_getSelect"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPreLoad">getPreLoad</a>()
+        
+                                            <p>取得预载入关联模型</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#method_getPreLoad"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTargetModel">getTargetModel</a>()
+        
+                                            <p>取得关联目标模型</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#method_getTargetModel"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceModel">getSourceModel</a>()
+        
+                                            <p>取得源模型</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#method_getSourceModel"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTargetKey">getTargetKey</a>()
+        
+                                            <p>取得目标中间表关联字段</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceKey">getSourceKey</a>()
+        
+                                            <p>取得源中间表关联字段</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withoutRelationCondition">withoutRelationCondition</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $calReturnRelation)
+        
+                                            <p>获取不带关联条件的关联对象</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#method_withoutRelationCondition"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRelationCondition">addRelationCondition</a>()
+        
+                                            <p>关联基础查询条件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_preLoadCondition">preLoadCondition</a>(array $arrModel)
+        
+                                            <p>设置预载入关联查询条件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_matchPreLoad">matchPreLoad</a>(array $arrModel, <a href="../../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a> $objResult, string $strRelation)
+        
+                                            <p>匹配关联查询数据到模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sourceQuery">sourceQuery</a>()
+        
+                                            <p>查询关联对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModelKey">getModelKey</a>(array $arrModel, string $strKey = null)
+        
+                                            <p>返回模型的主键</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#method_getModelKey"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelectFromModel">getSelectFromModel</a>()
+        
+                                            <p>从模型返回查询</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#method_getSelectFromModel"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $sMethod, array $arrArgs)
+        
+                                            <p>call</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/mvc/relation/relation.html#method___call"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\mvc\relation\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_middleCondition">middleCondition</a>(callable $calCallback)
+        
+                                            <p>中间表查询回调处理</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceValue">getSourceValue</a>()
+        
+                                            <p>取回源模型对应数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMiddleSelect">getMiddleSelect</a>()
+        
+                                            <p>取得中间表查询对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMiddleModel">getMiddleModel</a>()
+        
+                                            <p>取得中间表模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMiddleMap">getMiddleMap</a>()
+        
+                                            <p>取得中间表隐射数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceKeyValue">getSourceKeyValue</a>()
+        
+                                            <p>取得源外键值</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_preLoadRelationCondition">preLoadRelationCondition</a>(array $arrModel)
+        
+                                            <p>预载入关联基础查询条件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPreLoadSourceValue">getPreLoadSourceValue</a>(array $arrModel)
+        
+                                            <p>取回源模型对应数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildMap">buildMap</a>(<a href="../../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a> $objResult)
+        
+                                            <p>模型隐射数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseSelectCondition">parseSelectCondition</a>()
+        
+                                            <p>通过中间表获取目标 ID</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseTargetId">parseTargetId</a>()
+        
+                                            <p>通过中间表获取目标 ID</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 85</div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a> $objTargetModel, <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a> $objSourceModel, <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a> $objMiddleModel, string $strTargetKey, string $strSourceKey, string $strMiddleTargetKey, string $strMiddleSourceKey)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+                <td>$objTargetModel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+                <td>$objSourceModel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+                <td>$objMiddleModel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strTargetKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strSourceKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strMiddleTargetKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strMiddleSourceKey</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelect">
+        <div class="location">in <a href="../../../queryyetsimple/mvc/relation/relation.html#method_getSelect"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a> at         line 107</div>
+        <code>                    <a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+    <strong>getSelect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回查询</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreLoad">
+        <div class="location">in <a href="../../../queryyetsimple/mvc/relation/relation.html#method_getPreLoad"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a> at         line 117</div>
+        <code>                    <a href="../../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a>
+    <strong>getPreLoad</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得预载入关联模型</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTargetModel">
+        <div class="location">in <a href="../../../queryyetsimple/mvc/relation/relation.html#method_getTargetModel"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a> at         line 127</div>
+        <code>                    <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+    <strong>getTargetModel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得关联目标模型</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceModel">
+        <div class="location">in <a href="../../../queryyetsimple/mvc/relation/relation.html#method_getSourceModel"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a> at         line 137</div>
+        <code>                    <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+    <strong>getSourceModel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得源模型</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTargetKey">
+        <div class="location">at         line 205</div>
+        <code>                    string
+    <strong>getTargetKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得目标中间表关联字段</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceKey">
+        <div class="location">at         line 215</div>
+        <code>                    string
+    <strong>getSourceKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得源中间表关联字段</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutRelationCondition">
+        <div class="location">in <a href="../../../queryyetsimple/mvc/relation/relation.html#method_withoutRelationCondition"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a> at         line 168</div>
+        <code>        static            <a href="../../../queryyetsimple/mvc/relation/relation.html"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a>
+    <strong>withoutRelationCondition</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $calReturnRelation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取不带关联条件的关联对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$calReturnRelation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../queryyetsimple/mvc/relation/relation.html"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRelationCondition">
+        <div class="location">at         line 99</div>
+        <code>                    void
+    <strong>addRelationCondition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>关联基础查询条件</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_preLoadCondition">
+        <div class="location">at         line 112</div>
+        <code>                    void
+    <strong>preLoadCondition</strong>(array $arrModel)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置预载入关联查询条件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrModel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_matchPreLoad">
+        <div class="location">at         line 126</div>
+        <code>                    array
+    <strong>matchPreLoad</strong>(array $arrModel, <a href="../../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a> $objResult, string $strRelation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>匹配关联查询数据到模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrModel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a></td>
+                <td>$objResult</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strRelation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sourceQuery">
+        <div class="location">at         line 171</div>
+        <code>                    mixed
+    <strong>sourceQuery</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>查询关联对象</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModelKey">
+        <div class="location">in <a href="../../../queryyetsimple/mvc/relation/relation.html#method_getModelKey"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a> at         line 221</div>
+        <code>            protected        array
+    <strong>getModelKey</strong>(array $arrModel, string $strKey = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回模型的主键</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrModel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strKey</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelectFromModel">
+        <div class="location">in <a href="../../../queryyetsimple/mvc/relation/relation.html#method_getSelectFromModel"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a> at         line 233</div>
+        <code>            protected        <a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+    <strong>getSelectFromModel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>从模型返回查询</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../queryyetsimple/mvc/relation/relation.html#method___call"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a> at         line 245</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $sMethod, array $arrArgs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>call</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMethod</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_middleCondition">
+        <div class="location">at         line 146</div>
+        <code>                    <abbr title="queryyetsimple\mvc\relation\$this">$this</abbr>
+    <strong>middleCondition</strong>(callable $calCallback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>中间表查询回调处理</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$calCallback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\mvc\relation\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceValue">
+        <div class="location">at         line 161</div>
+        <code>                    mixed
+    <strong>getSourceValue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回源模型对应数据</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMiddleSelect">
+        <div class="location">at         line 185</div>
+        <code>                    <a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+    <strong>getMiddleSelect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得中间表查询对象</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMiddleModel">
+        <div class="location">at         line 195</div>
+        <code>                    <a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+    <strong>getMiddleModel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得中间表模型</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMiddleMap">
+        <div class="location">at         line 225</div>
+        <code>                    array
+    <strong>getMiddleMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得中间表隐射数据</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceKeyValue">
+        <div class="location">at         line 235</div>
+        <code>                    mixed
+    <strong>getSourceKeyValue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得源外键值</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_preLoadRelationCondition">
+        <div class="location">at         line 245</div>
+        <code>            protected        void
+    <strong>preLoadRelationCondition</strong>(array $arrModel)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>预载入关联基础查询条件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrModel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreLoadSourceValue">
+        <div class="location">at         line 255</div>
+        <code>            protected        mixed
+    <strong>getPreLoadSourceValue</strong>(array $arrModel)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回源模型对应数据</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrModel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildMap">
+        <div class="location">at         line 272</div>
+        <code>            protected        array
+    <strong>buildMap</strong>(<a href="../../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a> $objResult)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>模型隐射数据</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a></td>
+                <td>$objResult</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseSelectCondition">
+        <div class="location">at         line 293</div>
+        <code>            protected        array
+    <strong>parseSelectCondition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过中间表获取目标 ID</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseTargetId">
+        <div class="location">at         line 311</div>
+        <code>            protected        array
+    <strong>parseTargetId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过中间表获取目标 ID</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

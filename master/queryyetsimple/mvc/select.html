@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\mvc\select | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_mvc_select" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../queryyetsimple/mvc.html">mvc</a></li><li class="backslash">\</li><li>select</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            select
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>select</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>模型查询</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_objModel">
+                                        protected                                        <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </td>
+                <td>$objModel</td>
+                <td class="last">模型</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objSelect">
+                                        protected                                        <a href="../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+                </td>
+                <td>$objSelect</td>
+                <td class="last">查询</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrPreLoad">
+                                        protected                                        array
+                </td>
+                <td>$arrPreLoad</td>
+                <td class="last">关联预载入</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a> $objModel)
+        
+                                            <p>构造函数</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $sMethod, array $arrArgs)
+        
+                                            <p>call</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModel">getModel</a>($objModel)
+        
+                                            <p>获取模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\mvc\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_querySelelct">querySelelct</a>()
+        
+                                            <p>占位符返回本对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerSelect">registerSelect</a>(<a href="../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a> $objSelect)
+        
+                                            <p>注册查询</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\mvc\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_with">with</a>(mixed $mixRelation)
+        
+                                            <p>添加预载入的关联</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_preLoadResult">preLoadResult</a>(mixed $mixResult)
+        
+                                            <p>尝试解析结果预载</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(mixed $mixId, array $arrColumn = [&#039;*&#039;])
+        
+                                            <p>通过主键查找模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findMany">findMany</a>(array $arrId, array $arrColumn = [&#039;*&#039;])
+        
+                                            <p>根据主键查找模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOrFail">findOrFail</a>(mixed $mixId, array $arrColumn = [&#039;*&#039;])
+        
+                                            <p>通过主键查找模型，未找到则抛出异常</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOrNew">findOrNew</a>(mixed $mixId, array $arrColumn = [&#039;*&#039;], array $arrData = null, mixed $mixConnect = null, string $strTable = null)
+        
+                                            <p>通过主键查找模型，未找到初始化一个新的模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/mvc/select.html"><abbr title="queryyetsimple\mvc\select">select</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_first">first</a>($arrColumn = [&#039;*&#039;])
+        
+                                            <p>查找第一个结果</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/mvc/select.html"><abbr title="queryyetsimple\mvc\select">select</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_firstOrFail">firstOrFail</a>(array $arrColumn = [&#039;*&#039;])
+        
+                                            <p>查找第一个结果，未找到则抛出异常</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_firstOrNew">firstOrNew</a>(array $arrProp, mixed $mixConnect = null, string $strTable = null)
+        
+                                            <p>查找第一个结果，未找到则初始化一个新的模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_firstOrCreate">firstOrCreate</a>(array $arrProp, mixed $mixConnect = null, string $strTable = null)
+        
+                                            <p>尝试根据属性查找一个模型，未找到则新建一个模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateOrCreate">updateOrCreate</a>(array $arrProp, array $arrData = [], mixed $mixConnect = null, string $strTable = null)
+        
+                                            <p>尝试根据属性查找一个模型，未找到则新建或者更新一个模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onlyCreate">onlyCreate</a>(array $arrProp = [], mixed $mixConnect = null, string $strTable = null)
+        
+                                            <p>新建一个模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_softDelete">softDelete</a>()
+        
+                                            <p>从模型中软删除数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_softDestroy">softDestroy</a>($mixId)
+        
+                                            <p>根据主键 ID 删除模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_softRestore">softRestore</a>()
+        
+                                            <p>恢复软删除的模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withoutSoftDeleted">withoutSoftDeleted</a>()
+        
+                                            <p>获取不包含软删除的数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onlySoftDeleted">onlySoftDeleted</a>()
+        
+                                            <p>获取只包含软删除的数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_softDeleted">softDeleted</a>()
+        
+                                            <p>检查模型是否已经被软删除了</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDeletedAtColumn">getDeletedAtColumn</a>()
+        
+                                            <p>获取软删除字段</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFullDeletedAtColumn">getFullDeletedAtColumn</a>()
+        
+                                            <p>获取删除表加字段</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_scope">scope</a>(mixed $mixScope)
+        
+                                            <p>查询范围</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_preLoadRelation">preLoadRelation</a>(array $arrModel)
+        
+                                            <p>预载入模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/relation/relation.html"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelation">getRelation</a>($strName)
+        
+                                            <p>取得关联模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_nestedRelation">nestedRelation</a>(string $strRelation)
+        
+                                            <p>尝试取得嵌套关联</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNested">isNested</a>(string $strName, string $strRelation)
+        
+                                            <p>判断是否存在嵌套关联</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseWithRelation">parseWithRelation</a>(array $arrRelation)
+        
+                                            <p>格式化预载入关联</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseNestedWith">parseNestedWith</a>(string $strName, array $arrResult)
+        
+                                            <p>解析嵌套关联</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_conversionToModels">conversionToModels</a>(mixed $mixResult)
+        
+                                            <p>转换结果到模型类型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadRelation">loadRelation</a>(array $arrModel, string $strName, callable $calCondition)
+        
+                                            <p>关联数据设置到模型上</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFirstByProp">getFirstByProp</a>(array $arrProp)
+        
+                                            <p>尝试根据属性查找一个模型</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 72</div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a> $objModel)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+                <td>$objModel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at         line 84</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $sMethod, array $arrArgs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>call</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMethod</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModel">
+        <div class="location">at         line 102</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+    <strong>getModel</strong>($objModel)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$objModel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_querySelelct">
+        <div class="location">at         line 112</div>
+        <code>                    <abbr title="queryyetsimple\mvc\$this">$this</abbr>
+    <strong>querySelelct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>占位符返回本对象</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\mvc\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerSelect">
+        <div class="location">at         line 123</div>
+        <code>                    void
+    <strong>registerSelect</strong>(<a href="../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a> $objSelect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册查询</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a></td>
+                <td>$objSelect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_with">
+        <div class="location">at         line 135</div>
+        <code>                    <abbr title="queryyetsimple\mvc\$this">$this</abbr>
+    <strong>with</strong>(mixed $mixRelation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>添加预载入的关联</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixRelation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\mvc\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_preLoadResult">
+        <div class="location">at         line 150</div>
+        <code>                    mixed
+    <strong>preLoadResult</strong>(mixed $mixResult)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>尝试解析结果预载</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixResult</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">at         line 173</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a>|null
+    <strong>find</strong>(mixed $mixId, array $arrColumn = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过主键查找模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrColumn</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findMany">
+        <div class="location">at         line 189</div>
+        <code>                    <a href="../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a>
+    <strong>findMany</strong>(array $arrId, array $arrColumn = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>根据主键查找模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrColumn</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOrFail">
+        <div class="location">at         line 204</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a>
+    <strong>findOrFail</strong>(mixed $mixId, array $arrColumn = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过主键查找模型，未找到则抛出异常</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrColumn</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/support/collection.html"><abbr title="queryyetsimple\support\collection">collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOrNew">
+        <div class="location">at         line 229</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+    <strong>findOrNew</strong>(mixed $mixId, array $arrColumn = [&#039;*&#039;], array $arrData = null, mixed $mixConnect = null, string $strTable = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过主键查找模型，未找到初始化一个新的模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrColumn</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrData</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixConnect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strTable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_first">
+        <div class="location">at         line 243</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/mvc/select.html"><abbr title="queryyetsimple\mvc\select">select</abbr></a>|null
+    <strong>first</strong>($arrColumn = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>查找第一个结果</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$arrColumn</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/mvc/select.html"><abbr title="queryyetsimple\mvc\select">select</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_firstOrFail">
+        <div class="location">at         line 254</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/mvc/select.html"><abbr title="queryyetsimple\mvc\select">select</abbr></a>
+    <strong>firstOrFail</strong>(array $arrColumn = [&#039;*&#039;])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>查找第一个结果，未找到则抛出异常</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrColumn</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|<a href="../../queryyetsimple/mvc/select.html"><abbr title="queryyetsimple\mvc\select">select</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_firstOrNew">
+        <div class="location">at         line 270</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+    <strong>firstOrNew</strong>(array $arrProp, mixed $mixConnect = null, string $strTable = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>查找第一个结果，未找到则初始化一个新的模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrProp</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixConnect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strTable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_firstOrCreate">
+        <div class="location">at         line 286</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+    <strong>firstOrCreate</strong>(array $arrProp, mixed $mixConnect = null, string $strTable = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>尝试根据属性查找一个模型，未找到则新建一个模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrProp</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixConnect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strTable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateOrCreate">
+        <div class="location">at         line 303</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+    <strong>updateOrCreate</strong>(array $arrProp, array $arrData = [], mixed $mixConnect = null, string $strTable = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>尝试根据属性查找一个模型，未找到则新建或者更新一个模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrProp</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrData</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixConnect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strTable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onlyCreate">
+        <div class="location">at         line 316</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+    <strong>onlyCreate</strong>(array $arrProp = [], mixed $mixConnect = null, string $strTable = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>新建一个模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrProp</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixConnect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strTable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_softDelete">
+        <div class="location">at         line 326</div>
+        <code>                    int
+    <strong>softDelete</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>从模型中软删除数据</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_softDestroy">
+        <div class="location">at         line 349</div>
+        <code>                    int
+    <strong>softDestroy</strong>($mixId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>根据主键 ID 删除模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$mixId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_softRestore">
+        <div class="location">at         line 367</div>
+        <code>                    bool|null
+    <strong>softRestore</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>恢复软删除的模型</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutSoftDeleted">
+        <div class="location">at         line 384</div>
+        <code>                    <a href="../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+    <strong>withoutSoftDeleted</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取不包含软删除的数据</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onlySoftDeleted">
+        <div class="location">at         line 394</div>
+        <code>                    <a href="../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a>
+    <strong>onlySoftDeleted</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取只包含软删除的数据</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/database/select.html"><abbr title="queryyetsimple\database\select">select</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_softDeleted">
+        <div class="location">at         line 404</div>
+        <code>                    bool
+    <strong>softDeleted</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>检查模型是否已经被软删除了</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDeletedAtColumn">
+        <div class="location">at         line 414</div>
+        <code>                    string
+    <strong>getDeletedAtColumn</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取软删除字段</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFullDeletedAtColumn">
+        <div class="location">at         line 434</div>
+        <code>                    string
+    <strong>getFullDeletedAtColumn</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取删除表加字段</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scope">
+        <div class="location">at         line 445</div>
+        <code>                    <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>
+    <strong>scope</strong>(mixed $mixScope)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>查询范围</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixScope</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_preLoadRelation">
+        <div class="location">at         line 491</div>
+        <code>            protected        array
+    <strong>preLoadRelation</strong>(array $arrModel)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>预载入模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrModel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelation">
+        <div class="location">at         line 507</div>
+        <code>            protected        <a href="../../queryyetsimple/mvc/relation/relation.html"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a>
+    <strong>getRelation</strong>($strName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得关联模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$strName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/relation/relation.html"><abbr title="queryyetsimple\mvc\relation\relation">relation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_nestedRelation">
+        <div class="location">at         line 527</div>
+        <code>            protected        array
+    <strong>nestedRelation</strong>(string $strRelation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>尝试取得嵌套关联</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strRelation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNested">
+        <div class="location">at         line 547</div>
+        <code>            protected        bool
+    <strong>isNested</strong>(string $strName, string $strRelation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>判断是否存在嵌套关联</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strRelation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseWithRelation">
+        <div class="location">at         line 558</div>
+        <code>            protected        array
+    <strong>parseWithRelation</strong>(array $arrRelation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>格式化预载入关联</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrRelation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseNestedWith">
+        <div class="location">at         line 585</div>
+        <code>            protected        array
+    <strong>parseNestedWith</strong>(string $strName, array $arrResult)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>解析嵌套关联</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrResult</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_conversionToModels">
+        <div class="location">at         line 606</div>
+        <code>            protected        array
+    <strong>conversionToModels</strong>(mixed $mixResult)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>转换结果到模型类型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixResult</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadRelation">
+        <div class="location">at         line 638</div>
+        <code>            protected        array
+    <strong>loadRelation</strong>(array $arrModel, string $strName, callable $calCondition)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>关联数据设置到模型上</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrModel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$calCondition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFirstByProp">
+        <div class="location">at         line 652</div>
+        <code>            protected        <a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|null
+    <strong>getFirstByProp</strong>(array $arrProp)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>尝试根据属性查找一个模型</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrProp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/mvc/imodel.html"><abbr title="queryyetsimple\mvc\imodel">imodel</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

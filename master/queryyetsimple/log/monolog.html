@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\log\monolog | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_log_monolog" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../queryyetsimple/log.html">log</a></li><li class="backslash">\</li><li>monolog</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            monolog
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>monolog</strong>        extends <a href="../../queryyetsimple/log/aconnect.html"><abbr title="queryyetsimple\log\aconnect">aconnect</abbr></a>        implements
+        <a href="../../queryyetsimple/log/iconnect.html"><abbr title="queryyetsimple\log\iconnect">iconnect</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>log.monolog</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../queryyetsimple/support/option.html"><abbr title="queryyetsimple\support\option">option</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    类配置复用
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_objMonolog">
+                                        protected                                        <abbr title="Monolog\Logger">Logger</abbr>
+                </td>
+                <td>$objMonolog</td>
+                <td class="last">Monolog</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrOption">
+                                        protected                                        array
+                </td>
+                <td>$arrOption</td>
+                <td class="last">配置</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrSupportLevel">
+                                        protected                                        array
+                </td>
+                <td>$arrSupportLevel</td>
+                <td class="last">Monolog 支持日志级别</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_option">option</a>(string $name, mixed $value)
+        
+                                            <p>修改单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_option"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_optionArray">optionArray</a>(string $name, array $value)
+        
+                                            <p>修改数组配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_optionArray"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_options">options</a>(array $option = [])
+        
+                                            <p>修改多个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_options"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $name, mixed $defaults = null)
+        
+                                            <p>获取单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_getOption"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>(array $option = [])
+        
+                                            <p>获取所有配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_getOptions"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteOption">deleteOption</a>(string $name)
+        
+                                            <p>删除单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_deleteOption"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteOptions">deleteOptions</a>(array $option = [])
+        
+                                            <p>删除多个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/option.html#method_deleteOptions"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $arrOption = [])
+        
+                                            <p>构造函数</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkSize">checkSize</a>(string $filepath)
+        
+                                            <p>验证日志文件大小</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/log/aconnect.html#method_checkSize"><abbr title="queryyetsimple\log\aconnect">aconnect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPath">getPath</a>($level = &#039;&#039;)
+        
+                                            <p>获取日志路径</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/log/aconnect.html#method_getPath"><abbr title="queryyetsimple\log\aconnect">aconnect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_file">file</a>(string $strPath, string $strLevel = ilog::DEBUG)
+        
+                                            <p>注册文件 handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dailyFile">dailyFile</a>($strPath, $intDays, $strLevel = ilog::DEBUG)
+        
+                                            <p>注册每日文件 handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_syslog">syslog</a>(string $strName = &#039;queryphp&#039;, string $strLevel = ilog::DEBUG)
+        
+                                            <p>注册系统 handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_errorLog">errorLog</a>(string $strLevel = ilog::DEBUG, int $intMessageType = ErrorLogHandler::OPERATING_SYSTEM)
+        
+                                            <p>注册 error_log handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\log\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_monolog">monolog</a>(callable|null $mixCallback = null)
+        
+                                            <p>monolog 回调</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Monolog\Logger">Logger</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMonolog">getMonolog</a>()
+        
+                                            <p>取得 Monolog</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(array $arrData)
+        
+                                            <p>日志写入接口</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeFileHandler">makeFileHandler</a>()
+        
+                                            <p>初始化文件 handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeDailyFileHandler">makeDailyFileHandler</a>()
+        
+                                            <p>初始化每日文件 handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeSyslogHandler">makeSyslogHandler</a>()
+        
+                                            <p>初始化系统 handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeErrorLogHandler">makeErrorLogHandler</a>()
+        
+                                            <p>初始化 error_log handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDailyFilePath">getDailyFilePath</a>(string $strPath)
+        
+                                            <p>每日文件真实路径</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Monolog\Formatter\LineFormatter">LineFormatter</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultFormatter">getDefaultFormatter</a>()
+        
+                                            <p>默认格式化</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseMonologLevel">parseMonologLevel</a>(string $strLevel)
+        
+                                            <p>获取 Monolog 级别
+不支持级别归并到 DEBUG</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_option">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_option"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 40</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>option</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_optionArray">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_optionArray"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 53</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>optionArray</strong>(string $name, array $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改数组配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_options">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_options"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 65</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>options</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改多个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_getOption"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 83</div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $name, mixed $defaults = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$defaults</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_getOptions"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 94</div>
+        <code>                    mixed
+    <strong>getOptions</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取所有配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteOption">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_deleteOption"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 105</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>deleteOption</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteOptions">
+        <div class="location">in <a href="../../queryyetsimple/support/option.html#method_deleteOptions"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 119</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>deleteOptions</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除多个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 89</div>
+        <code>                    void
+    <strong>__construct</strong>(array $arrOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkSize">
+        <div class="location">in <a href="../../queryyetsimple/log/aconnect.html#method_checkSize"><abbr title="queryyetsimple\log\aconnect">aconnect</abbr></a> at         line 53</div>
+        <code>            protected        void
+    <strong>checkSize</strong>(string $filepath)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证日志文件大小</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$filepath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPath">
+        <div class="location">in <a href="../../queryyetsimple/log/aconnect.html#method_getPath"><abbr title="queryyetsimple\log\aconnect">aconnect</abbr></a> at         line 75</div>
+        <code>            protected        string
+    <strong>getPath</strong>($level = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取日志路径</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_file">
+        <div class="location">at         line 107</div>
+        <code>                    void
+    <strong>file</strong>(string $strPath, string $strLevel = ilog::DEBUG)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册文件 handler</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strPath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strLevel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dailyFile">
+        <div class="location">at         line 121</div>
+        <code>                    void
+    <strong>dailyFile</strong>($strPath, $intDays, $strLevel = ilog::DEBUG)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册每日文件 handler</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$strPath</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$intDays</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$strLevel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_syslog">
+        <div class="location">at         line 134</div>
+        <code>                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+    <strong>syslog</strong>(string $strName = &#039;queryphp&#039;, string $strLevel = ilog::DEBUG)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册系统 handler</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strLevel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_errorLog">
+        <div class="location">at         line 146</div>
+        <code>                    void
+    <strong>errorLog</strong>(string $strLevel = ilog::DEBUG, int $intMessageType = ErrorLogHandler::OPERATING_SYSTEM)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册 error_log handler</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strLevel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intMessageType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_monolog">
+        <div class="location">at         line 158</div>
+        <code>                    <abbr title="queryyetsimple\log\$this">$this</abbr>
+    <strong>monolog</strong>(callable|null $mixCallback = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>monolog 回调</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|null</td>
+                <td>$mixCallback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\log\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMonolog">
+        <div class="location">at         line 174</div>
+        <code>                    <abbr title="Monolog\Logger">Logger</abbr>
+    <strong>getMonolog</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得 Monolog</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Monolog\Logger">Logger</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at         line 185</div>
+        <code>                    void
+    <strong>save</strong>(array $arrData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>日志写入接口</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeFileHandler">
+        <div class="location">at         line 202</div>
+        <code>            protected        void
+    <strong>makeFileHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>初始化文件 handler</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeDailyFileHandler">
+        <div class="location">at         line 213</div>
+        <code>            protected        void
+    <strong>makeDailyFileHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>初始化每日文件 handler</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeSyslogHandler">
+        <div class="location">at         line 225</div>
+        <code>            protected        void
+    <strong>makeSyslogHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>初始化系统 handler</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeErrorLogHandler">
+        <div class="location">at         line 235</div>
+        <code>            protected        void
+    <strong>makeErrorLogHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>初始化 error_log handler</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDailyFilePath">
+        <div class="location">at         line 246</div>
+        <code>            protected        void
+    <strong>getDailyFilePath</strong>(string $strPath)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>每日文件真实路径</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strPath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultFormatter">
+        <div class="location">at         line 260</div>
+        <code>            protected        <abbr title="Monolog\Formatter\LineFormatter">LineFormatter</abbr>
+    <strong>getDefaultFormatter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>默认格式化</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Monolog\Formatter\LineFormatter">LineFormatter</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseMonologLevel">
+        <div class="location">at         line 272</div>
+        <code>            protected        int
+    <strong>parseMonologLevel</strong>(string $strLevel)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取 Monolog 级别
+不支持级别归并到 DEBUG</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strLevel</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

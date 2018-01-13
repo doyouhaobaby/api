@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\support\str | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_support_str" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../queryyetsimple/support.html">support</a></li><li class="backslash">\</li><li>str</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            str
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>str</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>字符串</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../queryyetsimple/support/infinity.html"><abbr title="queryyetsimple\support\infinity">infinity</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    实现类的无限扩展功能
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_arrInfinity">
+                    static                    protected                                        array
+                </td>
+                <td>$arrInfinity</td>
+                <td class="last">注册的动态扩展</td>
+                <td><small>from&nbsp;<a href="../../queryyetsimple/support/infinity.html#property_arrInfinity"><abbr title="queryyetsimple\support\infinity">infinity</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_infinity">infinity</a>(string $strName, callable $calInfinity)
+        
+                                            <p>注册一个扩展</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/infinity.html#method_infinity"><abbr title="queryyetsimple\support\infinity">infinity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasInfinity">hasInfinity</a>(string $strName)
+        
+                                            <p>判断一个扩展是否注册</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/infinity.html#method_hasInfinity"><abbr title="queryyetsimple\support\infinity">infinity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___callStatic">__callStatic</a>(string $sMethod, array $arrArgs)
+        
+                                            <p>call</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/infinity.html#method___callStatic"><abbr title="queryyetsimple\support\infinity">infinity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $sMethod, array $arrArgs)
+        
+                                            <p>call</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../queryyetsimple/support/infinity.html#method___call"><abbr title="queryyetsimple\support\infinity">infinity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randAlphaNum">randAlphaNum</a>(int $nLength, string $sCharBox = null)
+        
+                                            <p>随机字母数字</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randAlphaNumLowercase">randAlphaNumLowercase</a>(int $nLength, string $sCharBox = null)
+        
+                                            <p>随机小写字母数字</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randAlphaNumUppercase">randAlphaNumUppercase</a>(int $nLength, string $sCharBox = null)
+        
+                                            <p>随机大写字母数字</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randAlpha">randAlpha</a>(int $nLength, string $sCharBox = null)
+        
+                                            <p>随机字母</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randAlphaLowercase">randAlphaLowercase</a>(int $nLength, string $sCharBox = null)
+        
+                                            <p>随机小写字母</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randAlphaUppercase">randAlphaUppercase</a>(int $nLength, string $sCharBox = null)
+        
+                                            <p>随机大写字母</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randNum">randNum</a>(int $nLength, string $sCharBox = null)
+        
+                                            <p>随机数字</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randChinese">randChinese</a>(int $nLength, string $sCharBox = null)
+        
+                                            <p>随机字中文</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randSting">randSting</a>(int $nLength, string $sCharBox)
+        
+                                            <p>随机字符串</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stringEncoding">stringEncoding</a>(mixed $mixContents, string $sFromChar, string $sToChar = &#039;utf-8&#039;)
+        
+                                            <p>字符串编码转换</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isUtf8">isUtf8</a>(string $sString)
+        
+                                            <p>判断字符串是否为 UTF8</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_subString">subString</a>(string $sStr, <abbr title="queryyetsimple\support\number">number</abbr> $nStart, <abbr title="queryyetsimple\support\number">number</abbr> $nLength = 255, string $sCharset = &quot;utf-8&quot;, boolean $bSuffix = true)
+        
+                                            <p>字符串截取</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatDate">formatDate</a>(int $nDateTemp, string $sDateFormat = &#039;Y-m-d H:i&#039;, array $arrLang = [])
+        
+                                            <p>日期格式化</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatBytes">formatBytes</a>(int $nFileSize, boolean $booUnit = true)
+        
+                                            <p>文件大小格式化</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_camelize">camelize</a>(string $strValue, string $strSeparator = &#039;_&#039;)
+        
+                                            <p>下划线转驼峰</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unCamelize">unCamelize</a>(string $strValue, string $strSeparator = &#039;_&#039;)
+        
+                                            <p>驼峰转下划线</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startsWith">startsWith</a>(string $strToSearched, string $strSearch)
+        
+                                            <p>判断字符串中是否包含给定的字符开始</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endsWith">endsWith</a>(string $strToSearched, string $strSearch)
+        
+                                            <p>判断字符串中是否包含给定的字符结尾</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_contains">contains</a>(string $strToSearched, string $strSearch)
+        
+                                            <p>判断字符串中是否包含给定的字符串集合</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_infinity">
+        <div class="location">in <a href="../../queryyetsimple/support/infinity.html#method_infinity"><abbr title="queryyetsimple\support\infinity">infinity</abbr></a> at         line 51</div>
+        <code>        static            void
+    <strong>infinity</strong>(string $strName, callable $calInfinity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册一个扩展</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$calInfinity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasInfinity">
+        <div class="location">in <a href="../../queryyetsimple/support/infinity.html#method_hasInfinity"><abbr title="queryyetsimple\support\infinity">infinity</abbr></a> at         line 62</div>
+        <code>        static            bool
+    <strong>hasInfinity</strong>(string $strName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>判断一个扩展是否注册</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">in <a href="../../queryyetsimple/support/infinity.html#method___callStatic"><abbr title="queryyetsimple\support\infinity">infinity</abbr></a> at         line 74</div>
+        <code>        static            mixed
+    <strong>__callStatic</strong>(string $sMethod, array $arrArgs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>call</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMethod</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../queryyetsimple/support/infinity.html#method___call"><abbr title="queryyetsimple\support\infinity">infinity</abbr></a> at         line 95</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $sMethod, array $arrArgs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>call</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMethod</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randAlphaNum">
+        <div class="location">at         line 41</div>
+        <code>        static            string
+    <strong>randAlphaNum</strong>(int $nLength, string $sCharBox = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>随机字母数字</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCharBox</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randAlphaNumLowercase">
+        <div class="location">at         line 59</div>
+        <code>        static            string
+    <strong>randAlphaNumLowercase</strong>(int $nLength, string $sCharBox = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>随机小写字母数字</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCharBox</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randAlphaNumUppercase">
+        <div class="location">at         line 77</div>
+        <code>        static            string
+    <strong>randAlphaNumUppercase</strong>(int $nLength, string $sCharBox = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>随机大写字母数字</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCharBox</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randAlpha">
+        <div class="location">at         line 95</div>
+        <code>        static            string
+    <strong>randAlpha</strong>(int $nLength, string $sCharBox = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>随机字母</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCharBox</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randAlphaLowercase">
+        <div class="location">at         line 113</div>
+        <code>        static            string
+    <strong>randAlphaLowercase</strong>(int $nLength, string $sCharBox = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>随机小写字母</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCharBox</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randAlphaUppercase">
+        <div class="location">at         line 133</div>
+        <code>        static            string
+    <strong>randAlphaUppercase</strong>(int $nLength, string $sCharBox = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>随机大写字母</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCharBox</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randNum">
+        <div class="location">at         line 153</div>
+        <code>        static            string
+    <strong>randNum</strong>(int $nLength, string $sCharBox = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>随机数字</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCharBox</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randChinese">
+        <div class="location">at         line 171</div>
+        <code>        static            string
+    <strong>randChinese</strong>(int $nLength, string $sCharBox = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>随机字中文</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCharBox</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randSting">
+        <div class="location">at         line 196</div>
+        <code>        static            string
+    <strong>randSting</strong>(int $nLength, string $sCharBox)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>随机字符串</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCharBox</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stringEncoding">
+        <div class="location">at         line 212</div>
+        <code>        static            mixed
+    <strong>stringEncoding</strong>(mixed $mixContents, string $sFromChar, string $sToChar = &#039;utf-8&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>字符串编码转换</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixContents</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sFromChar</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sToChar</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isUtf8">
+        <div class="location">at         line 252</div>
+        <code>        static            boolean
+    <strong>isUtf8</strong>(string $sString)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>判断字符串是否为 UTF8</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sString</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_subString">
+        <div class="location">at         line 267</div>
+        <code>        static            string
+    <strong>subString</strong>(string $sStr, <abbr title="queryyetsimple\support\number">number</abbr> $nStart, <abbr title="queryyetsimple\support\number">number</abbr> $nLength = 255, string $sCharset = &quot;utf-8&quot;, boolean $bSuffix = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>字符串截取</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sStr</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="queryyetsimple\support\number">number</abbr></td>
+                <td>$nStart</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="queryyetsimple\support\number">number</abbr></td>
+                <td>$nLength</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sCharset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$bSuffix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatDate">
+        <div class="location">at         line 301</div>
+        <code>        static            string
+    <strong>formatDate</strong>(int $nDateTemp, string $sDateFormat = &#039;Y-m-d H:i&#039;, array $arrLang = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>日期格式化</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nDateTemp</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sDateFormat</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrLang</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatBytes">
+        <div class="location">at         line 330</div>
+        <code>        static            string
+    <strong>formatBytes</strong>(int $nFileSize, boolean $booUnit = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>文件大小格式化</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$nFileSize</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$booUnit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_camelize">
+        <div class="location">at         line 352</div>
+        <code>        static            string
+    <strong>camelize</strong>(string $strValue, string $strSeparator = &#039;_&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>下划线转驼峰</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strSeparator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unCamelize">
+        <div class="location">at         line 365</div>
+        <code>        static            string
+    <strong>unCamelize</strong>(string $strValue, string $strSeparator = &#039;_&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>驼峰转下划线</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strSeparator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startsWith">
+        <div class="location">at         line 377</div>
+        <code>        static            bool
+    <strong>startsWith</strong>(string $strToSearched, string $strSearch)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>判断字符串中是否包含给定的字符开始</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strToSearched</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strSearch</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endsWith">
+        <div class="location">at         line 392</div>
+        <code>        static            bool
+    <strong>endsWith</strong>(string $strToSearched, string $strSearch)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>判断字符串中是否包含给定的字符结尾</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strToSearched</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strSearch</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_contains">
+        <div class="location">at         line 407</div>
+        <code>        static            bool
+    <strong>contains</strong>(string $strToSearched, string $strSearch)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>判断字符串中是否包含给定的字符串集合</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strToSearched</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strSearch</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

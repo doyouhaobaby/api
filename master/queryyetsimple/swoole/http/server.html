@@ -1,0 +1,2861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\swoole\http\server | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_swoole_http_server" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../../queryyetsimple/swoole.html">swoole</a></li><li class="backslash">\</li><li><a href="../../../queryyetsimple/swoole/http.html">http</a></li><li class="backslash">\</li><li>server</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            server
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>server</strong>        extends <a href="../../../queryyetsimple/swoole/server.html"><abbr title="queryyetsimple\swoole\server">server</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>swoole http 服务</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../queryyetsimple/support/option.html"><abbr title="queryyetsimple\support\option">option</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    类配置复用
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_objServer">
+                                        protected                                        <abbr title="Swoole\Server">Server</abbr>
+                </td>
+                <td>$objServer</td>
+                <td class="last">swoole 服务实例</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#property_objServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objCommand">
+                                        protected                                        <a href="../../../queryyetsimple/console/command.html"><abbr title="queryyetsimple\console\command">command</abbr></a>
+                </td>
+                <td>$objCommand</td>
+                <td class="last">命令行工具</td>
+                <td><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#property_objCommand"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrOption">
+                                        protected                                        array
+                </td>
+                <td>$arrOption</td>
+                <td class="last">配置</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrServerEvent">
+                                        protected                                        array
+                </td>
+                <td>$arrServerEvent</td>
+                <td class="last">服务回调事件</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objRouter">
+                                        protected                                        <a href="../../../queryyetsimple/router/router.html"><abbr title="queryyetsimple\router\router">router</abbr></a>
+                </td>
+                <td>$objRouter</td>
+                <td class="last">路由</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objRequest">
+                                        protected                                        <a href="../../../queryyetsimple/http/request.html"><abbr title="queryyetsimple\http\request">request</abbr></a>
+                </td>
+                <td>$objRequest</td>
+                <td class="last">请求</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objResponse">
+                                        protected                                        <a href="../../../queryyetsimple/http/response.html"><abbr title="queryyetsimple\http\response">response</abbr></a>
+                </td>
+                <td>$objResponse</td>
+                <td class="last">响应</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_option">option</a>(string $name, mixed $value)
+        
+                                            <p>修改单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/support/option.html#method_option"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_optionArray">optionArray</a>(string $name, array $value)
+        
+                                            <p>修改数组配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/support/option.html#method_optionArray"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_options">options</a>(array $option = [])
+        
+                                            <p>修改多个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/support/option.html#method_options"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $name, mixed $defaults = null)
+        
+                                            <p>获取单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/support/option.html#method_getOption"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>(array $option = [])
+        
+                                            <p>获取所有配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/support/option.html#method_getOptions"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteOption">deleteOption</a>(string $name)
+        
+                                            <p>删除单个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/support/option.html#method_deleteOption"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteOptions">deleteOptions</a>(array $option = [])
+        
+                                            <p>删除多个配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/support/option.html#method_deleteOptions"><abbr title="queryyetsimple\support\option">option</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../queryyetsimple/router/router.html"><abbr title="queryyetsimple\router\router">router</abbr></a> $objRouter, <a href="../../../queryyetsimple/http/request.html"><abbr title="queryyetsimple\http\request">request</abbr></a> $objRequest, <a href="../../../queryyetsimple/http/response.html"><abbr title="queryyetsimple\http\response">response</abbr></a> $objResponse, array $arrOption = [])
+        
+                                            <p>构造函数</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCommand">setCommand</a>(<a href="../../../queryyetsimple/console/command.html"><abbr title="queryyetsimple\console\command">command</abbr></a> $objCommand)
+        
+                                            <p>设置命名行
+实现友好的屏幕信息输出</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_setCommand"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startServer">startServer</a>()
+        
+                                            <p>运行服务</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_startServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listsServer">listsServer</a>()
+        
+                                            <p>列出当前服务进程</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_listsServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stopServer">stopServer</a>()
+        
+                                            <p>结束当前服务进程</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_stopServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_restartServer">restartServer</a>()
+        
+                                            <p>重启当前服务进程</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_restartServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_closeServer">closeServer</a>()
+        
+                                            <p>关闭当前服务进程</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_closeServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_statusServer">statusServer</a>()
+        
+                                            <p>查看当前服务进程</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_statusServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_taskServer">taskServer</a>()
+        
+                                            <p>在当前服务进程开启任务</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_taskServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Swoole\Server">Server</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getServer">getServer</a>()
+        
+                                            <p>返回服务</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_getServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onStart">onStart</a>(<abbr title="Swoole\Server">Server</abbr> $objServer)
+        
+                                            <p>主进程的主线程
+记录进程 id,脚本实现自动重启</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_onStart"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onConnect">onConnect</a>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intFd, int $intReactorId)
+        
+                                            <p>新的连接进入时</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_onConnect"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onWorkerStart">onWorkerStart</a>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intWorkeId)
+        
+                                            <p>worker start 加载业务脚本常驻内存
+由于服务端命令行也采用 QueryPHP,无需再次引入 QueryPHP</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_onWorkerStart"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onManagerStart">onManagerStart</a>(<abbr title="Swoole\Server">Server</abbr> $objServer)
+        
+                                            <p>当管理进程启动时调用</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_onManagerStart"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onWorkerStop">onWorkerStop</a>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intWorkerId)
+        
+                                            <p>worker进程终止时发生</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_onWorkerStop"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onReceive">onReceive</a>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intFd, int $intReactorId, string $strData)
+        
+                                            <p>监听数据发送事件</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_onReceive"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onFinish">onFinish</a>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intTaskId, string $strData)
+        
+                                            <p>监听连接 Finish 事件</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_onFinish"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onTask">onTask</a>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intTaskId, int $intFromId, string $strData)
+        
+                                            <p>监听连接 task 事件</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_onTask"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onShutdown">onShutdown</a>(<abbr title="Swoole\Server">Server</abbr> $objServer)
+        
+                                            <p>Server 正常结束时发生</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_onShutdown"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onClose">onClose</a>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intFd, int $intReactorId)
+        
+                                            <p>监听连接关闭事件</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_onClose"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkBefore">checkBefore</a>()
+        
+                                            <p>创建服务前环境验证</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_checkBefore"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkPidPath">checkPidPath</a>()
+        
+                                            <p>验证 pid_path 是否可用</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_checkPidPath"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkService">checkService</a>()
+        
+                                            <p>验证服务是否被占用</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_checkService"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkPort">checkPort</a>()
+        
+                                            <p>验证端口是否被占用</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_checkPort"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_portBind">portBind</a>(int $intPort)
+        
+                                            <p>获取端口占用情况</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_portBind"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createServer">createServer</a>()
+        
+                                            <p>创建 http server</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initServer">initServer</a>()
+        
+                                            <p>初始化 http server</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_initServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_eventServer">eventServer</a>()
+        
+                                            <p>http server 绑定事件</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_eventServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startSwooleServer">startSwooleServer</a>()
+        
+                                            <p>http server 启动</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_startSwooleServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_showStartOption">showStartOption</a>(<abbr title="Swoole\Server">Server</abbr> $objServer)
+        
+                                            <p>显示服务启动配置</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_showStartOption"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProcessName">setProcessName</a>(string $sName)
+        
+                                            <p>设置 swoole 进程名称</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_setProcessName"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_daemonize">daemonize</a>()
+        
+                                            <p>是否为守候进程运行</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_daemonize"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_info">info</a>(string $sMessage, bool $booForce = false, string $strFormatTime = &#039;H:i:s&#039;)
+        
+                                            <p>屏幕消息输出</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_info"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_line">line</a>(string $sMessage, bool $booForce = false, string $strFormatTime = &#039;H:i:s&#039;)
+        
+                                            <p>屏幕消息输出普通消息</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_line"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_warn">warn</a>(string $sMessage, bool $booForce = false, string $strFormatTime = &#039;&#039;)
+        
+                                            <p>屏幕消息输出警告</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_warn"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_error">error</a>(string $sMessage, bool $booForce = false, string $strFormatTime = &#039;&#039;)
+        
+                                            <p>屏幕消息输出错误</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_error"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_messageAll">messageAll</a>(string $strType, string $sMessage, bool $booForce = false, string $strFormatTime = &#039;H:i:s&#039;)
+        
+                                            <p>消息输入统一处理</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_messageAll"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_messageTime">messageTime</a>(string $sMessage, string $strFormatTime = &#039;&#039;)
+        
+                                            <p>屏幕消息时间</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_messageTime"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isJson">isJson</a>(mixed $mixData)
+        
+                                            <p>验证是否为正常的 JSON 字符串</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_isJson"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkEnvironment">checkEnvironment</a>()
+        
+                                            <p>验证 swoole 运行环境</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_checkEnvironment"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkSwooleInstalled">checkSwooleInstalled</a>()
+        
+                                            <p>验证 swoole 是否安装</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_checkSwooleInstalled"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkPhpVersion">checkPhpVersion</a>()
+        
+                                            <p>验证 PHP 版本</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_checkPhpVersion"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkSwooleVersion">checkSwooleVersion</a>()
+        
+                                            <p>验证 swoole 版本</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method_checkSwooleVersion"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $sMethod, array $arrArgs)
+        
+                                            <p>call</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../queryyetsimple/swoole/server.html#method___call"><abbr title="queryyetsimple\swoole\server">server</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onRequest">onRequest</a>(<abbr title="Swoole\Http\Request">Request</abbr> $objSwooleRequest, <abbr title="Swoole\Http\Response">Response</abbr> $objSwooleResponse)
+        
+                                            <p>处理 http 请求</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_option">
+        <div class="location">in <a href="../../../queryyetsimple/support/option.html#method_option"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 40</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>option</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_optionArray">
+        <div class="location">in <a href="../../../queryyetsimple/support/option.html#method_optionArray"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 53</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>optionArray</strong>(string $name, array $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改数组配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_options">
+        <div class="location">in <a href="../../../queryyetsimple/support/option.html#method_options"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 65</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>options</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>修改多个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">in <a href="../../../queryyetsimple/support/option.html#method_getOption"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 83</div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $name, mixed $defaults = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$defaults</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in <a href="../../../queryyetsimple/support/option.html#method_getOptions"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 94</div>
+        <code>                    mixed
+    <strong>getOptions</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取所有配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteOption">
+        <div class="location">in <a href="../../../queryyetsimple/support/option.html#method_deleteOption"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 105</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>deleteOption</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除单个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteOptions">
+        <div class="location">in <a href="../../../queryyetsimple/support/option.html#method_deleteOptions"><abbr title="queryyetsimple\support\option">option</abbr></a> at         line 119</div>
+        <code>                    <abbr title="queryyetsimple\support\$this">$this</abbr>
+    <strong>deleteOptions</strong>(array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除多个配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\support\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 123</div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../../queryyetsimple/router/router.html"><abbr title="queryyetsimple\router\router">router</abbr></a> $objRouter, <a href="../../../queryyetsimple/http/request.html"><abbr title="queryyetsimple\http\request">request</abbr></a> $objRequest, <a href="../../../queryyetsimple/http/response.html"><abbr title="queryyetsimple\http\response">response</abbr></a> $objResponse, array $arrOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../queryyetsimple/router/router.html"><abbr title="queryyetsimple\router\router">router</abbr></a></td>
+                <td>$objRouter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../queryyetsimple/http/request.html"><abbr title="queryyetsimple\http\request">request</abbr></a></td>
+                <td>$objRequest</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../queryyetsimple/http/response.html"><abbr title="queryyetsimple\http\response">response</abbr></a></td>
+                <td>$objResponse</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCommand">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_setCommand"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 133</div>
+        <code>                    void
+    <strong>setCommand</strong>(<a href="../../../queryyetsimple/console/command.html"><abbr title="queryyetsimple\console\command">command</abbr></a> $objCommand)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置命名行
+实现友好的屏幕信息输出</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../queryyetsimple/console/command.html"><abbr title="queryyetsimple\console\command">command</abbr></a></td>
+                <td>$objCommand</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_startServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 143</div>
+        <code>                    void
+    <strong>startServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>运行服务</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listsServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_listsServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 157</div>
+        <code>                    void
+    <strong>listsServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>列出当前服务进程</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://www.cnblogs.com/emanlee/p/3983678.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_stopServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 193</div>
+        <code>                    void
+    <strong>stopServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>结束当前服务进程</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restartServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_restartServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 242</div>
+        <code>                    void
+    <strong>restartServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>重启当前服务进程</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_closeServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_closeServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 269</div>
+        <code>                    void
+    <strong>closeServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>关闭当前服务进程</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_statusServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_statusServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 300</div>
+        <code>                    void
+    <strong>statusServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>查看当前服务进程</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_taskServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_taskServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 356</div>
+        <code>                    void
+    <strong>taskServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>在当前服务进程开启任务</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_getServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 382</div>
+        <code>                    <abbr title="Swoole\Server">Server</abbr>
+    <strong>getServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回服务</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Swoole\Server">Server</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onStart">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_onStart"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 395</div>
+        <code>                    void
+    <strong>onStart</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>主进程的主线程
+记录进程 id,脚本实现自动重启</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://wiki.swoole.com/wiki/page/p-event/onStart.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onConnect">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_onConnect"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 418</div>
+        <code>                    void
+    <strong>onConnect</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intFd, int $intReactorId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>新的连接进入时</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intFd</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intReactorId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://wiki.swoole.com/wiki/page/49.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onWorkerStart">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_onWorkerStart"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 432</div>
+        <code>                    void
+    <strong>onWorkerStart</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intWorkeId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>worker start 加载业务脚本常驻内存
+由于服务端命令行也采用 QueryPHP,无需再次引入 QueryPHP</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intWorkeId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://wiki.swoole.com/wiki/page/p-event/onWorkerStart.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onManagerStart">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_onManagerStart"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 448</div>
+        <code>                    void
+    <strong>onManagerStart</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>当管理进程启动时调用</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://wiki.swoole.com/wiki/page/190.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onWorkerStop">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_onWorkerStop"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 462</div>
+        <code>                    void
+    <strong>onWorkerStop</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intWorkerId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>worker进程终止时发生</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intWorkerId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onReceive">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_onReceive"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 477</div>
+        <code>                    void
+    <strong>onReceive</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intFd, int $intReactorId, string $strData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>监听数据发送事件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intFd</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intReactorId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://wiki.swoole.com/wiki/page/50.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onFinish">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_onFinish"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 523</div>
+        <code>                    void
+    <strong>onFinish</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intTaskId, string $strData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>监听连接 Finish 事件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intTaskId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://wiki.swoole.com/wiki/page/136.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onTask">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_onTask"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 538</div>
+        <code>                    void
+    <strong>onTask</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intTaskId, int $intFromId, string $strData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>监听连接 task 事件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intTaskId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intFromId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://wiki.swoole.com/wiki/page/134.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onShutdown">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_onShutdown"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 555</div>
+        <code>                    void
+    <strong>onShutdown</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Server 正常结束时发生</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://wiki.swoole.com/wiki/page/p-event/onShutdown.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onClose">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_onClose"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 573</div>
+        <code>                    void
+    <strong>onClose</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer, int $intFd, int $intReactorId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>监听连接关闭事件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intFd</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$intReactorId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://wiki.swoole.com/wiki/page/p-event/onClose.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkBefore">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_checkBefore"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 583</div>
+        <code>            protected        void
+    <strong>checkBefore</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建服务前环境验证</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkPidPath">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_checkPidPath"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 596</div>
+        <code>            protected        void
+    <strong>checkPidPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证 pid_path 是否可用</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkService">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_checkService"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 618</div>
+        <code>            protected        void
+    <strong>checkService</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证服务是否被占用</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkPort">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_checkPort"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 642</div>
+        <code>            protected        void
+    <strong>checkPort</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证端口是否被占用</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_portBind">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_portBind"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 660</div>
+        <code>            protected        array
+    <strong>portBind</strong>(int $intPort)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取端口占用情况</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$intPort</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createServer">
+        <div class="location">at         line 182</div>
+        <code>            protected        void
+    <strong>createServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建 http server</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_initServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 698</div>
+        <code>            protected        void
+    <strong>initServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>初始化 http server</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_eventServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_eventServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 708</div>
+        <code>            protected        void
+    <strong>eventServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>http server 绑定事件</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startSwooleServer">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_startSwooleServer"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 723</div>
+        <code>            protected        void
+    <strong>startSwooleServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>http server 启动</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_showStartOption">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_showStartOption"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 734</div>
+        <code>            protected        void
+    <strong>showStartOption</strong>(<abbr title="Swoole\Server">Server</abbr> $objServer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>显示服务启动配置</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Server">Server</abbr></td>
+                <td>$objServer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProcessName">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_setProcessName"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 762</div>
+        <code>            protected        void
+    <strong>setProcessName</strong>(string $sName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 swoole 进程名称</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>http://php.net/manual/zh/function.cli-set-process-title.php</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>https://wiki.swoole.com/wiki/page/125.html</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_daemonize">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_daemonize"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 780</div>
+        <code>            protected        int
+    <strong>daemonize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为守候进程运行</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_info">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_info"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 793</div>
+        <code>            protected        void
+    <strong>info</strong>(string $sMessage, bool $booForce = false, string $strFormatTime = &#039;H:i:s&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>屏幕消息输出</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMessage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$booForce</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strFormatTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_line">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_line"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 806</div>
+        <code>            protected        void
+    <strong>line</strong>(string $sMessage, bool $booForce = false, string $strFormatTime = &#039;H:i:s&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>屏幕消息输出普通消息</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMessage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$booForce</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strFormatTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_warn">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_warn"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 818</div>
+        <code>            protected        void
+    <strong>warn</strong>(string $sMessage, bool $booForce = false, string $strFormatTime = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>屏幕消息输出警告</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMessage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$booForce</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strFormatTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_error">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_error"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 830</div>
+        <code>            protected        void
+    <strong>error</strong>(string $sMessage, bool $booForce = false, string $strFormatTime = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>屏幕消息输出错误</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMessage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$booForce</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strFormatTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_messageAll">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_messageAll"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 843</div>
+        <code>            protected        void
+    <strong>messageAll</strong>(string $strType, string $sMessage, bool $booForce = false, string $strFormatTime = &#039;H:i:s&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>消息输入统一处理</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sMessage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$booForce</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strFormatTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_messageTime">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_messageTime"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 859</div>
+        <code>            protected        string
+    <strong>messageTime</strong>(string $sMessage, string $strFormatTime = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>屏幕消息时间</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMessage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strFormatTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isJson">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_isJson"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 870</div>
+        <code>            protected        boolean
+    <strong>isJson</strong>(mixed $mixData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证是否为正常的 JSON 字符串</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkEnvironment">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_checkEnvironment"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 887</div>
+        <code>            protected        void
+    <strong>checkEnvironment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证 swoole 运行环境</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkSwooleInstalled">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_checkSwooleInstalled"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 899</div>
+        <code>            protected        void
+    <strong>checkSwooleInstalled</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证 swoole 是否安装</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkPhpVersion">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_checkPhpVersion"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 911</div>
+        <code>            protected        void
+    <strong>checkPhpVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证 PHP 版本</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkSwooleVersion">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method_checkSwooleVersion"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 923</div>
+        <code>            protected        void
+    <strong>checkSwooleVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证 swoole 版本</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../queryyetsimple/swoole/server.html#method___call"><abbr title="queryyetsimple\swoole\server">server</abbr></a> at         line 937</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $sMethod, array $arrArgs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>call</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sMethod</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onRequest">
+        <div class="location">at         line 138</div>
+        <code>                    void
+    <strong>onRequest</strong>(<abbr title="Swoole\Http\Request">Request</abbr> $objSwooleRequest, <abbr title="Swoole\Http\Response">Response</abbr> $objSwooleResponse)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>处理 http 请求</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Swoole\Http\Request">Request</abbr></td>
+                <td>$objSwooleRequest</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Swoole\Http\Response">Response</abbr></td>
+                <td>$objSwooleResponse</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

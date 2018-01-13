@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\validate\ivalidate | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_validate_ivalidate" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                        <li><a href="../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../queryyetsimple/validate.html">validate</a></li><li class="backslash">\</li><li>ivalidate</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ivalidate
+                
+        </h1>
+    </div>
+
+    <p>    interface
+    <strong>ivalidate</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>ivalidate 接口</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>DEFAULT_CONDITION</td>
+                <td class="last">
+                    <p><em>默认验证条件</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CONDITION_EXISTS</td>
+                <td class="last">
+                    <p><em>存在字段即验证</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CONDITION_MUST</td>
+                <td class="last">
+                    <p><em>无论是否存在字段都验证</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CONDITION_VALUE</td>
+                <td class="last">
+                    <p><em>字段值不为空就验证</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SKIP_SELF</td>
+                <td class="last">
+                    <p><em>失败后跳过</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SKIP_OTHER</td>
+                <td class="last">
+                    <p><em>跳过其它验证</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../queryyetsimple/validate.html"><abbr title="queryyetsimple\validate">validate</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_make">make</a>(array $arrData = [], array $arrRule = [], array $arrFieldName = [], array $arrMessage = [])
+        
+                                            <p>初始化验证器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_success">success</a>()
+        
+                                            <p>验证是否成功</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fail">fail</a>()
+        
+                                            <p>验证是否失败</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_error">error</a>()
+        
+                                            <p>返回所有错误消息</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getData">getData</a>()
+        
+                                            <p>返回验证数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_data">data</a>(array $arrData)
+        
+                                            <p>设置验证数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addData">addData</a>(array $arrData)
+        
+                                            <p>添加验证数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldData">fieldData</a>(string $strField, mixed $mixData)
+        
+                                            <p>设置单个字段验证数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRule">getRule</a>()
+        
+                                            <p>返回验证规则</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rule">rule</a>(array $arrRule)
+        
+                                            <p>设置验证规则</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ruleIf">ruleIf</a>(array $arrRule, $mixCallback)
+        
+                                            <p>设置验证规则,带上条件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRule">addRule</a>(array $arrRule)
+        
+                                            <p>添加验证规则</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRuleIf">addRuleIf</a>(array $arrRule, $mixCallback)
+        
+                                            <p>添加验证规则,带上条件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldRule">fieldRule</a>(string $strField, mixed $mixRule)
+        
+                                            <p>设置单个字段验证规则</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldRuleIf">fieldRuleIf</a>($strField, $mixRule, $mixCallback)
+        
+                                            <p>设置单个字段验证规则,带上条件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFieldRule">addFieldRule</a>(string $strField, mixed $mixRule)
+        
+                                            <p>添加单个字段验证规则</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFieldRuleIf">addFieldRuleIf</a>($strField, $mixRule, $mixCallback)
+        
+                                            <p>添加单个字段验证规则,带上条件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFieldRule">getFieldRule</a>(string $strField)
+        
+                                            <p>获取单个字段验证规则</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFieldRuleWithoutSkip">getFieldRuleWithoutSkip</a>(string $strField)
+        
+                                            <p>获取单个字段验证规则，排除掉绕过的规则</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMessage">getMessage</a>()
+        
+                                            <p>返回验证消息</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_message">message</a>(array $arrMessage)
+        
+                                            <p>设置验证消息</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMessage">addMessage</a>(array $arrMessage)
+        
+                                            <p>添加验证消息</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFieldName">getFieldName</a>()
+        
+                                            <p>返回字段名字</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldName">fieldName</a>(array $arrFieldName)
+        
+                                            <p>设置字段名字</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFieldName">addFieldName</a>(array $arrFieldName)
+        
+                                            <p>添加字段名字</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldRuleMessage">fieldRuleMessage</a>(string $strFieldRule, string $strMessage)
+        
+                                            <p>设置单个字段验证消息</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alias">alias</a>(<abbr title="queryyetsimple\validate\strKey">strKey</abbr> $strAlias, <abbr title="queryyetsimple\validate\strKey">strKey</abbr> $strFor)
+        
+                                            <p>设置别名</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_aliasMany">aliasMany</a>(array $arrAlias)
+        
+                                            <p>批量设置别名</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAlias">getAlias</a>()
+        
+                                            <p>返回别名</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_after">after</a>(callable|string $mixCallback)
+        
+                                            <p>设置验证后事件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAfter">getAfter</a>()
+        
+                                            <p>返回所有验证后事件</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExtend">getExtend</a>()
+        
+                                            <p>返回所有自定义扩展</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extend">extend</a>($strRule, $mixExtend)
+        
+                                            <p>注册自定义扩展</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extendMany">extendMany</a>(array $arrExtend)
+        
+                                            <p>批量注册自定义扩展</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_container">container</a>(<a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a> $objContainer)
+        
+                                            <p>设置 ioc 容器</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSkipRule">getSkipRule</a>()
+        
+                                            <p>获取需要跳过的验证规则</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_defaultMessage">defaultMessage</a>()
+        
+                                            <p>设置默认的消息</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_make">
+        <div class="location">at         line 86</div>
+        <code>        static            <a href="../../queryyetsimple/validate.html"><abbr title="queryyetsimple\validate">validate</abbr></a>
+    <strong>make</strong>(array $arrData = [], array $arrRule = [], array $arrFieldName = [], array $arrMessage = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>初始化验证器</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrData</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrRule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrFieldName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrMessage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/validate.html"><abbr title="queryyetsimple\validate">validate</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_success">
+        <div class="location">at         line 93</div>
+        <code>                    bool
+    <strong>success</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证是否成功</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fail">
+        <div class="location">at         line 100</div>
+        <code>                    bool
+    <strong>fail</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证是否失败</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_error">
+        <div class="location">at         line 107</div>
+        <code>                    array
+    <strong>error</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回所有错误消息</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getData">
+        <div class="location">at         line 114</div>
+        <code>                    array
+    <strong>getData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回验证数据</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_data">
+        <div class="location">at         line 122</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>data</strong>(array $arrData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置验证数据</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addData">
+        <div class="location">at         line 130</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>addData</strong>(array $arrData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>添加验证数据</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldData">
+        <div class="location">at         line 139</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>fieldData</strong>(string $strField, mixed $mixData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置单个字段验证数据</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRule">
+        <div class="location">at         line 146</div>
+        <code>                    array
+    <strong>getRule</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回验证规则</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rule">
+        <div class="location">at         line 154</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>rule</strong>(array $arrRule)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置验证规则</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrRule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ruleIf">
+        <div class="location">at         line 163</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>ruleIf</strong>(array $arrRule, $mixCallback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置验证规则,带上条件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrRule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mixCallback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRule">
+        <div class="location">at         line 171</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>addRule</strong>(array $arrRule)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>添加验证规则</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrRule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRuleIf">
+        <div class="location">at         line 180</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>addRuleIf</strong>(array $arrRule, $mixCallback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>添加验证规则,带上条件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrRule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mixCallback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldRule">
+        <div class="location">at         line 189</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>fieldRule</strong>(string $strField, mixed $mixRule)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置单个字段验证规则</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixRule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldRuleIf">
+        <div class="location">at         line 199</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>fieldRuleIf</strong>($strField, $mixRule, $mixCallback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置单个字段验证规则,带上条件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$strField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mixRule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mixCallback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFieldRule">
+        <div class="location">at         line 208</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>addFieldRule</strong>(string $strField, mixed $mixRule)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>添加单个字段验证规则</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixRule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFieldRuleIf">
+        <div class="location">at         line 218</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>addFieldRuleIf</strong>($strField, $mixRule, $mixCallback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>添加单个字段验证规则,带上条件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$strField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mixRule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mixCallback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFieldRule">
+        <div class="location">at         line 226</div>
+        <code>                    array
+    <strong>getFieldRule</strong>(string $strField)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取单个字段验证规则</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strField</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFieldRuleWithoutSkip">
+        <div class="location">at         line 234</div>
+        <code>                    array
+    <strong>getFieldRuleWithoutSkip</strong>(string $strField)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取单个字段验证规则，排除掉绕过的规则</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strField</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMessage">
+        <div class="location">at         line 241</div>
+        <code>                    array
+    <strong>getMessage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回验证消息</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_message">
+        <div class="location">at         line 249</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>message</strong>(array $arrMessage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置验证消息</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrMessage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addMessage">
+        <div class="location">at         line 257</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>addMessage</strong>(array $arrMessage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>添加验证消息</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrMessage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFieldName">
+        <div class="location">at         line 264</div>
+        <code>                    array
+    <strong>getFieldName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回字段名字</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldName">
+        <div class="location">at         line 272</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>fieldName</strong>(array $arrFieldName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置字段名字</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrFieldName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFieldName">
+        <div class="location">at         line 280</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>addFieldName</strong>(array $arrFieldName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>添加字段名字</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrFieldName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldRuleMessage">
+        <div class="location">at         line 289</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>fieldRuleMessage</strong>(string $strFieldRule, string $strMessage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置单个字段验证消息</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strFieldRule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strMessage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alias">
+        <div class="location">at         line 298</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>alias</strong>(<abbr title="queryyetsimple\validate\strKey">strKey</abbr> $strAlias, <abbr title="queryyetsimple\validate\strKey">strKey</abbr> $strFor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置别名</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="queryyetsimple\validate\strKey">strKey</abbr></td>
+                <td>$strAlias</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="queryyetsimple\validate\strKey">strKey</abbr></td>
+                <td>$strFor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_aliasMany">
+        <div class="location">at         line 306</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>aliasMany</strong>(array $arrAlias)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>批量设置别名</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrAlias</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAlias">
+        <div class="location">at         line 313</div>
+        <code>                    array
+    <strong>getAlias</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回别名</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_after">
+        <div class="location">at         line 321</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>after</strong>(callable|string $mixCallback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置验证后事件</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|string</td>
+                <td>$mixCallback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAfter">
+        <div class="location">at         line 328</div>
+        <code>                    array
+    <strong>getAfter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回所有验证后事件</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExtend">
+        <div class="location">at         line 335</div>
+        <code>                    array
+    <strong>getExtend</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回所有自定义扩展</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location">at         line 344</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>extend</strong>($strRule, $mixExtend)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册自定义扩展</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$strRule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mixExtend</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extendMany">
+        <div class="location">at         line 352</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>extendMany</strong>(array $arrExtend)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>批量注册自定义扩展</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrExtend</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_container">
+        <div class="location">at         line 360</div>
+        <code>                    <abbr title="queryyetsimple\validate\$this">$this</abbr>
+    <strong>container</strong>(<a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a> $objContainer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 ioc 容器</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../queryyetsimple/support/icontainer.html"><abbr title="queryyetsimple\support\icontainer">icontainer</abbr></a></td>
+                <td>$objContainer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\validate\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSkipRule">
+        <div class="location">at         line 367</div>
+        <code>                    array
+    <strong>getSkipRule</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取需要跳过的验证规则</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defaultMessage">
+        <div class="location">at         line 374</div>
+        <code>        static            void
+    <strong>defaultMessage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置默认的消息</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

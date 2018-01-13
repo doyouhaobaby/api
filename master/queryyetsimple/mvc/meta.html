@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>queryyetsimple\mvc\meta | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:queryyetsimple_mvc_meta" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../queryyetsimple.html">queryyetsimple</a></li><li class="backslash">\</li><li><a href="../../queryyetsimple/mvc.html">mvc</a></li><li class="backslash">\</li><li>meta</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            meta
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>meta</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>数据库元对象</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_objDatabaseManager">
+                    static                    protected                                        array
+                </td>
+                <td>$objDatabaseManager</td>
+                <td class="last">Database 管理</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrInstances">
+                    static                    protected                                        array
+                </td>
+                <td>$arrInstances</td>
+                <td class="last">meta 对象实例</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_objConnect">
+                                        protected                                        <a href="../../queryyetsimple/database/idatabase.html"><abbr title="queryyetsimple\database\idatabase">idatabase</abbr></a>
+                </td>
+                <td>$objConnect</td>
+                <td class="last">数据库仓储</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrFields">
+                                        protected                                        array
+                </td>
+                <td>$arrFields</td>
+                <td class="last">数据库查询的原生字段</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrField">
+                                        protected                                        array
+                </td>
+                <td>$arrField</td>
+                <td class="last">数据库字段名字</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrPrimaryKey">
+                                        protected                                        array
+                </td>
+                <td>$arrPrimaryKey</td>
+                <td class="last">主键</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_strAutoIncrement">
+                                        protected                                        string
+                </td>
+                <td>$strAutoIncrement</td>
+                <td class="last">自动增加 ID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_booCompositeId">
+                                        protected                                        bool
+                </td>
+                <td>$booCompositeId</td>
+                <td class="last">是否使用复合主键</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arrFieldType">
+                    static                    protected                                        array
+                </td>
+                <td>$arrFieldType</td>
+                <td class="last">字段格式化类型</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_strTable">
+                                        protected                                        string
+                </td>
+                <td>$strTable</td>
+                <td class="last">元对象表</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mixConnect">
+                                        protected                                        mixed
+                </td>
+                <td>$mixConnect</td>
+                <td class="last">表连接</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>($strTable, $mixConnect = null)
+        
+                                            <p>构造函数
+禁止直接访问构造函数，只能通过 instance 生成对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="queryyetsimple\mvc\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_instance">instance</a>(string $strTable, mixed $mixConnect = null)
+        
+                                            <p>返回数据库元对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDatabaseManager">setDatabaseManager</a>(<a href="../../queryyetsimple/database/manager.html"><abbr title="queryyetsimple\database\manager">manager</abbr></a> $objDatabaseManager)
+        
+                                            <p>设置数据库管理对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldsProp">fieldsProp</a>(string $strField, mixed $mixValue)
+        
+                                            <p>字段强制过滤</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldsProps">fieldsProps</a>(array $arrData)
+        
+                                            <p>批量字段转属性</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>(array $arrSaveData)
+        
+                                            <p>新增并返回数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(array $arrCondition, array $arrSaveData)
+        
+                                            <p>更新并返回数据</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrimaryKey">getPrimaryKey</a>()
+        
+                                            <p>返回主键</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCompositeId">getCompositeId</a>()
+        
+                                            <p>是否为符合主键</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAutoIncrement">getAutoIncrement</a>()
+        
+                                            <p>返回自增 ID</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFields">getFields</a>()
+        
+                                            <p>返回数据库查询的原生字段</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getField">getField</a>()
+        
+                                            <p>返回字段名字</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/database/idatabase.html"><abbr title="queryyetsimple\database\idatabase">idatabase</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnect">getConnect</a>()
+        
+                                            <p>返回数据库仓储</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelect">getSelect</a>()
+        
+                                            <p>返回查询</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initialization">initialization</a>(string $strTable)
+        
+                                            <p>初始化元对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../queryyetsimple/database/idatabase.html"><abbr title="queryyetsimple\database\idatabase">idatabase</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initConnect">initConnect</a>()
+        
+                                            <p>连接数据库仓储</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUnique">getUnique</a>($strTable, $mixConnect = null)
+        
+                                            <p>取得唯一值</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 135</div>
+        <code>            protected        void
+    <strong>__construct</strong>($strTable, $mixConnect = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数
+禁止直接访问构造函数，只能通过 instance 生成对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$strTable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mixConnect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_instance">
+        <div class="location">at         line 149</div>
+        <code>        static            <abbr title="queryyetsimple\mvc\$this">$this</abbr>
+    <strong>instance</strong>(string $strTable, mixed $mixConnect = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回数据库元对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strTable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixConnect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="queryyetsimple\mvc\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDatabaseManager">
+        <div class="location">at         line 165</div>
+        <code>        static            void
+    <strong>setDatabaseManager</strong>(<a href="../../queryyetsimple/database/manager.html"><abbr title="queryyetsimple\database\manager">manager</abbr></a> $objDatabaseManager)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置数据库管理对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../queryyetsimple/database/manager.html"><abbr title="queryyetsimple\database\manager">manager</abbr></a></td>
+                <td>$objDatabaseManager</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldsProp">
+        <div class="location">at         line 177</div>
+        <code>                    array
+    <strong>fieldsProp</strong>(string $strField, mixed $mixValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>字段强制过滤</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$mixValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldsProps">
+        <div class="location">at         line 212</div>
+        <code>                    array
+    <strong>fieldsProps</strong>(array $arrData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>批量字段转属性</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">at         line 229</div>
+        <code>                    array
+    <strong>insert</strong>(array $arrSaveData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>新增并返回数据</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrSaveData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         line 243</div>
+        <code>                    int
+    <strong>update</strong>(array $arrCondition, array $arrSaveData)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>更新并返回数据</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arrCondition</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arrSaveData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrimaryKey">
+        <div class="location">at         line 253</div>
+        <code>                    array
+    <strong>getPrimaryKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回主键</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCompositeId">
+        <div class="location">at         line 263</div>
+        <code>                    boolean
+    <strong>getCompositeId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为符合主键</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAutoIncrement">
+        <div class="location">at         line 273</div>
+        <code>                    string|null
+    <strong>getAutoIncrement</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回自增 ID</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFields">
+        <div class="location">at         line 283</div>
+        <code>                    array
+    <strong>getFields</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回数据库查询的原生字段</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getField">
+        <div class="location">at         line 293</div>
+        <code>                    array
+    <strong>getField</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回字段名字</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnect">
+        <div class="location">at         line 303</div>
+        <code>                    <a href="../../queryyetsimple/database/idatabase.html"><abbr title="queryyetsimple\database\idatabase">idatabase</abbr></a>
+    <strong>getConnect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回数据库仓储</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/database/idatabase.html"><abbr title="queryyetsimple\database\idatabase">idatabase</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelect">
+        <div class="location">at         line 313</div>
+        <code>                    
+    <strong>getSelect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回查询</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialization">
+        <div class="location">at         line 324</div>
+        <code>            protected        void
+    <strong>initialization</strong>(string $strTable)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>初始化元对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strTable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initConnect">
+        <div class="location">at         line 345</div>
+        <code>            protected        <a href="../../queryyetsimple/database/idatabase.html"><abbr title="queryyetsimple\database\idatabase">idatabase</abbr></a>
+    <strong>initConnect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>连接数据库仓储</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../queryyetsimple/database/idatabase.html"><abbr title="queryyetsimple\database\idatabase">idatabase</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUnique">
+        <div class="location">at         line 357</div>
+        <code>        static    protected        string
+    <strong>getUnique</strong>($strTable, $mixConnect = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得唯一值</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$strTable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mixConnect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
