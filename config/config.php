@@ -15,8 +15,8 @@ $versions = Sami\Version\GitVersionCollection::create($dir)
 $options = [
     'theme'                => 'queryphp', // default
     'title'                => 'QueryPHP API Documentation',
-    'build_dir'            => __DIR__ . '/../.deploy_git/%version%',
-    'cache_dir'            => __DIR__ . '/../cache/%version%',
+    'build_dir'            => __DIR__ . '/../.deploy_git/queryphp/%version%',
+    'cache_dir'            => __DIR__ . '/../cache/queryphp/%version%',
 ];
 
 $sami = new Sami\Sami($iterator, $options);
