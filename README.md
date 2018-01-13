@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+# The QueryPHP Api Document 
 
-You can use the [editor on GitHub](https://github.com/hunzhiwange/api/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This site is built with [sami](https://github.com/FriendsOfPHP/sami/). 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Install
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+composer install
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Publish
 
-### Jekyll Themes
+You can publish your modify by use the command:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hunzhiwange/api/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```
+php vendor/sami/sami/sami.php render config/config.php --force
+```
