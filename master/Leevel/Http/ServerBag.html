@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Leevel\Http\HeaderBag | QueryPHP API Documentation</title>
+    <title>Leevel\Http\ServerBag | QueryPHP API Documentation</title>
 
                 <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -21,7 +21,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Leevel_Http_HeaderBag" data-root-path="../../">
+    <body id="class" data-name="class:Leevel_Http_ServerBag" data-root-path="../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -68,27 +68,27 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Http.html">Http</a></li><li class="backslash">\</li><li>HeaderBag</li>
+                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Http.html">Http</a></li><li class="backslash">\</li><li>ServerBag</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            HeaderBag
+            ServerBag
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>HeaderBag</strong>        extends <a href="../../Leevel/Http/Bag.html"><abbr title="Leevel\Http\Bag">Bag</abbr></a>
+    <strong>ServerBag</strong>        extends <a href="../../Leevel/Http/Bag.html"><abbr title="Leevel\Http\Bag">Bag</abbr></a>
 </p>
 
         
     
 
             <div class="description">
-            <p>header bag.</p>                                </div>
+            <p>server bag.</p>                                </div>
     
     
     
@@ -117,7 +117,7 @@
                     <a href="#method___construct">__construct</a>(array $elements = [])
         
                                             <p>构造函数.</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method___construct"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -126,8 +126,8 @@
                 <div class="col-md-8 type">
                     <a href="#method___toString">__toString</a>()
         
-                                            <p>格式化 header 字符串.</p>                </div>
-                <div class="col-md-2"></div>
+                                            <p>魔术方法 __toString.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method___toString"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -157,7 +157,7 @@
                     <a href="#method_replace">replace</a>(array $elements = [])
         
                                             <p>替换当前所有元素.</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_replace"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -167,7 +167,7 @@
                     <a href="#method_add">add</a>(array $elements = [])
         
                                             <p>新增元素.</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_add"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -367,6 +367,16 @@
                     <a href="#method_normalize">normalize</a>(string $key)
         
                                             <p>格式化键值</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_normalize"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeaders">getHeaders</a>()
+        
+                                            <p>取回 HTTP HEADERS.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -377,7 +387,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 39</div>
+        <div class="location">in <a href="../../Leevel/Http/Bag.html#method___construct"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 56</div>
         <code>                    
     <strong>__construct</strong>(array $elements = [])
         </code>
@@ -408,7 +418,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___toString">
-        <div class="location">at         line 49</div>
+        <div class="location">in <a href="../../Leevel/Http/Bag.html#method___toString"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 66</div>
         <code>                    string
     <strong>__toString</strong>()
         </code>
@@ -418,7 +428,7 @@
     
 
                     <div class="method-description">
-                                    <p>格式化 header 字符串.</p>                                                </div>
+                                    <p>魔术方法 __toString.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -498,7 +508,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_replace">
-        <div class="location">at         line 70</div>
+        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_replace"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 96</div>
         <code>                    
     <strong>replace</strong>(array $elements = [])
         </code>
@@ -529,7 +539,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_add">
-        <div class="location">at         line 80</div>
+        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_add"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 106</div>
         <code>                    
     <strong>add</strong>(array $elements = [])
         </code>
@@ -1204,6 +1214,12 @@
                             <h4>See also</h4>
 
                     <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="http://php.net/manual/en/function.filter-var.php">http://php.net/manual/en/function.filter-var.php</a>
+                                    </td>
+                <td></td>
+            </tr>
             </table>
 
                     </div>
@@ -1333,7 +1349,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_normalize">
-        <div class="location">at         line 90</div>
+        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_normalize"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 473</div>
         <code>            protected        string
     <strong>normalize</strong>(string $key)
         </code>
@@ -1361,6 +1377,36 @@
                     <table class="table table-condensed">
         <tr>
             <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaders">
+        <div class="location">at         line 39</div>
+        <code>                    array
+    <strong>getHeaders</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回 HTTP HEADERS.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
             <td></td>
         </tr>
     </table>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Leevel\Http\ResponseHeaderBag | QueryPHP API Documentation</title>
+    <title>Leevel\Http\Bag | QueryPHP API Documentation</title>
 
                 <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -21,7 +21,7 @@
     
     </head>
 
-    <body id="class" data-name="class:Leevel_Http_ResponseHeaderBag" data-root-path="../../">
+    <body id="class" data-name="class:Leevel_Http_Bag" data-root-path="../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -68,48 +68,31 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Http.html">Http</a></li><li class="backslash">\</li><li>ResponseHeaderBag</li>
+                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Http.html">Http</a></li><li class="backslash">\</li><li>Bag</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            ResponseHeaderBag
+            Bag
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>ResponseHeaderBag</strong>        extends <a href="../../Leevel/Http/HeaderBag.html"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a>
+    <strong>Bag</strong>        implements
+        <a href="../../Leevel/Support/IArray.html"><abbr title="Leevel\Support\IArray">IArray</abbr></a>, <a href="../../Leevel/Support/IJson.html"><abbr title="Leevel\Support\IJson">IJson</abbr></a>, <a target="_blank" href="http://php.net/Countable">Countable</a>, <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>, <a target="_blank" href="http://php.net/JsonSerializable">JsonSerializable</a>
 </p>
 
         
     
 
             <div class="description">
-            <p>response header bag.</p>                                </div>
+            <p>http bag
+This class borrows heavily from the Symfony4 Framework and is part of the symfony package.</p>                                </div>
     
     
-            <h2>Constants</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td>DISPOSITION_ATTACHMENT</td>
-                <td class="last">
-                    <p><em>下载附件.</em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>DISPOSITION_INLINE</td>
-                <td class="last">
-                    <p><em>文件直接读取.</em></p>
-                    <p></p>
-                </td>
-            </tr>
-            </table>
-
     
             <h2>Properties</h2>
 
@@ -120,7 +103,7 @@
                 </td>
                 <td>$elements</td>
                 <td class="last">元素合集.</td>
-                <td><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#property_elements"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></td>
+                <td></td>
             </tr>
             </table>
 
@@ -136,7 +119,7 @@
                     <a href="#method___construct">__construct</a>(array $elements = [])
         
                                             <p>构造函数.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/HeaderBag.html#method___construct"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -145,8 +128,8 @@
                 <div class="col-md-8 type">
                     <a href="#method___toString">__toString</a>()
         
-                                            <p>格式化 header 字符串.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/HeaderBag.html#method___toString"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a></small></div>
+                                            <p>魔术方法 __toString.</p>                </div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -156,7 +139,7 @@
                     <a href="#method_all">all</a>()
         
                                             <p>取回元素.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_all"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -166,7 +149,7 @@
                     <a href="#method_keys">keys</a>()
         
                                             <p>返回元素键值</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_keys"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -176,7 +159,7 @@
                     <a href="#method_replace">replace</a>(array $elements = [])
         
                                             <p>替换当前所有元素.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/HeaderBag.html#method_replace"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -186,7 +169,7 @@
                     <a href="#method_add">add</a>(array $elements = [])
         
                                             <p>新增元素.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/HeaderBag.html#method_add"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -196,7 +179,7 @@
                     <a href="#method_get">get</a>(string $key, mixed $defaults = null)
         
                                             <p>取回元素值</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_get"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -206,7 +189,7 @@
                     <a href="#method_set">set</a>(string $key, mixed $value)
         
                                             <p>设置元素值</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_set"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -216,7 +199,7 @@
                     <a href="#method_has">has</a>(string $key)
         
                                             <p>判断是否存在元素值</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_has"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -226,7 +209,7 @@
                     <a href="#method_remove">remove</a>(string $key)
         
                                             <p>删除元素值</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_remove"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -236,7 +219,7 @@
                     <a href="#method_filter">filter</a>(string $key, mixed $defaults = null, array|int|string $filter = null, array $options = [])
         
                                             <p>获取过滤变量.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_filter"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -246,7 +229,7 @@
                     <a href="#method_count">count</a>()
         
                                             <p>实现 Countable::count.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_count"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -256,7 +239,7 @@
                     <a href="#method_toArray">toArray</a>()
         
                                             <p>对象转数组.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_toArray"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -266,7 +249,7 @@
                     <a href="#method_jsonSerialize">jsonSerialize</a>()
         
                                             <p>实现 JsonSerializable::jsonSerialize.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_jsonSerialize"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -276,7 +259,7 @@
                     <a href="#method_toJson">toJson</a>(int $option = null)
         
                                             <p>对象转 JSON.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_toJson"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -286,7 +269,7 @@
                     <a href="#method_getIterator">getIterator</a>()
         
                                             <p>实现 IteratorAggregate::getIterator.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_getIterator"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -296,7 +279,7 @@
                     <a href="#method_parseKeyFilter">parseKeyFilter</a>(string $key, array $filter)
         
                                             <p>分析键值和过滤器.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_parseKeyFilter"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -306,7 +289,7 @@
                     <a href="#method_parseFilter">parseFilter</a>(array|string $filter = null)
         
                                             <p>分析过滤器.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_parseFilter"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -316,7 +299,7 @@
                     <a href="#method_filterValue">filterValue</a>(mixed $value, mixed $defaults, array $filters, array $options = [])
         
                                             <p>过滤值</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_filterValue"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -326,7 +309,7 @@
                     <a href="#method_filterValueWithFunc">filterValueWithFunc</a>(mixed $value, string $filter)
         
                                             <p>使用函数过滤值</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_filterValueWithFunc"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -336,7 +319,7 @@
                     <a href="#method_filterValueWithCallable">filterValueWithCallable</a>(mixed $value, string $filter)
         
                                             <p>使用回调过滤值</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_filterValueWithCallable"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -346,7 +329,7 @@
                     <a href="#method_filterValueWithFilterVar">filterValueWithFilterVar</a>(mixed $value, mixed $filter, array $options)
         
                                             <p>使用 filter_var 过滤值</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_filterValueWithFilterVar"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -356,7 +339,7 @@
                     <a href="#method_parseFilterId">parseFilterId</a>(mixed $filter)
         
                                             <p>分析转换 filter_var 参数.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_parseFilterId"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -366,7 +349,7 @@
                     <a href="#method_isInt">isInt</a>(mixed $value)
         
                                             <p>判断字符串是否为数字.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_isInt"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -376,7 +359,7 @@
                     <a href="#method_getPartData">getPartData</a>(string $key, mixed $value, mixed $defaults = null)
         
                                             <p>返回部分数组数据.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Bag.html#method_getPartData"><abbr title="Leevel\Http\Bag">Bag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -386,7 +369,7 @@
                     <a href="#method_normalize">normalize</a>(string $key)
         
                                             <p>格式化键值</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/HeaderBag.html#method_normalize"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
             </div>
 
@@ -396,7 +379,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../Leevel/Http/HeaderBag.html#method___construct"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a> at         line 39</div>
+        <div class="location">at         line 56</div>
         <code>                    
     <strong>__construct</strong>(array $elements = [])
         </code>
@@ -427,7 +410,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___toString">
-        <div class="location">in <a href="../../Leevel/Http/HeaderBag.html#method___toString"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a> at         line 49</div>
+        <div class="location">at         line 66</div>
         <code>                    string
     <strong>__toString</strong>()
         </code>
@@ -437,7 +420,7 @@
     
 
                     <div class="method-description">
-                                    <p>格式化 header 字符串.</p>                                                </div>
+                                    <p>魔术方法 __toString.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -457,7 +440,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_all">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_all"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 76</div>
+        <div class="location">at         line 76</div>
         <code>                    array
     <strong>all</strong>()
         </code>
@@ -487,7 +470,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_keys">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_keys"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 86</div>
+        <div class="location">at         line 86</div>
         <code>                    array
     <strong>keys</strong>()
         </code>
@@ -517,7 +500,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_replace">
-        <div class="location">in <a href="../../Leevel/Http/HeaderBag.html#method_replace"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a> at         line 70</div>
+        <div class="location">at         line 96</div>
         <code>                    
     <strong>replace</strong>(array $elements = [])
         </code>
@@ -548,7 +531,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_add">
-        <div class="location">in <a href="../../Leevel/Http/HeaderBag.html#method_add"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a> at         line 80</div>
+        <div class="location">at         line 106</div>
         <code>                    
     <strong>add</strong>(array $elements = [])
         </code>
@@ -579,7 +562,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_get"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 119</div>
+        <div class="location">at         line 119</div>
         <code>                    mixed
     <strong>get</strong>(string $key, mixed $defaults = null)
         </code>
@@ -624,7 +607,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_set">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_set"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 132</div>
+        <div class="location">at         line 132</div>
         <code>                    
     <strong>set</strong>(string $key, mixed $value)
         </code>
@@ -660,7 +643,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_has"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 146</div>
+        <div class="location">at         line 146</div>
         <code>                    bool
     <strong>has</strong>(string $key)
         </code>
@@ -700,7 +683,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_remove">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_remove"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 158</div>
+        <div class="location">at         line 158</div>
         <code>                    
     <strong>remove</strong>(string $key)
         </code>
@@ -731,7 +714,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_filter">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_filter"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 177</div>
+        <div class="location">at         line 177</div>
         <code>                    mixed
     <strong>filter</strong>(string $key, mixed $defaults = null, array|int|string $filter = null, array $options = [])
         </code>
@@ -786,7 +769,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_count">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_count"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 209</div>
+        <div class="location">at         line 209</div>
         <code>                    int
     <strong>count</strong>()
         </code>
@@ -816,7 +799,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_toArray">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_toArray"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 219</div>
+        <div class="location">at         line 219</div>
         <code>                    array
     <strong>toArray</strong>()
         </code>
@@ -846,7 +829,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_jsonSerialize">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_jsonSerialize"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 229</div>
+        <div class="location">at         line 229</div>
         <code>                    array
     <strong>jsonSerialize</strong>()
         </code>
@@ -876,7 +859,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_toJson">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_toJson"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 241</div>
+        <div class="location">at         line 241</div>
         <code>                    string
     <strong>toJson</strong>(int $option = null)
         </code>
@@ -916,7 +899,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getIterator">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_getIterator"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 255</div>
+        <div class="location">at         line 255</div>
         <code>                    <a target="_blank" href="http://php.net/ArrayIterator">ArrayIterator</a>
     <strong>getIterator</strong>()
         </code>
@@ -946,7 +929,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseKeyFilter">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_parseKeyFilter"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 268</div>
+        <div class="location">at         line 268</div>
         <code>            protected        array
     <strong>parseKeyFilter</strong>(string $key, array $filter)
         </code>
@@ -991,7 +974,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseFilter">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_parseFilter"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 286</div>
+        <div class="location">at         line 286</div>
         <code>            protected        array
     <strong>parseFilter</strong>(array|string $filter = null)
         </code>
@@ -1031,7 +1014,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_filterValue">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_filterValue"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 305</div>
+        <div class="location">at         line 305</div>
         <code>            protected        mixed
     <strong>filterValue</strong>(mixed $value, mixed $defaults, array $filters, array $options = [])
         </code>
@@ -1086,7 +1069,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_filterValueWithFunc">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_filterValueWithFunc"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 334</div>
+        <div class="location">at         line 334</div>
         <code>            protected        mixed
     <strong>filterValueWithFunc</strong>(mixed $value, string $filter)
         </code>
@@ -1131,7 +1114,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_filterValueWithCallable">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_filterValueWithCallable"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 383</div>
+        <div class="location">at         line 383</div>
         <code>            protected        mixed
     <strong>filterValueWithCallable</strong>(mixed $value, string $filter)
         </code>
@@ -1176,7 +1159,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_filterValueWithFilterVar">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_filterValueWithFilterVar"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 401</div>
+        <div class="location">at         line 401</div>
         <code>            protected        mixed
     <strong>filterValueWithFilterVar</strong>(mixed $value, mixed $filter, array $options)
         </code>
@@ -1223,6 +1206,12 @@
                             <h4>See also</h4>
 
                     <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="http://php.net/manual/en/function.filter-var.php">http://php.net/manual/en/function.filter-var.php</a>
+                                    </td>
+                <td></td>
+            </tr>
             </table>
 
                     </div>
@@ -1231,7 +1220,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_parseFilterId">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_parseFilterId"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 415</div>
+        <div class="location">at         line 415</div>
         <code>            protected        int
     <strong>parseFilterId</strong>(mixed $filter)
         </code>
@@ -1271,7 +1260,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isInt">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_isInt"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 429</div>
+        <div class="location">at         line 429</div>
         <code>            protected        
     <strong>isInt</strong>(mixed $value)
         </code>
@@ -1302,7 +1291,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPartData">
-        <div class="location">in <a href="../../Leevel/Http/Bag.html#method_getPartData"><abbr title="Leevel\Http\Bag">Bag</abbr></a> at         line 447</div>
+        <div class="location">at         line 447</div>
         <code>            protected        mixed
     <strong>getPartData</strong>(string $key, mixed $value, mixed $defaults = null)
         </code>
@@ -1352,7 +1341,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_normalize">
-        <div class="location">in <a href="../../Leevel/Http/HeaderBag.html#method_normalize"><abbr title="Leevel\Http\HeaderBag">HeaderBag</abbr></a> at         line 90</div>
+        <div class="location">at         line 473</div>
         <code>            protected        string
     <strong>normalize</strong>(string $key)
         </code>
