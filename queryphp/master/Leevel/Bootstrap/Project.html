@@ -1,0 +1,4151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Leevel\Bootstrap\Project | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:Leevel_Bootstrap_Project" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Bootstrap.html">Bootstrap</a></li><li class="backslash">\</li><li>Project</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Project
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Project</strong>        extends <a href="../../Leevel/Di/Container.html"><abbr title="Leevel\Di\Container">Container</abbr></a>        implements
+        <a href="../../Leevel/Kernel/IProject.html"><abbr title="Leevel\Kernel\IProject">IProject</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>项目管理.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_services">
+                                        protected                                        array
+                </td>
+                <td>$services</td>
+                <td class="last">注册服务</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Di/Container.html#property_services"><abbr title="Leevel\Di\Container">Container</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_instances">
+                                        protected                                        array
+                </td>
+                <td>$instances</td>
+                <td class="last">注册的实例.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Di/Container.html#property_instances"><abbr title="Leevel\Di\Container">Container</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_singletons">
+                                        protected                                        array
+                </td>
+                <td>$singletons</td>
+                <td class="last">单一实例.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Di/Container.html#property_singletons"><abbr title="Leevel\Di\Container">Container</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_alias">
+                                        protected                                        array
+                </td>
+                <td>$alias</td>
+                <td class="last">别名支持</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Di/Container.html#property_alias"><abbr title="Leevel\Di\Container">Container</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_project">
+                    static                    protected                                        <a href="../../Leevel/Bootstrap/Project.html"><abbr title="Leevel\Bootstrap\Project">Project</abbr></a>
+                </td>
+                <td>$project</td>
+                <td class="last">当前项目实例.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_path">
+                                        protected                                        string
+                </td>
+                <td>$path</td>
+                <td class="last">项目基础路径.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_appPath">
+                                        protected                                        string
+                </td>
+                <td>$appPath</td>
+                <td class="last">应用路径.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_commonPath">
+                                        protected                                        string
+                </td>
+                <td>$commonPath</td>
+                <td class="last">公共路径.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_runtimePath">
+                                        protected                                        string
+                </td>
+                <td>$runtimePath</td>
+                <td class="last">运行时路径.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_storagePath">
+                                        protected                                        string
+                </td>
+                <td>$storagePath</td>
+                <td class="last">存储路径.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_publicPath">
+                                        protected                                        string
+                </td>
+                <td>$publicPath</td>
+                <td class="last">资源路径.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_themesPath">
+                                        protected                                        string
+                </td>
+                <td>$themesPath</td>
+                <td class="last">主题路径.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_optionPath">
+                                        protected                                        string
+                </td>
+                <td>$optionPath</td>
+                <td class="last">配置路径.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_i18nPath">
+                                        protected                                        string
+                </td>
+                <td>$i18nPath</td>
+                <td class="last">语言包路径.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_envPath">
+                                        protected                                        string
+                </td>
+                <td>$envPath</td>
+                <td class="last">环境变量路径.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_envFile">
+                                        protected                                        string
+                </td>
+                <td>$envFile</td>
+                <td class="last">环境变量文件.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_deferredProviders">
+                                        protected                                        array
+                </td>
+                <td>$deferredProviders</td>
+                <td class="last">延迟载入服务提供者.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_providerBootstraps">
+                                        protected                                        array
+                </td>
+                <td>$providerBootstraps</td>
+                <td class="last">服务提供者引导</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isBootstrap">
+                                        protected                                        bool
+                </td>
+                <td>$isBootstrap</td>
+                <td class="last">是否已经初始化引导</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Leevel\Di\设置项">设置项</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $key)
+        
+                                            <p>捕捉支持属性参数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method___get"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>(string $key, mixed $service)
+        
+                                            <p>设置支持属性参数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method___set"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $method, array $args)
+        
+                                            <p>call.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method___call"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>(mixed $name, mixed $service = null, bool $share = false)
+        
+                                            <p>注册到容器.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_bind"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_instance">instance</a>(mixed $name, mixed $service = null)
+        
+                                            <p>注册为实例.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_instance"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_singleton">singleton</a>(string $name, mixed $service = null)
+        
+                                            <p>注册单一实例.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_singleton"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alias">alias</a>(array|string $alias, null|array|string $value = null)
+        
+                                            <p>设置别名.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_alias"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false|object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_make">make</a>(string $name, array $args = [])
+        
+                                            <p>服务容器返回对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_call">call</a>(array|callable|string $callback, array $args = [])
+        
+                                            <p>实例回调自动注入.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_call"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_remove">remove</a>(string $name)
+        
+                                            <p>删除服务和实例.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_remove"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>(string $name)
+        
+                                            <p>服务或者实例是否存在.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_exists"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(string $index)
+        
+                                            <p>实现 ArrayAccess::offsetExits.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_offsetExists"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(string $index)
+        
+                                            <p>实现 ArrayAccess::offsetGet.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_offsetGet"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $index, mixed $newval)
+        
+                                            <p>实现 ArrayAccess::offsetSet.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_offsetSet"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(string $index)
+        
+                                            <p>实现 ArrayAccess::offsetUnset.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_offsetUnset"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalize">normalize</a>(string $name)
+        
+                                            <p>统一去掉前面的斜杠.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_normalize"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAlias">getAlias</a>(string $name)
+        
+                                            <p>返回对象别名.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_getAlias"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInjectionObject">getInjectionObject</a>(string $classname, array $args = [])
+        
+                                            <p>根据 class 名字创建实例.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_getInjectionObject"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeInjectionArgs">normalizeInjectionArgs</a>(mixed $value, array $args)
+        
+                                            <p>格式化依赖参数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_normalizeInjectionArgs"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseInjection">parseInjection</a>(mixed $injection, array $args = [])
+        
+                                            <p>分析自动依赖注入.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_parseInjection"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseParameterClass">parseParameterClass</a>(<a target="_blank" href="http://php.net/ReflectionParameter">ReflectionParameter</a> $param)
+        
+                                            <p>分析反射参数的类.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_parseParameterClass"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseClassInstance">parseClassInstance</a>(string $argsclass)
+        
+                                            <p>解析反射参数类实例.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_parseClassInstance"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseClassFromContainer">parseClassFromContainer</a>(string $argsclass)
+        
+                                            <p>从服务容器中获取解析反射参数类实例.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_parseClassFromContainer"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseClassNotExists">parseClassNotExists</a>(string $argsclass)
+        
+                                            <p>独立类作为解析反射参数类实例.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_parseClassNotExists"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseReflection">parseReflection</a>(mixed $injection)
+        
+                                            <p>不同的类型不同的反射.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_parseReflection"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseClosureReflection">parseClosureReflection</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $injection)
+        
+                                            <p>解析闭包反射参数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_parseClosureReflection"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseMethodReflection">parseMethodReflection</a>(<abbr title="Leevel\Di\array&callback">array&callback</abbr> $injection)
+        
+                                            <p>解析数组回调反射参数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_parseMethodReflection"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseClassReflection">parseClassReflection</a>(string $injection)
+        
+                                            <p>解析类反射参数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_parseClassReflection"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_newInstanceArgs">newInstanceArgs</a>(string $classname, array $args)
+        
+                                            <p>动态创建实例对象.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_newInstanceArgs"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseAlias">parseAlias</a>(array $name)
+        
+                                            <p>解析注册容器对象别名.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Di/Container.html#method_parseAlias"><abbr title="Leevel\Di\Container">Container</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string|null $path = null)
+        
+                                            <p>构造函数
+项目中通过 singletons 生成单一实例.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>禁止克隆.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Leevel/Kernel/IProject.html"><abbr title="Leevel\Kernel\IProject">IProject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_singletons">singletons</a>(string|null $path = null)
+        
+                                            <p>返回项目.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_version">version</a>()
+        
+                                            <p>程序版本.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runWithExtension">runWithExtension</a>()
+        
+                                            <p>是否以扩展方式运行.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_console">console</a>()
+        
+                                            <p>是否为 Console.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPath">setPath</a>(string $path)
+        
+                                            <p>设置项目路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_path">path</a>(string $path = &#039;&#039;)
+        
+                                            <p>基础路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAppPath">setAppPath</a>(string $path)
+        
+                                            <p>设置应用路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_appPath">appPath</a>(bool|string $app = false, string $path = &#039;&#039;)
+        
+                                            <p>应用路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_themePath">themePath</a>(bool|string $app = false)
+        
+                                            <p>取得应用主题目录.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCommonPath">setCommonPath</a>(string $path)
+        
+                                            <p>设置公共路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_commonPath">commonPath</a>(string $path = &#039;&#039;)
+        
+                                            <p>公共路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRuntimePath">setRuntimePath</a>(string $path)
+        
+                                            <p>设置运行时路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runtimePath">runtimePath</a>(string $path = &#039;&#039;)
+        
+                                            <p>运行路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStoragePath">setStoragePath</a>(string $path)
+        
+                                            <p>设置存储路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_storagePath">storagePath</a>(string $path = &#039;&#039;)
+        
+                                            <p>附件路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPublicPath">setPublicPath</a>(string $path)
+        
+                                            <p>设置资源路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_publicPath">publicPath</a>(string $path = &#039;&#039;)
+        
+                                            <p>资源路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setThemesPath">setThemesPath</a>(string $path)
+        
+                                            <p>设置主题路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_themesPath">themesPath</a>(string $path = &#039;&#039;)
+        
+                                            <p>主题路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptionPath">setOptionPath</a>(string $path)
+        
+                                            <p>设置配置路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_optionPath">optionPath</a>(string $path = &#039;&#039;)
+        
+                                            <p>配置路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setI18nPath">setI18nPath</a>(string $path)
+        
+                                            <p>设置语言包路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_i18nPath">i18nPath</a>(string $path = null)
+        
+                                            <p>语言包路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEnvPath">setEnvPath</a>(string $path)
+        
+                                            <p>设置环境变量路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_envPath">envPath</a>()
+        
+                                            <p>环境变量路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEnvFile">setEnvFile</a>(string $file)
+        
+                                            <p>设置环境变量文件.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_envFile">envFile</a>()
+        
+                                            <p>取得环境变量文件.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fullEnvPath">fullEnvPath</a>()
+        
+                                            <p>取得环境变量完整路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_i18nCachedPath">i18nCachedPath</a>(string $i18n)
+        
+                                            <p>返回语言包缓存路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isCachedI18n">isCachedI18n</a>(string $i18n)
+        
+                                            <p>是否存在语言包缓存.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_optionCachedPath">optionCachedPath</a>()
+        
+                                            <p>返回配置缓存路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isCachedOption">isCachedOption</a>()
+        
+                                            <p>是否存在配置缓存.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_routerCachedPath">routerCachedPath</a>()
+        
+                                            <p>返回路由缓存路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isCachedRouter">isCachedRouter</a>()
+        
+                                            <p>是否存在路由缓存.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Composer\Autoload\ClassLoader">ClassLoader</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_composer">composer</a>()
+        
+                                            <p>取得 composer.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPathByComposer">getPathByComposer</a>(string $namespaces)
+        
+                                            <p>获取命名空间路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_debug">debug</a>()
+        
+                                            <p>是否开启 debug.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_development">development</a>()
+        
+                                            <p>是否为开发环境.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_environment">environment</a>()
+        
+                                            <p>运行环境.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeProvider">makeProvider</a>(string $provider)
+        
+                                            <p>创建服务提供者.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_callProviderBootstrap">callProviderBootstrap</a>(<a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a> $provider)
+        
+                                            <p>执行 bootstrap.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bootstrap">bootstrap</a>(array $bootstraps)
+        
+                                            <p>初始化项目.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isBootstrap">isBootstrap</a>()
+        
+                                            <p>是否已经初始化引导</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerProviders">registerProviders</a>()
+        
+                                            <p>框架基础提供者 register.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bootstrapProviders">bootstrapProviders</a>()
+        
+                                            <p>执行框架基础提供者引导</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_register">register</a>(<a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a>|string $provider)
+        
+                                            <p>注册服务提供者.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerBaseServices">registerBaseServices</a>()
+        
+                                            <p>注册基础服务</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerBaseProvider">registerBaseProvider</a>()
+        
+                                            <p>注册基础服务提供者.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerDeferredProvider">registerDeferredProvider</a>(string $provider)
+        
+                                            <p>注册延迟载入服务提供者.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeApp">normalizeApp</a>(bool|string $app)
+        
+                                            <p>格式化应用名字.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizePath">normalizePath</a>(string $path)
+        
+                                            <p>格式化路径.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method___get"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 79</div>
+        <code>                    <abbr title="Leevel\Di\设置项">设置项</abbr>
+    <strong>__get</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>捕捉支持属性参数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Leevel\Di\设置项">设置项</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method___set"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 90</div>
+        <code>                    
+    <strong>__set</strong>(string $key, mixed $service)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置支持属性参数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$service</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method___call"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 105</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>call.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_bind"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 119</div>
+        <code>                    $this
+    <strong>bind</strong>(mixed $name, mixed $service = null, bool $share = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册到容器.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$service</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$share</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_instance">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_instance"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 147</div>
+        <code>                    
+    <strong>instance</strong>(mixed $name, mixed $service = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册为实例.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$service</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_singleton">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_singleton"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 171</div>
+        <code>                    
+    <strong>singleton</strong>(string $name, mixed $service = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册单一实例.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$service</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alias">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_alias"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 184</div>
+        <code>                    
+    <strong>alias</strong>(array|string $alias, null|array|string $value = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置别名.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$alias</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|array|string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_make">
+        <div class="location">at         line 227</div>
+        <code>                    false|object
+    <strong>make</strong>(string $name, array $args = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>服务容器返回对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_call">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_call"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 257</div>
+        <code>                    mixed
+    <strong>call</strong>(array|callable|string $callback, array $args = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实例回调自动注入.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|callable|string</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_remove"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 294</div>
+        <code>                    
+    <strong>remove</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除服务和实例.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_exists"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 318</div>
+        <code>                    bool
+    <strong>exists</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>服务或者实例是否存在.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_offsetExists"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 334</div>
+        <code>                    bool
+    <strong>offsetExists</strong>(string $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实现 ArrayAccess::offsetExits.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_offsetGet"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 346</div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(string $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实现 ArrayAccess::offsetGet.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_offsetSet"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 357</div>
+        <code>                    
+    <strong>offsetSet</strong>(mixed $index, mixed $newval)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实现 ArrayAccess::offsetSet.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$newval</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_offsetUnset"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 367</div>
+        <code>                    
+    <strong>offsetUnset</strong>(string $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实现 ArrayAccess::offsetUnset.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalize">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_normalize"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 379</div>
+        <code>            protected        mixed
+    <strong>normalize</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>统一去掉前面的斜杠.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAlias">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_getAlias"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 391</div>
+        <code>            protected        string
+    <strong>getAlias</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回对象别名.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInjectionObject">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_getInjectionObject"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 404</div>
+        <code>            protected        object
+    <strong>getInjectionObject</strong>(string $classname, array $args = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>根据 class 名字创建实例.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$classname</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeInjectionArgs">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_normalizeInjectionArgs"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 432</div>
+        <code>            protected        array|void
+    <strong>normalizeInjectionArgs</strong>(mixed $value, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>格式化依赖参数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseInjection">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_parseInjection"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 453</div>
+        <code>            protected        array
+    <strong>parseInjection</strong>(mixed $injection, array $args = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析自动依赖注入.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$injection</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseParameterClass">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_parseParameterClass"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 530</div>
+        <code>            protected        bool|string
+    <strong>parseParameterClass</strong>(<a target="_blank" href="http://php.net/ReflectionParameter">ReflectionParameter</a> $param)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析反射参数的类.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/ReflectionParameter">ReflectionParameter</a></td>
+                <td>$param</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseClassInstance">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_parseClassInstance"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 548</div>
+        <code>            protected        array
+    <strong>parseClassInstance</strong>(string $argsclass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>解析反射参数类实例.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$argsclass</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseClassFromContainer">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_parseClassFromContainer"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 573</div>
+        <code>            protected        bool|object
+    <strong>parseClassFromContainer</strong>(string $argsclass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>从服务容器中获取解析反射参数类实例.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$argsclass</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseClassNotExists">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_parseClassNotExists"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 617</div>
+        <code>            protected        bool|object
+    <strong>parseClassNotExists</strong>(string $argsclass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>独立类作为解析反射参数类实例.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$argsclass</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseReflection">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_parseReflection"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 644</div>
+        <code>            protected        array
+    <strong>parseReflection</strong>(mixed $injection)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>不同的类型不同的反射.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$injection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseClosureReflection">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_parseClosureReflection"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 665</div>
+        <code>            protected        array
+    <strong>parseClosureReflection</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $injection)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>解析闭包反射参数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$injection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseMethodReflection">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_parseMethodReflection"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 682</div>
+        <code>            protected        array
+    <strong>parseMethodReflection</strong>(<abbr title="Leevel\Di\array&callback">array&callback</abbr> $injection)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>解析数组回调反射参数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Leevel\Di\array&callback">array&callback</abbr></td>
+                <td>$injection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseClassReflection">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_parseClassReflection"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 699</div>
+        <code>            protected        array
+    <strong>parseClassReflection</strong>(string $injection)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>解析类反射参数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$injection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newInstanceArgs">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_newInstanceArgs"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 729</div>
+        <code>            protected        mixed
+    <strong>newInstanceArgs</strong>(string $classname, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>动态创建实例对象.</p>                    <p>zephir 版本会执行到 newInstanceWithoutConstructor.
+例子：Class Tests\Event\ListenerNotExtends does not
+have a constructor, so you cannot pass any constructor arguments.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$classname</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseAlias">
+        <div class="location">in <a href="../../Leevel/Di/Container.html#method_parseAlias"><abbr title="Leevel\Di\Container">Container</abbr></a> at         line 745</div>
+        <code>            protected        array
+    <strong>parseAlias</strong>(array $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>解析注册容器对象别名.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 154</div>
+        <code>                    
+    <strong>__construct</strong>(string|null $path = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数
+项目中通过 singletons 生成单一实例.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at         line 168</div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>禁止克隆.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_singletons">
+        <div class="location">at         line 181</div>
+        <code>        static            <a href="../../Leevel/Kernel/IProject.html"><abbr title="Leevel\Kernel\IProject">IProject</abbr></a>
+    <strong>singletons</strong>(string|null $path = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回项目.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Kernel/IProject.html"><abbr title="Leevel\Kernel\IProject">IProject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_version">
+        <div class="location">at         line 195</div>
+        <code>                    string
+    <strong>version</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>程序版本.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runWithExtension">
+        <div class="location">at         line 205</div>
+        <code>                    bool
+    <strong>runWithExtension</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否以扩展方式运行.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_console">
+        <div class="location">at         line 215</div>
+        <code>                    bool
+    <strong>console</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为 Console.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPath">
+        <div class="location">at         line 243</div>
+        <code>                    
+    <strong>setPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置项目路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_path">
+        <div class="location">at         line 255</div>
+        <code>                    string
+    <strong>path</strong>(string $path = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>基础路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAppPath">
+        <div class="location">at         line 265</div>
+        <code>                    $this
+    <strong>setAppPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置应用路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_appPath">
+        <div class="location">at         line 278</div>
+        <code>                    string
+    <strong>appPath</strong>(bool|string $app = false, string $path = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>应用路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool|string</td>
+                <td>$app</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_themePath">
+        <div class="location">at         line 292</div>
+        <code>                    string
+    <strong>themePath</strong>(bool|string $app = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得应用主题目录.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool|string</td>
+                <td>$app</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCommonPath">
+        <div class="location">at         line 302</div>
+        <code>                    $this
+    <strong>setCommonPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置公共路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commonPath">
+        <div class="location">at         line 314</div>
+        <code>                    string
+    <strong>commonPath</strong>(string $path = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>公共路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRuntimePath">
+        <div class="location">at         line 325</div>
+        <code>                    $this
+    <strong>setRuntimePath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置运行时路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runtimePath">
+        <div class="location">at         line 337</div>
+        <code>                    string
+    <strong>runtimePath</strong>(string $path = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>运行路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStoragePath">
+        <div class="location">at         line 348</div>
+        <code>                    $this
+    <strong>setStoragePath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置存储路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_storagePath">
+        <div class="location">at         line 360</div>
+        <code>                    string
+    <strong>storagePath</strong>(string $path = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>附件路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPublicPath">
+        <div class="location">at         line 371</div>
+        <code>                    
+    <strong>setPublicPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置资源路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_publicPath">
+        <div class="location">at         line 383</div>
+        <code>                    string
+    <strong>publicPath</strong>(string $path = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>资源路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setThemesPath">
+        <div class="location">at         line 394</div>
+        <code>                    
+    <strong>setThemesPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置主题路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_themesPath">
+        <div class="location">at         line 406</div>
+        <code>                    string
+    <strong>themesPath</strong>(string $path = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>主题路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptionPath">
+        <div class="location">at         line 417</div>
+        <code>                    $this
+    <strong>setOptionPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置配置路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_optionPath">
+        <div class="location">at         line 429</div>
+        <code>                    string
+    <strong>optionPath</strong>(string $path = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>配置路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setI18nPath">
+        <div class="location">at         line 440</div>
+        <code>                    $this
+    <strong>setI18nPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置语言包路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_i18nPath">
+        <div class="location">at         line 452</div>
+        <code>                    string
+    <strong>i18nPath</strong>(string $path = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>语言包路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnvPath">
+        <div class="location">at         line 463</div>
+        <code>                    $this
+    <strong>setEnvPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置环境变量路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_envPath">
+        <div class="location">at         line 473</div>
+        <code>                    string
+    <strong>envPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>环境变量路径.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnvFile">
+        <div class="location">at         line 483</div>
+        <code>                    $this
+    <strong>setEnvFile</strong>(string $file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置环境变量文件.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_envFile">
+        <div class="location">at         line 493</div>
+        <code>                    string
+    <strong>envFile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得环境变量文件.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fullEnvPath">
+        <div class="location">at         line 503</div>
+        <code>                    string
+    <strong>fullEnvPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得环境变量完整路径.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_i18nCachedPath">
+        <div class="location">at         line 515</div>
+        <code>                    string
+    <strong>i18nCachedPath</strong>(string $i18n)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回语言包缓存路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$i18n</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCachedI18n">
+        <div class="location">at         line 527</div>
+        <code>                    bool
+    <strong>isCachedI18n</strong>(string $i18n)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否存在语言包缓存.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$i18n</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_optionCachedPath">
+        <div class="location">at         line 537</div>
+        <code>                    string
+    <strong>optionCachedPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回配置缓存路径.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCachedOption">
+        <div class="location">at         line 547</div>
+        <code>                    bool
+    <strong>isCachedOption</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否存在配置缓存.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_routerCachedPath">
+        <div class="location">at         line 557</div>
+        <code>                    string
+    <strong>routerCachedPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回路由缓存路径.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCachedRouter">
+        <div class="location">at         line 567</div>
+        <code>                    bool
+    <strong>isCachedRouter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否存在路由缓存.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_composer">
+        <div class="location">at         line 578</div>
+        <code>                    <abbr title="Composer\Autoload\ClassLoader">ClassLoader</abbr>
+    <strong>composer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得 composer.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Composer\Autoload\ClassLoader">ClassLoader</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPathByComposer">
+        <div class="location">at         line 591</div>
+        <code>                    null|string
+    <strong>getPathByComposer</strong>(string $namespaces)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取命名空间路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespaces</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_debug">
+        <div class="location">at         line 611</div>
+        <code>                    bool
+    <strong>debug</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否开启 debug.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_development">
+        <div class="location">at         line 621</div>
+        <code>                    bool
+    <strong>development</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为开发环境.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_environment">
+        <div class="location">at         line 631</div>
+        <code>                    string
+    <strong>environment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>运行环境.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeProvider">
+        <div class="location">at         line 643</div>
+        <code>                    <a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a>
+    <strong>makeProvider</strong>(string $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建服务提供者.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callProviderBootstrap">
+        <div class="location">at         line 653</div>
+        <code>                    
+    <strong>callProviderBootstrap</strong>(<a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a> $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>执行 bootstrap.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a></td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bootstrap">
+        <div class="location">at         line 670</div>
+        <code>                    
+    <strong>bootstrap</strong>(array $bootstraps)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>初始化项目.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$bootstraps</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isBootstrap">
+        <div class="location">at         line 686</div>
+        <code>                    bool
+    <strong>isBootstrap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否已经初始化引导</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerProviders">
+        <div class="location">at         line 696</div>
+        <code>                    $this
+    <strong>registerProviders</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>框架基础提供者 register.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bootstrapProviders">
+        <div class="location">at         line 726</div>
+        <code>                    $this
+    <strong>bootstrapProviders</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>执行框架基础提供者引导</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register">
+        <div class="location">at         line 748</div>
+        <code>                    <a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a>
+    <strong>register</strong>(<a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a>|string $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册服务提供者.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a>|string</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Di/Provider.html"><abbr title="Leevel\Di\Provider">Provider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerBaseServices">
+        <div class="location">at         line 768</div>
+        <code>            protected        
+    <strong>registerBaseServices</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册基础服务</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerBaseProvider">
+        <div class="location">at         line 799</div>
+        <code>            protected        
+    <strong>registerBaseProvider</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册基础服务提供者.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerDeferredProvider">
+        <div class="location">at         line 813</div>
+        <code>            protected        
+    <strong>registerDeferredProvider</strong>(string $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册延迟载入服务提供者.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeApp">
+        <div class="location">at         line 833</div>
+        <code>            protected        string
+    <strong>normalizeApp</strong>(bool|string $app)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>格式化应用名字.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool|string</td>
+                <td>$app</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizePath">
+        <div class="location">at         line 845</div>
+        <code>            protected        string
+    <strong>normalizePath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>格式化路径.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

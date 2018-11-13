@@ -1,0 +1,2801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Leevel\Filesystem\Manager | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:Leevel_Filesystem_Manager" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Filesystem.html">Filesystem</a></li><li class="backslash">\</li><li>Manager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Manager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Manager</strong>        extends <a href="../../Leevel/Manager/Manager.html"><abbr title="Leevel\Manager\Manager">Manager</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>filesystem 入口.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_container">
+                                        protected                                        <a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a>
+                </td>
+                <td>$container</td>
+                <td class="last">IOC Container.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#property_container"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_connects">
+                                        protected                                        object[]
+                </td>
+                <td>$connects</td>
+                <td class="last">连接对象</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#property_connects"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a> $container)
+        
+                                            <p>构造函数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method___construct"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $method, array $args)
+        
+                                            <p>call.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method___call"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_container">container</a>()
+        
+                                            <p>返回 IOC 容器.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_container"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connect">connect</a>(null|array|string $options = null)
+        
+                                            <p>连接 connect 并返回连接对象</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_connect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reconnect">reconnect</a>(array|string $options = [])
+        
+                                            <p>重新连接.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_reconnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disconnect">disconnect</a>(array|string $options = [])
+        
+                                            <p>删除连接.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_disconnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnects">getConnects</a>()
+        
+                                            <p>取回所有连接.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_getConnects"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultDriver">getDefaultDriver</a>()
+        
+                                            <p>返回默认驱动.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_getDefaultDriver"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultDriver">setDefaultDriver</a>(string $name)
+        
+                                            <p>设置默认驱动.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_setDefaultDriver"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContainerOption">getContainerOption</a>(string|null $name = null)
+        
+                                            <p>获取容器配置值.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_getContainerOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContainerOption">setContainerOption</a>(string $name, mixed $value)
+        
+                                            <p>设置容器配置值.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_setContainerOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeOptionNamespace">normalizeOptionNamespace</a>()
+        
+                                            <p>取得配置命名空间.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createConnect">createConnect</a>(object $connect)
+        
+                                            <p>创建连接对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeOptionName">normalizeOptionName</a>(string $name = null)
+        
+                                            <p>取得连接名字.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_normalizeOptionName"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeConnect">makeConnect</a>(string $connect, array $options = [])
+        
+                                            <p>创建连接.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_makeConnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createConnectCommon">createConnectCommon</a>(string $connect, array $options = [])
+        
+                                            <p>创建连接对象公共入口.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_createConnectCommon"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseOptionAndUnique">parseOptionAndUnique</a>(array|string $options = [])
+        
+                                            <p>分析连接参数以及其唯一值</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_parseOptionAndUnique"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseOptionParameter">parseOptionParameter</a>(array|string $options = [])
+        
+                                            <p>分析连接参数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_parseOptionParameter"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeUnique">normalizeUnique</a>(array $options)
+        
+                                            <p>取得唯一值</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_normalizeUnique"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeConnectOption">normalizeConnectOption</a>(string $connect, array $extendOption = [])
+        
+                                            <p>整理连接配置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_normalizeConnectOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommonOption">getCommonOption</a>()
+        
+                                            <p>读取连接全局配置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_getCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterCommonOption">filterCommonOption</a>(array $options)
+        
+                                            <p>过滤全局配置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_filterCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_defaultCommonOption">defaultCommonOption</a>()
+        
+                                            <p>过滤全局配置项.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_defaultCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnectOption">getConnectOption</a>(string $connect)
+        
+                                            <p>分析连接配置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_getConnectOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterNullOfOption">filterNullOfOption</a>(array $options)
+        
+                                            <p>清除配置 null.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_filterNullOfOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Filesystem/Local.html"><abbr title="Leevel\Filesystem\Local">Local</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeConnectLocal">makeConnectLocal</a>(array $options = [])
+        
+                                            <p>创建 local 连接.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Filesystem/Ftp.html"><abbr title="Leevel\Filesystem\Ftp">Ftp</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeConnectFtp">makeConnectFtp</a>(array $options = [])
+        
+                                            <p>创建 ftp 连接.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Filesystem/Sftp.html"><abbr title="Leevel\Filesystem\Sftp">Sftp</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeConnectSftp">makeConnectSftp</a>(array $options = [])
+        
+                                            <p>创建 sftp 连接.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Filesystem/Zip.html"><abbr title="Leevel\Filesystem\Zip">Zip</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeConnectZip">makeConnectZip</a>(array $options = [])
+        
+                                            <p>创建 zip 连接.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_has">has</a>(string  $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_read">read</a>(string  $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false|resource
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_readStream">readStream</a>(string  $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listContents">listContents</a>(string  $directory = &#039;&#039;, bool  $recursive = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMetadata">getMetadata</a>(string  $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSize">getSize</a>(string  $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMimetype">getMimetype</a>(string  $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTimestamp">getTimestamp</a>(string  $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVisibility">getVisibility</a>(string  $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_write">write</a>(string  $path, string  $contents, array  $config = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writeStream">writeStream</a>(string  $path, resource  $resource, array  $config = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(string  $path, string  $contents, array  $config = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateStream">updateStream</a>(string  $path, resource  $resource, array  $config = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rename">rename</a>(string  $path, string  $newpath)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_copy">copy</a>(string  $path, string  $newpath)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(string  $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteDir">deleteDir</a>(string  $dirname)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createDir">createDir</a>(string  $dirname, array  $config = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVisibility">setVisibility</a>(sring  $path, string  $visibility)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_put">put</a>(string  $path, string  $contents, array  $config = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_putStream">putStream</a>(string  $path, resource  $resource, array  $config = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_readAndDelete">readAndDelete</a>(string  $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="League\Flysystem\Handler">Handler</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string  $path, <abbr title="League\Flysystem\Handler ">Handler </abbr> $handler = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="League\Flysystem\FilesystemInterface">FilesystemInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPlugin">addPlugin</a>(<abbr title="League\Flysystem\PluginInterface ">PluginInterface </abbr> $plugin)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method___construct"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 56</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a> $container)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method___call"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 69</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>call.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_container">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_container"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 79</div>
+        <code>                    <a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a>
+    <strong>container</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回 IOC 容器.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connect">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_connect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 91</div>
+        <code>                    object
+    <strong>connect</strong>(null|array|string $options = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>连接 connect 并返回连接对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|array|string</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reconnect">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_reconnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 113</div>
+        <code>                    object
+    <strong>reconnect</strong>(array|string $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>重新连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disconnect">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_disconnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 125</div>
+        <code>                    
+    <strong>disconnect</strong>(array|string $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnects">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_getConnects"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 139</div>
+        <code>                    object[]
+    <strong>getConnects</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回所有连接.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultDriver">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_getDefaultDriver"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 149</div>
+        <code>                    string
+    <strong>getDefaultDriver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回默认驱动.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultDriver">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_setDefaultDriver"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 159</div>
+        <code>                    void
+    <strong>setDefaultDriver</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置默认驱动.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContainerOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_getContainerOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 171</div>
+        <code>                    mixed
+    <strong>getContainerOption</strong>(string|null $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取容器配置值.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContainerOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_setContainerOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 184</div>
+        <code>                    void
+    <strong>setContainerOption</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置容器配置值.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeOptionNamespace">
+        <div class="location">at         line 66</div>
+        <code>            protected        string
+    <strong>normalizeOptionNamespace</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得配置命名空间.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createConnect">
+        <div class="location">at         line 78</div>
+        <code>            protected        object
+    <strong>createConnect</strong>(object $connect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建连接对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeOptionName">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_normalizeOptionName"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 214</div>
+        <code>            protected        string
+    <strong>normalizeOptionName</strong>(string $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得连接名字.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeConnect">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_makeConnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 227</div>
+        <code>            protected        object
+    <strong>makeConnect</strong>(string $connect, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createConnectCommon">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_createConnectCommon"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 250</div>
+        <code>            protected        object
+    <strong>createConnectCommon</strong>(string $connect, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建连接对象公共入口.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseOptionAndUnique">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_parseOptionAndUnique"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 262</div>
+        <code>            protected        array
+    <strong>parseOptionAndUnique</strong>(array|string $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析连接参数以及其唯一值</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseOptionParameter">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_parseOptionParameter"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 277</div>
+        <code>            protected        array
+    <strong>parseOptionParameter</strong>(array|string $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析连接参数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeUnique">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_normalizeUnique"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 301</div>
+        <code>            protected        string
+    <strong>normalizeUnique</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得唯一值</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeConnectOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_normalizeConnectOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 314</div>
+        <code>            protected        array
+    <strong>normalizeConnectOption</strong>(string $connect, array $extendOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>整理连接配置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$extendOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommonOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_getCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 328</div>
+        <code>            protected        array
+    <strong>getCommonOption</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>读取连接全局配置.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterCommonOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_filterCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 342</div>
+        <code>            protected        array
+    <strong>filterCommonOption</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>过滤全局配置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defaultCommonOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_defaultCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 358</div>
+        <code>            protected        array
+    <strong>defaultCommonOption</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>过滤全局配置项.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnectOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_getConnectOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 373</div>
+        <code>            protected        array
+    <strong>getConnectOption</strong>(string $connect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析连接配置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterNullOfOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_filterNullOfOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 385</div>
+        <code>            protected        array
+    <strong>filterNullOfOption</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>清除配置 null.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeConnectLocal">
+        <div class="location">at         line 90</div>
+        <code>            protected        <a href="../../Leevel/Filesystem/Local.html"><abbr title="Leevel\Filesystem\Local">Local</abbr></a>
+    <strong>makeConnectLocal</strong>(array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建 local 连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Filesystem/Local.html"><abbr title="Leevel\Filesystem\Local">Local</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeConnectFtp">
+        <div class="location">at         line 104</div>
+        <code>            protected        <a href="../../Leevel/Filesystem/Ftp.html"><abbr title="Leevel\Filesystem\Ftp">Ftp</abbr></a>
+    <strong>makeConnectFtp</strong>(array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建 ftp 连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Filesystem/Ftp.html"><abbr title="Leevel\Filesystem\Ftp">Ftp</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeConnectSftp">
+        <div class="location">at         line 118</div>
+        <code>            protected        <a href="../../Leevel/Filesystem/Sftp.html"><abbr title="Leevel\Filesystem\Sftp">Sftp</abbr></a>
+    <strong>makeConnectSftp</strong>(array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建 sftp 连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Filesystem/Sftp.html"><abbr title="Leevel\Filesystem\Sftp">Sftp</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeConnectZip">
+        <div class="location">at         line 132</div>
+        <code>            protected        <a href="../../Leevel/Filesystem/Zip.html"><abbr title="Leevel\Filesystem\Zip">Zip</abbr></a>
+    <strong>makeConnectZip</strong>(array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建 zip 连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Filesystem/Zip.html"><abbr title="Leevel\Filesystem\Zip">Zip</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_has">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>has</strong>(string  $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_read">
+        <div class="location">at         line 59</div>
+        <code>                    false|string
+    <strong>read</strong>(string  $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readStream">
+        <div class="location">at         line 59</div>
+        <code>                    false|resource
+    <strong>readStream</strong>(string  $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|resource</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listContents">
+        <div class="location">at         line 59</div>
+        <code>                    array
+    <strong>listContents</strong>(string  $directory = &#039;&#039;, bool  $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$directory</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool </td>
+                <td>$recursive</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMetadata">
+        <div class="location">at         line 59</div>
+        <code>                    array|false
+    <strong>getMetadata</strong>(string  $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSize">
+        <div class="location">at         line 59</div>
+        <code>                    false|int
+    <strong>getSize</strong>(string  $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMimetype">
+        <div class="location">at         line 59</div>
+        <code>                    false|string
+    <strong>getMimetype</strong>(string  $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTimestamp">
+        <div class="location">at         line 59</div>
+        <code>                    false|int
+    <strong>getTimestamp</strong>(string  $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVisibility">
+        <div class="location">at         line 59</div>
+        <code>                    false|string
+    <strong>getVisibility</strong>(string  $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_write">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>write</strong>(string  $path, string  $contents, array  $config = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string </td>
+                <td>$contents</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writeStream">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>writeStream</strong>(string  $path, resource  $resource, array  $config = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>resource </td>
+                <td>$resource</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>update</strong>(string  $path, string  $contents, array  $config = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string </td>
+                <td>$contents</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateStream">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>updateStream</strong>(string  $path, resource  $resource, array  $config = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>resource </td>
+                <td>$resource</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rename">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>rename</strong>(string  $path, string  $newpath)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string </td>
+                <td>$newpath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_copy">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>copy</strong>(string  $path, string  $newpath)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string </td>
+                <td>$newpath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>delete</strong>(string  $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteDir">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>deleteDir</strong>(string  $dirname)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createDir">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>createDir</strong>(string  $dirname, array  $config = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$dirname</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVisibility">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>setVisibility</strong>(sring  $path, string  $visibility)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>sring </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string </td>
+                <td>$visibility</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_put">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>put</strong>(string  $path, string  $contents, array  $config = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string </td>
+                <td>$contents</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_putStream">
+        <div class="location">at         line 59</div>
+        <code>                    bool
+    <strong>putStream</strong>(string  $path, resource  $resource, array  $config = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>resource </td>
+                <td>$resource</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array </td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readAndDelete">
+        <div class="location">at         line 59</div>
+        <code>                    string
+    <strong>readAndDelete</strong>(string  $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at         line 59</div>
+        <code>                    <abbr title="League\Flysystem\Handler">Handler</abbr>
+    <strong>get</strong>(string  $path, <abbr title="League\Flysystem\Handler ">Handler </abbr> $handler = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="League\Flysystem\Handler ">Handler </abbr></td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="League\Flysystem\Handler">Handler</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPlugin">
+        <div class="location">at         line 59</div>
+        <code>                    <abbr title="League\Flysystem\FilesystemInterface">FilesystemInterface</abbr>
+    <strong>addPlugin</strong>(<abbr title="League\Flysystem\PluginInterface ">PluginInterface </abbr> $plugin)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="League\Flysystem\PluginInterface ">PluginInterface </abbr></td>
+                <td>$plugin</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="League\Flysystem\FilesystemInterface">FilesystemInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

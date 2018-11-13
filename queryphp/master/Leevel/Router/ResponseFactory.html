@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Leevel\Router\ResponseFactory | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:Leevel_Router_ResponseFactory" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Router.html">Router</a></li><li class="backslash">\</li><li>ResponseFactory</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ResponseFactory
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ResponseFactory</strong>        implements
+        <a href="../../Leevel/Router/IResponseFactory.html"><abbr title="Leevel\Router\IResponseFactory">IResponseFactory</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>响应工厂</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_view">
+                                        protected                                        <a href="../../Leevel/Mvc/IView.html"><abbr title="Leevel\Mvc\IView">IView</abbr></a>
+                </td>
+                <td>$view</td>
+                <td class="last">视图.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_redirector">
+                                        protected                                        <abbr title="Leevel\Router\Redirector">Redirector</abbr>
+                </td>
+                <td>$redirector</td>
+                <td class="last">跳转实例.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_viewSuccessTemplate">
+                                        protected                                        string
+                </td>
+                <td>$viewSuccessTemplate</td>
+                <td class="last">视图正确模板</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_viewFailTemplate">
+                                        protected                                        string
+                </td>
+                <td>$viewFailTemplate</td>
+                <td class="last">视图错误模板</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Leevel/Mvc/IView.html"><abbr title="Leevel\Mvc\IView">IView</abbr></a> $view, <a href="../../Leevel/Router/Redirect.html"><abbr title="Leevel\Router\Redirect">Redirect</abbr></a> $redirector)
+        
+                                            <p>构造函数.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_make">make</a>(string $content = &#039;&#039;, int $status = 200, array $headers = [])
+        
+                                            <p>返回一个响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_view">view</a>(string $file, array $vars = [], string|null $ext = null, int $status = 200, array $headers = [])
+        
+                                            <p>返回视图响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_viewSuccess">viewSuccess</a>(string $message, string $url = &#039;&#039;, int $time = 1, int $status = 200, array $headers = [])
+        
+                                            <p>返回视图成功消息.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_viewFail">viewFail</a>(string $message, string $url = &#039;&#039;, int $time = 3, int $status = 404, array $headers = [])
+        
+                                            <p>返回视图失败消息.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/JsonResponse.html"><abbr title="Leevel\Http\JsonResponse">JsonResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_json">json</a>(string $data = null, int $status = 200, array $headers = [], bool $json = false)
+        
+                                            <p>返回 JSON 响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/JsonResponse.html"><abbr title="Leevel\Http\JsonResponse">JsonResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_jsonp">jsonp</a>(string $callback, string $data = null, int $status = 200, array $headers = [], bool $json = false)
+        
+                                            <p>返回 JSONP 响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/FileResponse.html"><abbr title="Leevel\Http\FileResponse">FileResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_download">download</a>(<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string $file, string $name = null, int $status = 200, array $headers = [], bool $autoEtag = false, bool $autoLastModified = true)
+        
+                                            <p>返回下载响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/FileResponse.html"><abbr title="Leevel\Http\FileResponse">FileResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_file">file</a>(<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string $file, int $status = 200, array $headers = [], bool $autoEtag = false, bool $autoLastModified = true)
+        
+                                            <p>返回文件响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/RedirectResponse.html"><abbr title="Leevel\Http\RedirectResponse">RedirectResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirect">redirect</a>(string $url, array $params = [], string $subdomain = &#039;www&#039;, mixed $suffix = false, int $status = 302, array $headers = [])
+        
+                                            <p>返回一个 URL 生成跳转响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/RedirectResponse.html"><abbr title="Leevel\Http\RedirectResponse">RedirectResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirectRaw">redirectRaw</a>(string $url, int $status = 302, array $headers = [])
+        
+                                            <p>返回一个跳转响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiOk">apiOk</a>(mixed $content = &#039;&#039;, string $text = null)
+        
+                                            <p>请求成功
+一般用于GET与POST请求： 200.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiCreated">apiCreated</a>(string|null $location = null, mixed $content = &#039;&#039;)
+        
+                                            <p>已创建
+成功请求并创建了新的资源: 201.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiAccepted">apiAccepted</a>(string|null $location = null, mixed $content = &#039;&#039;)
+        
+                                            <p>已接受
+已经接受请求，但未处理完成: 202.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiNoContent">apiNoContent</a>()
+        
+                                            <p>无内容
+服务器成功处理，但未返回内容: 204.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiError">apiError</a>(string $message, int $statusCode, string|null $text = null)
+        
+                                            <p>错误请求</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiBadRequest">apiBadRequest</a>(string|null $message = null, string|null $text = null)
+        
+                                            <p>错误请求
+服务器不理解请求的语法: 400.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiUnauthorized">apiUnauthorized</a>(string|null $message = null, string|null $text = null)
+        
+                                            <p>未授权
+对于需要登录的网页，服务器可能返回此响应: 401.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiForbidden">apiForbidden</a>(string|null $message = null, string|null $text = null)
+        
+                                            <p>禁止
+服务器拒绝请求: 403.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiNotFound">apiNotFound</a>(string|null $message = null, string|null $text = null)
+        
+                                            <p>未找到
+用户发出的请求针对的是不存在的记录: 404.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiMethodNotAllowed">apiMethodNotAllowed</a>(string|null $message = null, string|null $text = null)
+        
+                                            <p>方法禁用
+禁用请求中指定的方法: 405.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiUnprocessableEntity">apiUnprocessableEntity</a>(array|null $errors = null, string|null $message = null, string|null $text = null)
+        
+                                            <p>无法处理的实体
+请求格式正确，但是由于含有语义错误，无法响应: 422.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiTooManyRequests">apiTooManyRequests</a>(string|null $message = null, string|null $text = null)
+        
+                                            <p>太多请求
+用户在给定的时间内发送了太多的请求: 429.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_apiInternalServerError">apiInternalServerError</a>(string|null $message = null, string|null $text = null)
+        
+                                            <p>服务器内部错误
+服务器遇到错误，无法完成请求: 500.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setViewSuccessTemplate">setViewSuccessTemplate</a>(string $template)
+        
+                                            <p>设置视图正确模板</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setViewFailTemplate">setViewFailTemplate</a>(string $template)
+        
+                                            <p>设置视图错误模板</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createApiResponse">createApiResponse</a>()
+        
+                                            <p>创建基础 API 响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 76</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Leevel/Mvc/IView.html"><abbr title="Leevel\Mvc\IView">IView</abbr></a> $view, <a href="../../Leevel/Router/Redirect.html"><abbr title="Leevel\Router\Redirect">Redirect</abbr></a> $redirector)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Leevel/Mvc/IView.html"><abbr title="Leevel\Mvc\IView">IView</abbr></a></td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Leevel/Router/Redirect.html"><abbr title="Leevel\Router\Redirect">Redirect</abbr></a></td>
+                <td>$redirector</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_make">
+        <div class="location">at         line 91</div>
+        <code>                    <a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a>
+    <strong>make</strong>(string $content = &#039;&#039;, int $status = 200, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回一个响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_view">
+        <div class="location">at         line 107</div>
+        <code>                    <a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a>
+    <strong>view</strong>(string $file, array $vars = [], string|null $ext = null, int $status = 200, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回视图响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$vars</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$ext</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_viewSuccess">
+        <div class="location">at         line 123</div>
+        <code>                    <a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a>
+    <strong>viewSuccess</strong>(string $message, string $url = &#039;&#039;, int $time = 1, int $status = 200, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回视图成功消息.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_viewFail">
+        <div class="location">at         line 145</div>
+        <code>                    <a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a>
+    <strong>viewFail</strong>(string $message, string $url = &#039;&#039;, int $time = 3, int $status = 404, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回视图失败消息.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_json">
+        <div class="location">at         line 166</div>
+        <code>                    <a href="../../Leevel/Http/JsonResponse.html"><abbr title="Leevel\Http\JsonResponse">JsonResponse</abbr></a>
+    <strong>json</strong>(string $data = null, int $status = 200, array $headers = [], bool $json = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回 JSON 响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$json</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/JsonResponse.html"><abbr title="Leevel\Http\JsonResponse">JsonResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsonp">
+        <div class="location">at         line 182</div>
+        <code>                    <a href="../../Leevel/Http/JsonResponse.html"><abbr title="Leevel\Http\JsonResponse">JsonResponse</abbr></a>
+    <strong>jsonp</strong>(string $callback, string $data = null, int $status = 200, array $headers = [], bool $json = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回 JSONP 响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$json</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/JsonResponse.html"><abbr title="Leevel\Http\JsonResponse">JsonResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_download">
+        <div class="location">at         line 200</div>
+        <code>                    <a href="../../Leevel/Http/FileResponse.html"><abbr title="Leevel\Http\FileResponse">FileResponse</abbr></a>
+    <strong>download</strong>(<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string $file, string $name = null, int $status = 200, array $headers = [], bool $autoEtag = false, bool $autoLastModified = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回下载响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoEtag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoLastModified</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/FileResponse.html"><abbr title="Leevel\Http\FileResponse">FileResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_file">
+        <div class="location">at         line 222</div>
+        <code>                    <a href="../../Leevel/Http/FileResponse.html"><abbr title="Leevel\Http\FileResponse">FileResponse</abbr></a>
+    <strong>file</strong>(<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string $file, int $status = 200, array $headers = [], bool $autoEtag = false, bool $autoLastModified = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回文件响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoEtag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoLastModified</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/FileResponse.html"><abbr title="Leevel\Http\FileResponse">FileResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirect">
+        <div class="location">at         line 239</div>
+        <code>                    <a href="../../Leevel/Http/RedirectResponse.html"><abbr title="Leevel\Http\RedirectResponse">RedirectResponse</abbr></a>
+    <strong>redirect</strong>(string $url, array $params = [], string $subdomain = &#039;www&#039;, mixed $suffix = false, int $status = 302, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回一个 URL 生成跳转响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$subdomain</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$suffix</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/RedirectResponse.html"><abbr title="Leevel\Http\RedirectResponse">RedirectResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirectRaw">
+        <div class="location">at         line 253</div>
+        <code>                    <a href="../../Leevel/Http/RedirectResponse.html"><abbr title="Leevel\Http\RedirectResponse">RedirectResponse</abbr></a>
+    <strong>redirectRaw</strong>(string $url, int $status = 302, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回一个跳转响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/RedirectResponse.html"><abbr title="Leevel\Http\RedirectResponse">RedirectResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiOk">
+        <div class="location">at         line 267</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiOk</strong>(mixed $content = &#039;&#039;, string $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>请求成功
+一般用于GET与POST请求： 200.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiCreated">
+        <div class="location">at         line 281</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiCreated</strong>(string|null $location = null, mixed $content = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>已创建
+成功请求并创建了新的资源: 201.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiAccepted">
+        <div class="location">at         line 295</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiAccepted</strong>(string|null $location = null, mixed $content = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>已接受
+已经接受请求，但未处理完成: 202.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiNoContent">
+        <div class="location">at         line 306</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiNoContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>无内容
+服务器成功处理，但未返回内容: 204.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiError">
+        <div class="location">at         line 320</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiError</strong>(string $message, int $statusCode, string|null $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>错误请求</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$statusCode</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiBadRequest">
+        <div class="location">at         line 334</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiBadRequest</strong>(string|null $message = null, string|null $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>错误请求
+服务器不理解请求的语法: 400.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiUnauthorized">
+        <div class="location">at         line 348</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiUnauthorized</strong>(string|null $message = null, string|null $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>未授权
+对于需要登录的网页，服务器可能返回此响应: 401.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiForbidden">
+        <div class="location">at         line 362</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiForbidden</strong>(string|null $message = null, string|null $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>禁止
+服务器拒绝请求: 403.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiNotFound">
+        <div class="location">at         line 376</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiNotFound</strong>(string|null $message = null, string|null $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>未找到
+用户发出的请求针对的是不存在的记录: 404.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiMethodNotAllowed">
+        <div class="location">at         line 390</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiMethodNotAllowed</strong>(string|null $message = null, string|null $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>方法禁用
+禁用请求中指定的方法: 405.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiUnprocessableEntity">
+        <div class="location">at         line 405</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiUnprocessableEntity</strong>(array|null $errors = null, string|null $message = null, string|null $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>无法处理的实体
+请求格式正确，但是由于含有语义错误，无法响应: 422.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|null</td>
+                <td>$errors</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiTooManyRequests">
+        <div class="location">at         line 419</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiTooManyRequests</strong>(string|null $message = null, string|null $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>太多请求
+用户在给定的时间内发送了太多的请求: 429.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_apiInternalServerError">
+        <div class="location">at         line 433</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>apiInternalServerError</strong>(string|null $message = null, string|null $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>服务器内部错误
+服务器遇到错误，无法完成请求: 500.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setViewSuccessTemplate">
+        <div class="location">at         line 445</div>
+        <code>                    
+    <strong>setViewSuccessTemplate</strong>(string $template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置视图正确模板</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$template</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setViewFailTemplate">
+        <div class="location">at         line 459</div>
+        <code>                    <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>setViewFailTemplate</strong>(string $template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置视图错误模板</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$template</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createApiResponse">
+        <div class="location">at         line 471</div>
+        <code>            protected        <a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a>
+    <strong>createApiResponse</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建基础 API 响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/ApiResponse.html"><abbr title="Leevel\Http\ApiResponse">ApiResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

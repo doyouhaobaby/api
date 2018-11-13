@@ -1,0 +1,3488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Leevel\Http\FileResponse | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:Leevel_Http_FileResponse" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Http.html">Http</a></li><li class="backslash">\</li><li>FileResponse</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            FileResponse
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>FileResponse</strong>        extends <a href="../../Leevel/Http/Response.html"><abbr title="Leevel\Http\Response">Response</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>FILE 响应请求
+This class borrows heavily from the Symfony4 Framework and is part of the symfony package.</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Leevel/Flow/TControl.html"><abbr title="Leevel\Flow\TControl">TControl</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    流程控制复用.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Leevel/Support/TMacro.html"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    实现类的无限扩展功能.
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_inFlowControl">
+                                        protected                                        bool
+                </td>
+                <td>$inFlowControl</td>
+                <td class="last">逻辑代码是否处于条件表达式中.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Flow/TControl.html#property_inFlowControl"><abbr title="Leevel\Flow\TControl">TControl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isFlowControlTrue">
+                                        protected                                        bool
+                </td>
+                <td>$isFlowControlTrue</td>
+                <td class="last">条件表达式是否为真</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Flow/TControl.html#property_isFlowControlTrue"><abbr title="Leevel\Flow\TControl">TControl</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_macro">
+                    static                    protected                                        array
+                </td>
+                <td>$macro</td>
+                <td class="last">注册的动态扩展.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Support/TMacro.html#property_macro"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_headers">
+                                                                                <a href="../../Leevel/Http/ResponseHeaderBag.html"><abbr title="Leevel\Http\ResponseHeaderBag">ResponseHeaderBag</abbr></a>
+                </td>
+                <td>$headers</td>
+                <td class="last">响应头.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_headers"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_original">
+                                                                                mixed
+                </td>
+                <td>$original</td>
+                <td class="last">原生响应内容.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_original"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_statusTexts">
+                    static                                                            array
+                </td>
+                <td>$statusTexts</td>
+                <td class="last">状态码</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_statusTexts"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_content">
+                                        protected                                        string
+                </td>
+                <td>$content</td>
+                <td class="last">响应内容.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_content"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_protocolVersion">
+                                        protected                                        string
+                </td>
+                <td>$protocolVersion</td>
+                <td class="last">HTTP 协议版本.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_protocolVersion"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_statusCode">
+                                        protected                                        int
+                </td>
+                <td>$statusCode</td>
+                <td class="last">状态码</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_statusCode"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_statusText">
+                                        protected                                        string
+                </td>
+                <td>$statusText</td>
+                <td class="last">状态码内容.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_statusText"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_charset">
+                                        protected                                        string
+                </td>
+                <td>$charset</td>
+                <td class="last">字符编码</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_charset"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isJson">
+                                        protected                                        bool
+                </td>
+                <td>$isJson</td>
+                <td class="last">是否为 JSON.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_isJson"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cookieResolver">
+                    static                    protected                                        <a target="_blank" href="http://php.net/Closure">Closure</a>
+                </td>
+                <td>$cookieResolver</td>
+                <td class="last">COOKIE Resolver.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_cookieResolver"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_resolvedCookie">
+                    static                    protected                                        <a href="../../Leevel/Cookie/ICookie.html"><abbr title="Leevel\Cookie\ICookie">ICookie</abbr></a>
+                </td>
+                <td>$resolvedCookie</td>
+                <td class="last">COOKIE.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Http/Response.html#property_resolvedCookie"><abbr title="Leevel\Http\Response">Response</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_file">
+                                        protected                                        <a href="../../Leevel/Http/File.html"><abbr title="Leevel\Http\File">File</abbr></a>
+                </td>
+                <td>$file</td>
+                <td class="last">文件.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ifs">ifs</a>(mixed $value = false)
+        
+                                            <p>条件语句 ifs.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Flow/TControl.html#method_ifs"><abbr title="Leevel\Flow\TControl">TControl</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_elseIfs">elseIfs</a>(mixed $value = false)
+        
+                                            <p>条件语句 elseIfs.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Flow/TControl.html#method_elseIfs"><abbr title="Leevel\Flow\TControl">TControl</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_elses">elses</a>()
+        
+                                            <p>条件语句 elses.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Flow/TControl.html#method_elses"><abbr title="Leevel\Flow\TControl">TControl</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endIfs">endIfs</a>()
+        
+                                            <p>条件语句 endIfs.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Flow/TControl.html#method_endIfs"><abbr title="Leevel\Flow\TControl">TControl</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTControl">setTControl</a>(bool $inFlowControl, bool $isFlowControlTrue)
+        
+                                            <p>设置当前条件表达式状态</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Flow/TControl.html#method_setTControl"><abbr title="Leevel\Flow\TControl">TControl</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkTControl">checkTControl</a>()
+        
+                                            <p>验证一下条件表达式是否通过.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Flow/TControl.html#method_checkTControl"><abbr title="Leevel\Flow\TControl">TControl</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_placeholderTControl">placeholderTControl</a>(string $method)
+        
+                                            <p>占位符.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Flow/TControl.html#method_placeholderTControl"><abbr title="Leevel\Flow\TControl">TControl</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___callStatic">__callStatic</a>(string $method, array $args)
+        
+                                            <p>__callStatic 魔术方法.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Support/TMacro.html#method___callStatic"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $method, array $args)
+        
+                                            <p>__call 魔术方法.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Support/TMacro.html#method___call"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_macro">macro</a>(string $name, <a target="_blank" href="http://php.net/Closure">Closure</a> $macro)
+        
+                                            <p>注册一个扩展.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Support/TMacro.html#method_macro"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasMacro">hasMacro</a>(string $name)
+        
+                                            <p>判断一个扩展是否注册.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Support/TMacro.html#method_hasMacro"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_callStaticMacro">callStaticMacro</a>(string $method, array $args)
+        
+                                            <p>__callStatic 魔术方法隐射
+由于 zephir 对应的 C 扩展版本不支持对象内绑定 class
+即 Closure::bind($closures, null, get_called_class())
+为保持功能一致，所以取消 PHP 版本的静态闭包绑定功能.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Support/TMacro.html#method_callStaticMacro"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_callMacro">callMacro</a>(string $method, array $args)
+        
+                                            <p>__call 魔术方法隐射
+由于 zephir 对应的 C 扩展版本不支持对象内绑定 class
+即 Closure::bind($closures, null, get_called_class())
+为保持功能一致，所以绑定对象但是不绑定作用域，即可以使用 $this,只能访问 public 属性.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Support/TMacro.html#method_callMacro"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string $file, int $status = 200, array $headers = [], string $contentDisposition = null, bool $autoEtag = false, bool $autoLastModified = true)
+        
+                                            <p>构造函数.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Leevel/Http/IResponse.html"><abbr title="Leevel\Http\IResponse">IResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string $file = null, int $status = 200, array $headers = [], null|string $contentDisposition = null, bool $autoEtag = false, bool $autoLastModified = true)
+        
+                                            <p>创建一个文件响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCookieResolver">setCookieResolver</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $cookieResolver = null)
+        
+                                            <p>设置 COOKIE Resolver.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setCookieResolver"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Leevel/Cookie/ICookie.html"><abbr title="Leevel\Cookie\ICookie">ICookie</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveCookie">resolveCookie</a>()
+        
+                                            <p>返回 COOKIE.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_resolveCookie"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_send">send</a>()
+        
+                                            <p>发送 HTTP 响应.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_send"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendHeaders">sendHeaders</a>()
+        
+                                            <p>发送响应头.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_sendHeaders"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendContent">sendContent</a>()
+        
+                                            <p>发送响应内容.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContent">setContent</a>(mixed $content)
+        
+                                            <p>设置内容.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_appendContent">appendContent</a>(string $content = null)
+        
+                                            <p>附加内容.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_appendContent"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHeader">setHeader</a>(string $key, string $value, bool $replace = true)
+        
+                                            <p>设置响应头.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setHeader"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withHeaders">withHeaders</a>(array $headers)
+        
+                                            <p>批量设置响应头.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_withHeaders"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cookie">cookie</a>(string $name, string $value = &#039;&#039;, array $option = [])
+        
+                                            <p>设置 COOKIE 别名.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_cookie"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCookie">setCookie</a>(string $name, string $value = &#039;&#039;, array $option = [])
+        
+                                            <p>设置 COOKIE.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setCookie"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withCookies">withCookies</a>(array $cookies, array $option = [])
+        
+                                            <p>批量设置 COOKIE.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_withCookies"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCookies">getCookies</a>()
+        
+                                            <p>获取 COOKIE.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_getCookies"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getData">getData</a>(bool $assoc = true, int $depth = 512)
+        
+                                            <p>取回 JSON 数据.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_getData"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setData">setData</a>(mixed $data = [], int|null $encodingOptions = null)
+        
+                                            <p>设置 JSON 数据.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setData"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContent">getContent</a>()
+        
+                                            <p>获取内容.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_content">content</a>()
+        
+                                            <p>获取内容.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_content"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOriginal">getOriginal</a>()
+        
+                                            <p>获取原始内容.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_getOriginal"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProtocolVersion">setProtocolVersion</a>(string $protocolVersion)
+        
+                                            <p>设置 HTTP 协议版本 (1.0 or 1.1).</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setProtocolVersion"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProtocolVersion">getProtocolVersion</a>()
+        
+                                            <p>获取 HTTP 协议版本.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_getProtocolVersion"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStatusCode">setStatusCode</a>(int $code, mixed $text = null)
+        
+                                            <p>设置相应状态码</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setStatusCode"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_status">status</a>()
+        
+                                            <p>获取状态码</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_status"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStatusCode">getStatusCode</a>()
+        
+                                            <p>获取状态码</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_getStatusCode"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCharset">setCharset</a>(string $charset)
+        
+                                            <p>编码设置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setCharset"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_charset">charset</a>(string $charset)
+        
+                                            <p>编码设置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_charset"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCharset">getCharset</a>()
+        
+                                            <p>获取编码</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_getCharset"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExpires">setExpires</a>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $datetime = null)
+        
+                                            <p>设置过期时间.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setExpires"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLastModified">setLastModified</a>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $datetime = null)
+        
+                                            <p>设置最后修改时间.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setLastModified"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCache">setCache</a>(int $minutes)
+        
+                                            <p>设置缓存.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setCache"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNotModified">setNotModified</a>()
+        
+                                            <p>设置响应未修改.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setNotModified"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContentType">setContentType</a>(string $contentType, string $charset = null)
+        
+                                            <p>设置响应内容类型.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setContentType"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContentLength">setContentLength</a>(int $contentLength)
+        
+                                            <p>设置响应内容长度.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setContentLength"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEtag">setEtag</a>(string $etag)
+        
+                                            <p>设置自定义标识符.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_setEtag"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isJson">isJson</a>()
+        
+                                            <p>响应是否为 JSON.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isJson"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isInvalid">isInvalid</a>()
+        
+                                            <p>响应是否正确.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isInvalid"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isInformational">isInformational</a>()
+        
+                                            <p>是否为信息性响应.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isInformational"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSuccessful">isSuccessful</a>()
+        
+                                            <p>是否为正确响应.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isSuccessful"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isRedirection">isRedirection</a>()
+        
+                                            <p>是否为重定向响应.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isRedirection"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isClientError">isClientError</a>()
+        
+                                            <p>是否为客户端错误响应.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isClientError"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isServerError">isServerError</a>()
+        
+                                            <p>是否为服务端错误响应.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isServerError"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isOk">isOk</a>()
+        
+                                            <p>是否为正常响应.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isOk"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isForbidden">isForbidden</a>()
+        
+                                            <p>是否为受限响应.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isForbidden"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNotFound">isNotFound</a>()
+        
+                                            <p>是否为 404 NOT FOUND.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isNotFound"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isRedirect">isRedirect</a>(string $location = null)
+        
+                                            <p>是否为表单重定向响应.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isRedirect"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isEmpty">isEmpty</a>()
+        
+                                            <p>是否为空响应.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_isEmpty"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeDateTime">normalizeDateTime</a>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $datetime)
+        
+                                            <p>格式化响应时间.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_normalizeDateTime"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_contentToJson">contentToJson</a>(mixed $content)
+        
+                                            <p>内容转换为 JSON.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_contentToJson"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_contentShouldJson">contentShouldJson</a>(mixed $content)
+        
+                                            <p>可以转换为 JSON.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Http/Response.html#method_contentShouldJson"><abbr title="Leevel\Http\Response">Response</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFile">setFile</a>(<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string $file, string $contentDisposition = null, bool $autoEtag = false, bool $autoLastModified = true)
+        
+                                            <p>设置文件.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Http/File.html"><abbr title="Leevel\Http\File">File</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFile">getFile</a>()
+        
+                                            <p>取回文件.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAutoLastModified">setAutoLastModified</a>()
+        
+                                            <p>自动设置最后修改时间.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAutoEtag">setAutoEtag</a>()
+        
+                                            <p>自动设置标记.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContentDisposition">setContentDisposition</a>(string $disposition, string $filename = &#039;&#039;)
+        
+                                            <p>设置文件下载模式.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_ifs">
+        <div class="location">in <a href="../../Leevel/Flow/TControl.html#method_ifs"><abbr title="Leevel\Flow\TControl">TControl</abbr></a> at         line 55</div>
+        <code>                    $this
+    <strong>ifs</strong>(mixed $value = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>条件语句 ifs.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_elseIfs">
+        <div class="location">in <a href="../../Leevel/Flow/TControl.html#method_elseIfs"><abbr title="Leevel\Flow\TControl">TControl</abbr></a> at         line 67</div>
+        <code>                    $this
+    <strong>elseIfs</strong>(mixed $value = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>条件语句 elseIfs.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_elses">
+        <div class="location">in <a href="../../Leevel/Flow/TControl.html#method_elses"><abbr title="Leevel\Flow\TControl">TControl</abbr></a> at         line 77</div>
+        <code>                    $this
+    <strong>elses</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>条件语句 elses.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endIfs">
+        <div class="location">in <a href="../../Leevel/Flow/TControl.html#method_endIfs"><abbr title="Leevel\Flow\TControl">TControl</abbr></a> at         line 87</div>
+        <code>                    $this
+    <strong>endIfs</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>条件语句 endIfs.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTControl">
+        <div class="location">in <a href="../../Leevel/Flow/TControl.html#method_setTControl"><abbr title="Leevel\Flow\TControl">TControl</abbr></a> at         line 100</div>
+        <code>                    $this
+    <strong>setTControl</strong>(bool $inFlowControl, bool $isFlowControlTrue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置当前条件表达式状态</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$inFlowControl</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$isFlowControlTrue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkTControl">
+        <div class="location">in <a href="../../Leevel/Flow/TControl.html#method_checkTControl"><abbr title="Leevel\Flow\TControl">TControl</abbr></a> at         line 113</div>
+        <code>                    bool
+    <strong>checkTControl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>验证一下条件表达式是否通过.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_placeholderTControl">
+        <div class="location">in <a href="../../Leevel/Flow/TControl.html#method_placeholderTControl"><abbr title="Leevel\Flow\TControl">TControl</abbr></a> at         line 125</div>
+        <code>                    bool
+    <strong>placeholderTControl</strong>(string $method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>占位符.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">in <a href="../../Leevel/Support/TMacro.html#method___callStatic"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a> at         line 52</div>
+        <code>        static            mixed
+    <strong>__callStatic</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__callStatic 魔术方法.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../Leevel/Support/TMacro.html#method___call"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a> at         line 65</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__call 魔术方法.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_macro">
+        <div class="location">in <a href="../../Leevel/Support/TMacro.html#method_macro"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a> at         line 76</div>
+        <code>        static            
+    <strong>macro</strong>(string $name, <a target="_blank" href="http://php.net/Closure">Closure</a> $macro)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册一个扩展.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$macro</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasMacro">
+        <div class="location">in <a href="../../Leevel/Support/TMacro.html#method_hasMacro"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a> at         line 88</div>
+        <code>        static            bool
+    <strong>hasMacro</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>判断一个扩展是否注册.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callStaticMacro">
+        <div class="location">in <a href="../../Leevel/Support/TMacro.html#method_callStaticMacro"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a> at         line 104</div>
+        <code>        static            mixed
+    <strong>callStaticMacro</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__callStatic 魔术方法隐射
+由于 zephir 对应的 C 扩展版本不支持对象内绑定 class
+即 Closure::bind($closures, null, get_called_class())
+为保持功能一致，所以取消 PHP 版本的静态闭包绑定功能.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callMacro">
+        <div class="location">in <a href="../../Leevel/Support/TMacro.html#method_callMacro"><abbr title="Leevel\Support\TMacro">TMacro</abbr></a> at         line 126</div>
+        <code>                    mixed
+    <strong>callMacro</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__call 魔术方法隐射
+由于 zephir 对应的 C 扩展版本不支持对象内绑定 class
+即 Closure::bind($closures, null, get_called_class())
+为保持功能一致，所以绑定对象但是不绑定作用域，即可以使用 $this,只能访问 public 属性.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 60</div>
+        <code>                    
+    <strong>__construct</strong>(<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string $file, int $status = 200, array $headers = [], string $contentDisposition = null, bool $autoEtag = false, bool $autoLastModified = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$contentDisposition</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoEtag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoLastModified</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 79</div>
+        <code>        static            <a href="../../Leevel/Http/IResponse.html"><abbr title="Leevel\Http\IResponse">IResponse</abbr></a>
+    <strong>create</strong>(<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string $file = null, int $status = 200, array $headers = [], null|string $contentDisposition = null, bool $autoEtag = false, bool $autoLastModified = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建一个文件响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|string</td>
+                <td>$contentDisposition</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoEtag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoLastModified</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/IResponse.html"><abbr title="Leevel\Http\IResponse">IResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCookieResolver">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setCookieResolver"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 229</div>
+        <code>        static            
+    <strong>setCookieResolver</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $cookieResolver = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 COOKIE Resolver.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$cookieResolver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveCookie">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_resolveCookie"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 243</div>
+        <code>        static            <a href="../../Leevel/Cookie/ICookie.html"><abbr title="Leevel\Cookie\ICookie">ICookie</abbr></a>
+    <strong>resolveCookie</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回 COOKIE.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Cookie/ICookie.html"><abbr title="Leevel\Cookie\ICookie">ICookie</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_send"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 261</div>
+        <code>                    $this
+    <strong>send</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>发送 HTTP 响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendHeaders">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_sendHeaders"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 275</div>
+        <code>                    $this
+    <strong>sendHeaders</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>发送响应头.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendContent">
+        <div class="location">at         line 233</div>
+        <code>                    $this
+    <strong>sendContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>发送响应内容.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContent">
+        <div class="location">at         line 176</div>
+        <code>                    $this
+    <strong>setContent</strong>(mixed $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置内容.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_appendContent">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_appendContent"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 356</div>
+        <code>                    $this
+    <strong>appendContent</strong>(string $content = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>附加内容.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHeader">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setHeader"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 376</div>
+        <code>                    $this
+    <strong>setHeader</strong>(string $key, string $value, bool $replace = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置响应头.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$replace</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withHeaders">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_withHeaders"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 396</div>
+        <code>                    $this
+    <strong>withHeaders</strong>(array $headers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>批量设置响应头.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cookie">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_cookie"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 418</div>
+        <code>                    $this
+    <strong>cookie</strong>(string $name, string $value = &#039;&#039;, array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 COOKIE 别名.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCookie">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setCookie"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 432</div>
+        <code>                    $this
+    <strong>setCookie</strong>(string $name, string $value = &#039;&#039;, array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 COOKIE.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withCookies">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_withCookies"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 451</div>
+        <code>                    $this
+    <strong>withCookies</strong>(array $cookies, array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>批量设置 COOKIE.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$cookies</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCookies">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_getCookies"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 469</div>
+        <code>                    array
+    <strong>getCookies</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取 COOKIE.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getData">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_getData"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 482</div>
+        <code>                    mixed
+    <strong>getData</strong>(bool $assoc = true, int $depth = 512)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回 JSON 数据.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$assoc</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$depth</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setData">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setData"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 499</div>
+        <code>                    $this
+    <strong>setData</strong>(mixed $data = [], int|null $encodingOptions = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 JSON 数据.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$encodingOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContent">
+        <div class="location">at         line 192</div>
+        <code>                    string
+    <strong>getContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取内容.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_content">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_content"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 545</div>
+        <code>                    string
+    <strong>content</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取内容.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOriginal">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_getOriginal"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 555</div>
+        <code>                    string
+    <strong>getOriginal</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取原始内容.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProtocolVersion">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setProtocolVersion"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 567</div>
+        <code>                    $this
+    <strong>setProtocolVersion</strong>(string $protocolVersion)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 HTTP 协议版本 (1.0 or 1.1).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$protocolVersion</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProtocolVersion">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_getProtocolVersion"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 583</div>
+        <code>                    string
+    <strong>getProtocolVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取 HTTP 协议版本.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStatusCode">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setStatusCode"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 596</div>
+        <code>                    $this
+    <strong>setStatusCode</strong>(int $code, mixed $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置相应状态码</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_status">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_status"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 632</div>
+        <code>                    int
+    <strong>status</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取状态码</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStatusCode">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_getStatusCode"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 642</div>
+        <code>                    int
+    <strong>getStatusCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取状态码</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCharset">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setCharset"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 654</div>
+        <code>                    $this
+    <strong>setCharset</strong>(string $charset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>编码设置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$charset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_charset">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_charset"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 666</div>
+        <code>                    $this
+    <strong>charset</strong>(string $charset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>编码设置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$charset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCharset">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_getCharset"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 682</div>
+        <code>                    string
+    <strong>getCharset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取编码</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setExpires">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setExpires"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 694</div>
+        <code>                    $this
+    <strong>setExpires</strong>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $datetime = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置过期时间.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+                <td>$datetime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLastModified">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setLastModified"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 718</div>
+        <code>                    $this
+    <strong>setLastModified</strong>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $datetime = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置最后修改时间.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+                <td>$datetime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCache">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setCache"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 742</div>
+        <code>                    $this
+    <strong>setCache</strong>(int $minutes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置缓存.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$minutes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNotModified">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setNotModified"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 762</div>
+        <code>                    $this
+    <strong>setNotModified</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置响应未修改.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContentType">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setContentType"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 781</div>
+        <code>                    $this
+    <strong>setContentType</strong>(string $contentType, string $charset = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置响应内容类型.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$contentType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$charset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContentLength">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setContentLength"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 807</div>
+        <code>                    $this
+    <strong>setContentLength</strong>(int $contentLength)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置响应内容长度.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$contentLength</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEtag">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_setEtag"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 825</div>
+        <code>                    $this
+    <strong>setEtag</strong>(string $etag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置自定义标识符.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$etag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isJson">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isJson"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 841</div>
+        <code>                    bool
+    <strong>isJson</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>响应是否为 JSON.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isInvalid">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isInvalid"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 851</div>
+        <code>                    bool
+    <strong>isInvalid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>响应是否正确.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isInformational">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isInformational"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 861</div>
+        <code>                    bool
+    <strong>isInformational</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为信息性响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSuccessful">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isSuccessful"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 871</div>
+        <code>                    bool
+    <strong>isSuccessful</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为正确响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isRedirection">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isRedirection"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 881</div>
+        <code>                    bool
+    <strong>isRedirection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为重定向响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isClientError">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isClientError"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 891</div>
+        <code>                    bool
+    <strong>isClientError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为客户端错误响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isServerError">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isServerError"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 901</div>
+        <code>                    bool
+    <strong>isServerError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为服务端错误响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isOk">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isOk"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 911</div>
+        <code>                    bool
+    <strong>isOk</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为正常响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isForbidden">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isForbidden"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 921</div>
+        <code>                    bool
+    <strong>isForbidden</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为受限响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNotFound">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isNotFound"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 931</div>
+        <code>                    bool
+    <strong>isNotFound</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为 404 NOT FOUND.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isRedirect">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isRedirect"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 941</div>
+        <code>                    bool
+    <strong>isRedirect</strong>(string $location = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为表单重定向响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEmpty">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_isEmpty"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 959</div>
+        <code>                    bool
+    <strong>isEmpty</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为空响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeDateTime">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_normalizeDateTime"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 974</div>
+        <code>            protected        string
+    <strong>normalizeDateTime</strong>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $datetime)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>格式化响应时间.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+                <td>$datetime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_contentToJson">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_contentToJson"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 990</div>
+        <code>            protected        string
+    <strong>contentToJson</strong>(mixed $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>内容转换为 JSON.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_contentShouldJson">
+        <div class="location">in <a href="../../Leevel/Http/Response.html#method_contentShouldJson"><abbr title="Leevel\Http\Response">Response</abbr></a> at         line 1010</div>
+        <code>            protected        bool
+    <strong>contentShouldJson</strong>(mixed $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>可以转换为 JSON.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFile">
+        <div class="location">at         line 94</div>
+        <code>                    $this
+    <strong>setFile</strong>(<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string $file, string $contentDisposition = null, bool $autoEtag = false, bool $autoLastModified = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置文件.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>|<a target="_blank" href="http://php.net/SplFileObject">SplFileObject</a>|string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$contentDisposition</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoEtag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$autoLastModified</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFile">
+        <div class="location">at         line 138</div>
+        <code>                    <a href="../../Leevel/Http/File.html"><abbr title="Leevel\Http\File">File</abbr></a>
+    <strong>getFile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回文件.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/File.html"><abbr title="Leevel\Http\File">File</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAutoLastModified">
+        <div class="location">at         line 146</div>
+        <code>                    
+    <strong>setAutoLastModified</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>自动设置最后修改时间.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAutoEtag">
+        <div class="location">at         line 160</div>
+        <code>                    
+    <strong>setAutoEtag</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>自动设置标记.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContentDisposition">
+        <div class="location">at         line 205</div>
+        <code>                    $this
+    <strong>setContentDisposition</strong>(string $disposition, string $filename = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置文件下载模式.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$disposition</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Leevel\Auth\Manager | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:Leevel_Auth_Manager" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Auth.html">Auth</a></li><li class="backslash">\</li><li>Manager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Manager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Manager</strong>        extends <a href="../../Leevel/Manager/Manager.html"><abbr title="Leevel\Manager\Manager">Manager</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>manager 入口.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_container">
+                                        protected                                        <a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a>
+                </td>
+                <td>$container</td>
+                <td class="last">IOC Container.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#property_container"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_connects">
+                                        protected                                        object[]
+                </td>
+                <td>$connects</td>
+                <td class="last">连接对象</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#property_connects"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a> $container)
+        
+                                            <p>构造函数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method___construct"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $method, array $args)
+        
+                                            <p>call.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method___call"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_container">container</a>()
+        
+                                            <p>返回 IOC 容器.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_container"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connect">connect</a>(null|array|string $options = null)
+        
+                                            <p>连接 connect 并返回连接对象</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_connect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reconnect">reconnect</a>(array|string $options = [])
+        
+                                            <p>重新连接.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_reconnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disconnect">disconnect</a>(array|string $options = [])
+        
+                                            <p>删除连接.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_disconnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnects">getConnects</a>()
+        
+                                            <p>取回所有连接.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_getConnects"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultDriver">getDefaultDriver</a>()
+        
+                                            <p>返回默认驱动.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultDriver">setDefaultDriver</a>(string $name)
+        
+                                            <p>设置默认驱动.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContainerOption">getContainerOption</a>(string|null $name = null)
+        
+                                            <p>获取容器配置值.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_getContainerOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContainerOption">setContainerOption</a>(string $name, mixed $value)
+        
+                                            <p>设置容器配置值.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_setContainerOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeOptionNamespace">normalizeOptionNamespace</a>()
+        
+                                            <p>取得配置命名空间.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createConnect">createConnect</a>(object $connect)
+        
+                                            <p>创建连接对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeOptionName">normalizeOptionName</a>(string $name = null)
+        
+                                            <p>取得连接名字.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_normalizeOptionName"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeConnect">makeConnect</a>(string $connect, array $options = [])
+        
+                                            <p>创建连接.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_makeConnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createConnectCommon">createConnectCommon</a>(string $connect, array $options = [])
+        
+                                            <p>创建连接对象公共入口.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_createConnectCommon"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseOptionAndUnique">parseOptionAndUnique</a>(array|string $options = [])
+        
+                                            <p>分析连接参数以及其唯一值</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_parseOptionAndUnique"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseOptionParameter">parseOptionParameter</a>(array|string $options = [])
+        
+                                            <p>分析连接参数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_parseOptionParameter"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeUnique">normalizeUnique</a>(array $options)
+        
+                                            <p>取得唯一值</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_normalizeUnique"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeConnectOption">normalizeConnectOption</a>(string $connect, array $extendOption = [])
+        
+                                            <p>整理连接配置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_normalizeConnectOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommonOption">getCommonOption</a>()
+        
+                                            <p>读取连接全局配置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_getCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterCommonOption">filterCommonOption</a>(array $options)
+        
+                                            <p>过滤全局配置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_filterCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_defaultCommonOption">defaultCommonOption</a>()
+        
+                                            <p>过滤全局配置项.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_defaultCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnectOption">getConnectOption</a>(string $connect)
+        
+                                            <p>分析连接配置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_getConnectOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterNullOfOption">filterNullOfOption</a>(array $options)
+        
+                                            <p>清除配置 null.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Manager/Manager.html#method_filterNullOfOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Auth/Session.html"><abbr title="Leevel\Auth\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeConnectSession">makeConnectSession</a>(array $options = [])
+        
+                                            <p>创建 session 连接.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Leevel/Auth/Token.html"><abbr title="Leevel\Auth\Token">Token</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeConnectToken">makeConnectToken</a>(array $options = [])
+        
+                                            <p>创建 token 连接.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method___construct"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 56</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a> $container)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method___call"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 69</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>call.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_container">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_container"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 79</div>
+        <code>                    <a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a>
+    <strong>container</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回 IOC 容器.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Di/IContainer.html"><abbr title="Leevel\Di\IContainer">IContainer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connect">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_connect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 91</div>
+        <code>                    object
+    <strong>connect</strong>(null|array|string $options = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>连接 connect 并返回连接对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|array|string</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reconnect">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_reconnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 113</div>
+        <code>                    object
+    <strong>reconnect</strong>(array|string $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>重新连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disconnect">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_disconnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 125</div>
+        <code>                    
+    <strong>disconnect</strong>(array|string $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnects">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_getConnects"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 139</div>
+        <code>                    object[]
+    <strong>getConnects</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回所有连接.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultDriver">
+        <div class="location">at         line 41</div>
+        <code>                    string
+    <strong>getDefaultDriver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回默认驱动.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultDriver">
+        <div class="location">at         line 53</div>
+        <code>                    void
+    <strong>setDefaultDriver</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置默认驱动.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContainerOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_getContainerOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 171</div>
+        <code>                    mixed
+    <strong>getContainerOption</strong>(string|null $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取容器配置值.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContainerOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_setContainerOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 184</div>
+        <code>                    void
+    <strong>setContainerOption</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置容器配置值.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeOptionNamespace">
+        <div class="location">at         line 65</div>
+        <code>            protected        string
+    <strong>normalizeOptionNamespace</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得配置命名空间.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createConnect">
+        <div class="location">at         line 77</div>
+        <code>            protected        object
+    <strong>createConnect</strong>(object $connect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建连接对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeOptionName">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_normalizeOptionName"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 214</div>
+        <code>            protected        string
+    <strong>normalizeOptionName</strong>(string $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得连接名字.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeConnect">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_makeConnect"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 227</div>
+        <code>            protected        object
+    <strong>makeConnect</strong>(string $connect, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createConnectCommon">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_createConnectCommon"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 250</div>
+        <code>            protected        object
+    <strong>createConnectCommon</strong>(string $connect, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建连接对象公共入口.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseOptionAndUnique">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_parseOptionAndUnique"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 262</div>
+        <code>            protected        array
+    <strong>parseOptionAndUnique</strong>(array|string $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析连接参数以及其唯一值</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseOptionParameter">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_parseOptionParameter"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 277</div>
+        <code>            protected        array
+    <strong>parseOptionParameter</strong>(array|string $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析连接参数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeUnique">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_normalizeUnique"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 301</div>
+        <code>            protected        string
+    <strong>normalizeUnique</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得唯一值</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeConnectOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_normalizeConnectOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 314</div>
+        <code>            protected        array
+    <strong>normalizeConnectOption</strong>(string $connect, array $extendOption = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>整理连接配置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$extendOption</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommonOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_getCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 328</div>
+        <code>            protected        array
+    <strong>getCommonOption</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>读取连接全局配置.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterCommonOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_filterCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 342</div>
+        <code>            protected        array
+    <strong>filterCommonOption</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>过滤全局配置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defaultCommonOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_defaultCommonOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 358</div>
+        <code>            protected        array
+    <strong>defaultCommonOption</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>过滤全局配置项.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnectOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_getConnectOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 373</div>
+        <code>            protected        array
+    <strong>getConnectOption</strong>(string $connect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析连接配置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterNullOfOption">
+        <div class="location">in <a href="../../Leevel/Manager/Manager.html#method_filterNullOfOption"><abbr title="Leevel\Manager\Manager">Manager</abbr></a> at         line 385</div>
+        <code>            protected        array
+    <strong>filterNullOfOption</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>清除配置 null.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeConnectSession">
+        <div class="location">at         line 89</div>
+        <code>            protected        <a href="../../Leevel/Auth/Session.html"><abbr title="Leevel\Auth\Session">Session</abbr></a>
+    <strong>makeConnectSession</strong>(array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建 session 连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Auth/Session.html"><abbr title="Leevel\Auth\Session">Session</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeConnectToken">
+        <div class="location">at         line 105</div>
+        <code>            protected        <a href="../../Leevel/Auth/Token.html"><abbr title="Leevel\Auth\Token">Token</abbr></a>
+    <strong>makeConnectToken</strong>(array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建 token 连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Auth/Token.html"><abbr title="Leevel\Auth\Token">Token</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

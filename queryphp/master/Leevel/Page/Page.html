@@ -1,0 +1,2365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Leevel\Page\Page | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:Leevel_Page_Page" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Page.html">Page</a></li><li class="backslash">\</li><li>Page</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Page
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Page</strong>        extends <a href="../../Leevel/Page/Connect.html"><abbr title="Leevel\Page\Connect">Connect</abbr></a>        implements
+        <a href="../../Leevel/Page/IPage.html"><abbr title="Leevel\Page\IPage">IPage</abbr></a>, <a href="../../Leevel/Support/IJson.html"><abbr title="Leevel\Support\IJson">IJson</abbr></a>, <a href="../../Leevel/Support/IArray.html"><abbr title="Leevel\Support\IArray">IArray</abbr></a>, <a target="_blank" href="http://php.net/JsonSerializable">JsonSerializable</a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>分页处理.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_totalRecord">
+                                        protected                                        int
+                </td>
+                <td>$totalRecord</td>
+                <td class="last">总记录数量.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#property_totalRecord"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_perPage">
+                                        protected                                        int
+                </td>
+                <td>$perPage</td>
+                <td class="last">每页分页数量.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#property_perPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_currentPage">
+                                        protected                                        int
+                </td>
+                <td>$currentPage</td>
+                <td class="last">当前分页页码</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#property_currentPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_totalPage">
+                                        protected                                        int
+                </td>
+                <td>$totalPage</td>
+                <td class="last">总页数.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#property_totalPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pageStart">
+                                        protected                                        int
+                </td>
+                <td>$pageStart</td>
+                <td class="last">分页开始位置.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#property_pageStart"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pageEnd">
+                                        protected                                        int
+                </td>
+                <td>$pageEnd</td>
+                <td class="last">分页结束位置.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#property_pageEnd"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_resolveUrl">
+                                        protected                                        string
+                </td>
+                <td>$resolveUrl</td>
+                <td class="last">解析后 url 地址</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#property_resolveUrl"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_urlResolver">
+                    static                    protected                                        callable
+                </td>
+                <td>$urlResolver</td>
+                <td class="last">解析 url.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#property_urlResolver"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_option">
+                                        protected                                        array
+                </td>
+                <td>$option</td>
+                <td class="last">配置.</td>
+                <td><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#property_option"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p>转化为字符串.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method___toString"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOption">setOption</a>(string $name, mixed $value)
+        
+                                            <p>设置配置.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_setOption"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toHtml">toHtml</a>()
+        
+                                            <p>转化输出 HTML.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_toHtml"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_append">append</a>(string $key, string $value)
+        
+                                            <p>追加分页条件.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_append"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_appends">appends</a>(array $values)
+        
+                                            <p>批量追加分页条件.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_appends"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parameter">parameter</a>(array $parameter)
+        
+                                            <p>设置分页条件.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_parameter"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addParameter">addParameter</a>(string $key, mixed $value)
+        
+                                            <p>添加分页条件.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_addParameter"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderOption">renderOption</a>(string $key, mixed $value)
+        
+                                            <p>设置渲染参数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_renderOption"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderOptions">renderOptions</a>(array $option)
+        
+                                            <p>批量设置渲染参数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_renderOptions"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_url">url</a>(string|null $url = null)
+        
+                                            <p>设置 url.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_url"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRender">setRender</a>(string|null $render = null)
+        
+                                            <p>设置 render.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_setRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRender">getRender</a>()
+        
+                                            <p>获取 render.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_range">range</a>(int|null $range = null)
+        
+                                            <p>设置 range.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_range"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRange">getRange</a>()
+        
+                                            <p>获取 range.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getRange"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fragment">fragment</a>(string|null $fragment = null)
+        
+                                            <p>设置 url 描点.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_fragment"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFragment">getFragment</a>()
+        
+                                            <p>获取 url 描点.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getFragment"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_perPage">perPage</a>(int $perPage)
+        
+                                            <p>设置每页分页数量.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_perPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPerPage">getPerPage</a>()
+        
+                                            <p>返回每页数量.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getPerPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pageName">pageName</a>(string $pageName)
+        
+                                            <p>设置分页名字.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_pageName"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPageName">getPageName</a>()
+        
+                                            <p>获取分页名字.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getPageName"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTotalRecord">getTotalRecord</a>()
+        
+                                            <p>返回总记录数量.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getTotalRecord"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTotalMacro">isTotalMacro</a>()
+        
+                                            <p>是否为无限分页.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_isTotalMacro"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFromRecord">getFromRecord</a>()
+        
+                                            <p>取得第一个记录的编号.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getFromRecord"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getToRecord">getToRecord</a>()
+        
+                                            <p>取得最后一个记录的编号.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getToRecord"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_currentPage">currentPage</a>(int $page)
+        
+                                            <p>返回当前分页.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_currentPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentPage">getCurrentPage</a>()
+        
+                                            <p>返回当前分页.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getCurrentPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPageStart">getPageStart</a>()
+        
+                                            <p>返回分页视图开始页码</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getPageStart"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPageEnd">getPageEnd</a>()
+        
+                                            <p>返回分页视图结束页码</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getPageEnd"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTotalPage">getTotalPage</a>()
+        
+                                            <p>返回总分页数量.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getTotalPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canTotalRender">canTotalRender</a>()
+        
+                                            <p>是否渲染 total.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_canTotalRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canFirstRender">canFirstRender</a>()
+        
+                                            <p>是否渲染 first.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_canFirstRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseFirstRenderPrev">parseFirstRenderPrev</a>()
+        
+                                            <p>返回渲染 first.prev.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_parseFirstRenderPrev"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canPrevRender">canPrevRender</a>()
+        
+                                            <p>是否渲染 prev.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_canPrevRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parsePrevRenderPrev">parsePrevRenderPrev</a>()
+        
+                                            <p>返回渲染 prev.prev.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_parsePrevRenderPrev"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canMainRender">canMainRender</a>()
+        
+                                            <p>是否渲染 main.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_canMainRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canNextRender">canNextRender</a>()
+        
+                                            <p>是否渲染 next.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_canNextRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canLastRender">canLastRender</a>()
+        
+                                            <p>是否渲染 last.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_canLastRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canLastRenderNext">canLastRenderNext</a>()
+        
+                                            <p>是否渲染 last.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_canLastRenderNext"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseLastRenderNext">parseLastRenderNext</a>()
+        
+                                            <p>返回渲染 last.next.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_parseLastRenderNext"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUrlResolver">setUrlResolver</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $urlResolver = null)
+        
+                                            <p>设置 url 解析回调.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_setUrlResolver"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pageReplace">pageReplace</a>(mixed $page)
+        
+                                            <p>替换分页变量.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_pageReplace"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUrl">getUrl</a>()
+        
+                                            <p>分析分页 url 地址</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_getUrl"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolverUrl">resolverUrl</a>(...$args)
+        
+                                            <p>解析 url.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_resolverUrl"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildFragment">buildFragment</a>()
+        
+                                            <p>创建描点.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Leevel/Page/Connect.html#method_buildFragment"><abbr title="Leevel\Page\Connect">Connect</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(int|null $perPage = null, int|null $totalRecord = null, array $option = [])
+        
+                                            <p>构造函数.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>($render = null, array $option = [])
+        
+                                            <p>渲染分页.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+        
+                                            <p>对象转数组.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_jsonSerialize">jsonSerialize</a>()
+        
+                                            <p>实现 JsonSerializable::jsonSerialize.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toJson">toJson</a>(int $option = null)
+        
+                                            <p>对象转 JSON.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method___toString"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 114</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>转化为字符串.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOption">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_setOption"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 127</div>
+        <code>                    $this
+    <strong>setOption</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置配置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toHtml">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_toHtml"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 139</div>
+        <code>                    string
+    <strong>toHtml</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>转化输出 HTML.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_append">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_append"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 152</div>
+        <code>                    $this
+    <strong>append</strong>(string $key, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>追加分页条件.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_appends">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_appends"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 164</div>
+        <code>                    $this
+    <strong>appends</strong>(array $values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>批量追加分页条件.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parameter">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_parameter"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 178</div>
+        <code>                    
+    <strong>parameter</strong>(array $parameter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置分页条件.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$parameter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addParameter">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_addParameter"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 191</div>
+        <code>                    $this
+    <strong>addParameter</strong>(string $key, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>添加分页条件.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderOption">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_renderOption"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 209</div>
+        <code>                    $this
+    <strong>renderOption</strong>(string $key, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置渲染参数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderOptions">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_renderOptions"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 227</div>
+        <code>                    $this
+    <strong>renderOptions</strong>(array $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>批量设置渲染参数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_url">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_url"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 243</div>
+        <code>                    $this
+    <strong>url</strong>(string|null $url = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 url.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRender">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_setRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 255</div>
+        <code>                    $this
+    <strong>setRender</strong>(string|null $render = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 render.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRender">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 265</div>
+        <code>                    null|string
+    <strong>getRender</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取 render.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_range">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_range"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 277</div>
+        <code>                    $this
+    <strong>range</strong>(int|null $range = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 range.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$range</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRange">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getRange"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 287</div>
+        <code>                    int
+    <strong>getRange</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取 range.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fragment">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_fragment"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 301</div>
+        <code>                    $this
+    <strong>fragment</strong>(string|null $fragment = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 url 描点.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$fragment</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFragment">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getFragment"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 311</div>
+        <code>                    null|string
+    <strong>getFragment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取 url 描点.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_perPage">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_perPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 323</div>
+        <code>                    $this
+    <strong>perPage</strong>(int $perPage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置每页分页数量.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$perPage</td>
+                <td>perPage</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPerPage">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getPerPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 335</div>
+        <code>                    int
+    <strong>getPerPage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回每页数量.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pageName">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_pageName"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 351</div>
+        <code>                    $this
+    <strong>pageName</strong>(string $pageName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置分页名字.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pageName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPageName">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getPageName"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 361</div>
+        <code>                    string
+    <strong>getPageName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取分页名字.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTotalRecord">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getTotalRecord"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 371</div>
+        <code>                    null|int
+    <strong>getTotalRecord</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回总记录数量.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTotalMacro">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_isTotalMacro"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 381</div>
+        <code>                    bool
+    <strong>isTotalMacro</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为无限分页.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFromRecord">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getFromRecord"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 391</div>
+        <code>                    int
+    <strong>getFromRecord</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得第一个记录的编号.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getToRecord">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getToRecord"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 401</div>
+        <code>                    int
+    <strong>getToRecord</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得最后一个记录的编号.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_currentPage">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_currentPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 419</div>
+        <code>                    $this
+    <strong>currentPage</strong>(int $page)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回当前分页.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurrentPage">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getCurrentPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 431</div>
+        <code>                    int
+    <strong>getCurrentPage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回当前分页.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPageStart">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getPageStart"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 457</div>
+        <code>                    int
+    <strong>getPageStart</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回分页视图开始页码</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPageEnd">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getPageEnd"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 477</div>
+        <code>                    int
+    <strong>getPageEnd</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回分页视图结束页码</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTotalPage">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getTotalPage"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 502</div>
+        <code>                    int
+    <strong>getTotalPage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回总分页数量.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canTotalRender">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_canTotalRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 520</div>
+        <code>                    bool
+    <strong>canTotalRender</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否渲染 total.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canFirstRender">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_canFirstRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 531</div>
+        <code>                    bool
+    <strong>canFirstRender</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否渲染 first.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseFirstRenderPrev">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_parseFirstRenderPrev"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 542</div>
+        <code>                    int
+    <strong>parseFirstRenderPrev</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回渲染 first.prev.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canPrevRender">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_canPrevRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 552</div>
+        <code>                    bool
+    <strong>canPrevRender</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否渲染 prev.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parsePrevRenderPrev">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_parsePrevRenderPrev"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 563</div>
+        <code>                    int
+    <strong>parsePrevRenderPrev</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回渲染 prev.prev.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canMainRender">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_canMainRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 573</div>
+        <code>                    bool
+    <strong>canMainRender</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否渲染 main.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canNextRender">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_canNextRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 583</div>
+        <code>                    string
+    <strong>canNextRender</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否渲染 next.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canLastRender">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_canLastRender"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 595</div>
+        <code>                    string
+    <strong>canLastRender</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否渲染 last.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canLastRenderNext">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_canLastRenderNext"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 607</div>
+        <code>                    string
+    <strong>canLastRenderNext</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否渲染 last.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseLastRenderNext">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_parseLastRenderNext"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 617</div>
+        <code>                    int
+    <strong>parseLastRenderNext</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回渲染 last.next.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUrlResolver">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_setUrlResolver"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 635</div>
+        <code>        static            
+    <strong>setUrlResolver</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $urlResolver = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 url 解析回调.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$urlResolver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pageReplace">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_pageReplace"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 647</div>
+        <code>                    string
+    <strong>pageReplace</strong>(mixed $page)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>替换分页变量.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUrl">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_getUrl"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 664</div>
+        <code>            protected        string
+    <strong>getUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>分析分页 url 地址</p>                    <p>{page} 表示自定义分页变量替换
+带有 @ 表示使用 url 函数进行二次解析 @/list-{page}
+foo@ 表示具有子域名 subdomain@blog/list/{page}</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolverUrl">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_resolverUrl"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 712</div>
+        <code>            protected        string
+    <strong>resolverUrl</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>解析 url.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildFragment">
+        <div class="location">in <a href="../../Leevel/Page/Connect.html#method_buildFragment"><abbr title="Leevel\Page\Connect">Connect</abbr></a> at         line 726</div>
+        <code>            protected        string
+    <strong>buildFragment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建描点.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 46</div>
+        <code>                    
+    <strong>__construct</strong>(int|null $perPage = null, int|null $totalRecord = null, array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$perPage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$totalRecord</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">at         line 62</div>
+        <code>                    string
+    <strong>render</strong>($render = null, array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>渲染分页.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$render</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at         line 86</div>
+        <code>                    array
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>对象转数组.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsonSerialize">
+        <div class="location">at         line 104</div>
+        <code>                    bool
+    <strong>jsonSerialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实现 JsonSerializable::jsonSerialize.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toJson">
+        <div class="location">at         line 116</div>
+        <code>                    string
+    <strong>toJson</strong>(int $option = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>对象转 JSON.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

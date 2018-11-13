@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Leevel\Database\Ddd\Relation\HasOne | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:Leevel_Database_Ddd_Relation_HasOne" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../../../Leevel/Database.html">Database</a></li><li class="backslash">\</li><li><a href="../../../../Leevel/Database/Ddd.html">Ddd</a></li><li class="backslash">\</li><li><a href="../../../../Leevel/Database/Ddd/Relation.html">Relation</a></li><li class="backslash">\</li><li>HasOne</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            HasOne
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>HasOne</strong>        extends <a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>关联模型实体 HasOne.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_select">
+                                        protected                                        <a href="../../../../Leevel/Database/Ddd/Select.html"><abbr title="Leevel\Database\Ddd\Select">Select</abbr></a>
+                </td>
+                <td>$select</td>
+                <td class="last">查询对象</td>
+                <td><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#property_select"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_targetEntity">
+                                        protected                                        <a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a>
+                </td>
+                <td>$targetEntity</td>
+                <td class="last">关联目标模型实体.</td>
+                <td><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#property_targetEntity"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sourceEntity">
+                                        protected                                        <a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a>
+                </td>
+                <td>$sourceEntity</td>
+                <td class="last">源模型实体.</td>
+                <td><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#property_sourceEntity"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_targetKey">
+                                        protected                                        string
+                </td>
+                <td>$targetKey</td>
+                <td class="last">目标关联字段.</td>
+                <td><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#property_targetKey"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sourceKey">
+                                        protected                                        string
+                </td>
+                <td>$sourceKey</td>
+                <td class="last">源关联字段.</td>
+                <td><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#property_sourceKey"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_relationCondition">
+                    static                    protected                                        bool
+                </td>
+                <td>$relationCondition</td>
+                <td class="last">是否初始化查询.</td>
+                <td><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#property_relationCondition"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $targetEntity, <a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $sourceEntity, string $targetKey, string $sourceKey)
+        
+                                            <p>构造函数.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method___construct"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $method, array $args)
+        
+                                            <p>call.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method___call"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Leevel/Database/Ddd/Select.html"><abbr title="Leevel\Database\Ddd\Select">Select</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelect">getSelect</a>()
+        
+                                            <p>返回查询.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getSelect"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPreLoad">getPreLoad</a>()
+        
+                                            <p>取得预载入关联模型实体.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getPreLoad"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTargetEntity">getTargetEntity</a>()
+        
+                                            <p>取得关联目标模型实体.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getTargetEntity"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceEntity">getSourceEntity</a>()
+        
+                                            <p>取得源模型实体.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getSourceEntity"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTargetKey">getTargetKey</a>()
+        
+                                            <p>取得目标字段.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getTargetKey"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceKey">getSourceKey</a>()
+        
+                                            <p>取得源字段.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getSourceKey"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withoutRelationCondition">withoutRelationCondition</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $returnRelation)
+        
+                                            <p>获取不带关联条件的关联对象</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_withoutRelationCondition"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRelationCondition">addRelationCondition</a>()
+        
+                                            <p>关联基础查询条件.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_addRelationCondition"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_preLoadCondition">preLoadCondition</a>(array $entitys)
+        
+                                            <p>设置预载入关联查询条件.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_preLoadCondition"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_matchPreLoad">matchPreLoad</a>(array $entitys, <a href="../../../../Leevel/Collection/Collection.html"><abbr title="Leevel\Collection\Collection">Collection</abbr></a> $result, string $relation)
+        
+                                            <p>匹配关联查询数据到模型实体.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sourceQuery">sourceQuery</a>()
+        
+                                            <p>查询关联对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEntityKey">getEntityKey</a>(array $entitys, string|null $key = null)
+        
+                                            <p>返回模型实体的主键.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getEntityKey"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelectFromEntity">getSelectFromEntity</a>()
+        
+                                            <p>从模型实体返回查询.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getSelectFromEntity"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceValue">getSourceValue</a>()
+        
+                                            <p>取回源模型实体对应数据.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_getSourceValue"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_matchPreLoadOneOrMany">matchPreLoadOneOrMany</a>(array $entitys, <a href="../../../../Leevel/Collection/Collection.html"><abbr title="Leevel\Collection\Collection">Collection</abbr></a> $result, string $relation, string $type)
+        
+                                            <p>匹配预载入数据.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_matchPreLoadOneOrMany"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelationValue">getRelationValue</a>(array $maps, string $key, string $type)
+        
+                                            <p>取得关联模型实体数据.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_getRelationValue"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildMap">buildMap</a>(<a href="../../../../Leevel/Collection/Collection.html"><abbr title="Leevel\Collection\Collection">Collection</abbr></a> $result)
+        
+                                            <p>模型实体隐射数据.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_buildMap"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method___construct"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a> at         line 45</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $targetEntity, <a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $sourceEntity, string $targetKey, string $sourceKey)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>构造函数.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$targetEntity</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$sourceEntity</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$targetKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sourceKey</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method___call"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a> at         line 108</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>call.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelect">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getSelect"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a> at         line 124</div>
+        <code>                    <a href="../../../../Leevel/Database/Ddd/Select.html"><abbr title="Leevel\Database\Ddd\Select">Select</abbr></a>
+    <strong>getSelect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回查询.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Leevel/Database/Ddd/Select.html"><abbr title="Leevel\Database\Ddd\Select">Select</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreLoad">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getPreLoad"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a> at         line 134</div>
+        <code>                    mixed
+    <strong>getPreLoad</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得预载入关联模型实体.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTargetEntity">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getTargetEntity"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a> at         line 147</div>
+        <code>                    <a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a>
+    <strong>getTargetEntity</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得关联目标模型实体.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceEntity">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getSourceEntity"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a> at         line 157</div>
+        <code>                    <a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a>
+    <strong>getSourceEntity</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得源模型实体.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTargetKey">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getTargetKey"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a> at         line 167</div>
+        <code>                    string
+    <strong>getTargetKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得目标字段.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceKey">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getSourceKey"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a> at         line 177</div>
+        <code>                    string
+    <strong>getSourceKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得源字段.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withoutRelationCondition">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_withoutRelationCondition"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a> at         line 189</div>
+        <code>        static            <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a>
+    <strong>withoutRelationCondition</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $returnRelation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取不带关联条件的关联对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$returnRelation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Leevel/Database/Ddd/Relation/Relation.html"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRelationCondition">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_addRelationCondition"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a> at         line 53</div>
+        <code>                    
+    <strong>addRelationCondition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>关联基础查询条件.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_preLoadCondition">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_preLoadCondition"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a> at         line 72</div>
+        <code>                    
+    <strong>preLoadCondition</strong>(array $entitys)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置预载入关联查询条件.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$entitys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_matchPreLoad">
+        <div class="location">at         line 55</div>
+        <code>                    array
+    <strong>matchPreLoad</strong>(array $entitys, <a href="../../../../Leevel/Collection/Collection.html"><abbr title="Leevel\Collection\Collection">Collection</abbr></a> $result, string $relation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>匹配关联查询数据到模型实体.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$entitys</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Leevel/Collection/Collection.html"><abbr title="Leevel\Collection\Collection">Collection</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sourceQuery">
+        <div class="location">at         line 41</div>
+        <code>                    mixed
+    <strong>sourceQuery</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>查询关联对象</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEntityKey">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getEntityKey"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a> at         line 239</div>
+        <code>            protected        array
+    <strong>getEntityKey</strong>(array $entitys, string|null $key = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回模型实体的主键.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$entitys</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelectFromEntity">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/Relation.html#method_getSelectFromEntity"><abbr title="Leevel\Database\Ddd\Relation\Relation">Relation</abbr></a> at         line 255</div>
+        <code>            protected        
+    <strong>getSelectFromEntity</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>从模型实体返回查询.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceValue">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_getSourceValue"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a> at         line 104</div>
+        <code>                    mixed
+    <strong>getSourceValue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回源模型实体对应数据.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_matchPreLoadOneOrMany">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_matchPreLoadOneOrMany"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a> at         line 129</div>
+        <code>            protected        array
+    <strong>matchPreLoadOneOrMany</strong>(array $entitys, <a href="../../../../Leevel/Collection/Collection.html"><abbr title="Leevel\Collection\Collection">Collection</abbr></a> $result, string $relation, string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>匹配预载入数据.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$entitys</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Leevel/Collection/Collection.html"><abbr title="Leevel\Collection\Collection">Collection</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelationValue">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_getRelationValue"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a> at         line 156</div>
+        <code>            protected        mixed
+    <strong>getRelationValue</strong>(array $maps, string $key, string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得关联模型实体数据.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$maps</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildMap">
+        <div class="location">in <a href="../../../../Leevel/Database/Ddd/Relation/HasMany.html#method_buildMap"><abbr title="Leevel\Database\Ddd\Relation\HasMany">HasMany</abbr></a> at         line 170</div>
+        <code>            protected        array
+    <strong>buildMap</strong>(<a href="../../../../Leevel/Collection/Collection.html"><abbr title="Leevel\Collection\Collection">Collection</abbr></a> $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>模型实体隐射数据.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Leevel/Collection/Collection.html"><abbr title="Leevel\Collection\Collection">Collection</abbr></a></td>
+                <td>$result</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,2672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Leevel\Http\IResponse | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:Leevel_Http_IResponse" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                        <li><a href="../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../Leevel/Http.html">Http</a></li><li class="backslash">\</li><li>IResponse</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            IResponse
+                
+        </h1>
+    </div>
+
+    <p>    interface
+    <strong>IResponse</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>HTTP 响应接口.</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>HTTP_CONTINUE</td>
+                <td class="last">
+                    <p><em>HTTP_CONTINUE.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_SWITCHING_PROTOCOLS</td>
+                <td class="last">
+                    <p><em>HTTP_SWITCHING_PROTOCOLS.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_PROCESSING</td>
+                <td class="last">
+                    <p><em>HTTP_PROCESSING (RFC2518).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_OK</td>
+                <td class="last">
+                    <p><em>HTTP_OK.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_CREATED</td>
+                <td class="last">
+                    <p><em>HTTP_CREATED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_ACCEPTED</td>
+                <td class="last">
+                    <p><em>HTTP_ACCEPTED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_NON_AUTHORITATIVE_INFORMATION</td>
+                <td class="last">
+                    <p><em>HTTP_NON_AUTHORITATIVE_INFORMATION.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_NO_CONTENT</td>
+                <td class="last">
+                    <p><em>HTTP_NO_CONTENT.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_RESET_CONTENT</td>
+                <td class="last">
+                    <p><em>HTTP_RESET_CONTENT.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_PARTIAL_CONTENT</td>
+                <td class="last">
+                    <p><em>HTTP_PARTIAL_CONTENT.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_MULTI_STATUS</td>
+                <td class="last">
+                    <p><em>HTTP_MULTI_STATUS (RFC4918).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_ALREADY_REPORTED</td>
+                <td class="last">
+                    <p><em>HTTP_ALREADY_REPORTED (RFC5842).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_IM_USED</td>
+                <td class="last">
+                    <p><em>HTTP_IM_USED (RFC3229).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_MULTIPLE_CHOICES</td>
+                <td class="last">
+                    <p><em>HTTP_MULTIPLE_CHOICES.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_MOVED_PERMANENTLY</td>
+                <td class="last">
+                    <p><em>HTTP_MOVED_PERMANENTLY.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_FOUND</td>
+                <td class="last">
+                    <p><em>HTTP_FOUND.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_SEE_OTHER</td>
+                <td class="last">
+                    <p><em>HTTP_SEE_OTHER.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_NOT_MODIFIED</td>
+                <td class="last">
+                    <p><em>HTTP_NOT_MODIFIED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_USE_PROXY</td>
+                <td class="last">
+                    <p><em>HTTP_USE_PROXY.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_RESERVED</td>
+                <td class="last">
+                    <p><em>HTTP_RESERVED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_TEMPORARY_REDIRECT</td>
+                <td class="last">
+                    <p><em>HTTP_TEMPORARY_REDIRECT.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_PERMANENTLY_REDIRECT</td>
+                <td class="last">
+                    <p><em>HTTP_PERMANENTLY_REDIRECT (RFC7238).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_BAD_REQUEST</td>
+                <td class="last">
+                    <p><em>HTTP_BAD_REQUEST.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_UNAUTHORIZED</td>
+                <td class="last">
+                    <p><em>HTTP_UNAUTHORIZED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_PAYMENT_REQUIRED</td>
+                <td class="last">
+                    <p><em>HTTP_PAYMENT_REQUIRED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_FORBIDDEN</td>
+                <td class="last">
+                    <p><em>HTTP_FORBIDDEN.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_NOT_FOUND</td>
+                <td class="last">
+                    <p><em>HTTP_NOT_FOUND.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_METHOD_NOT_ALLOWED</td>
+                <td class="last">
+                    <p><em>HTTP_METHOD_NOT_ALLOWED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_NOT_ACCEPTABLE</td>
+                <td class="last">
+                    <p><em>HTTP_NOT_ACCEPTABLE.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_PROXY_AUTHENTICATION_REQUIRED</td>
+                <td class="last">
+                    <p><em>HTTP_PROXY_AUTHENTICATION_REQUIRED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_REQUEST_TIMEOUT</td>
+                <td class="last">
+                    <p><em>HTTP_REQUEST_TIMEOUT.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_CONFLICT</td>
+                <td class="last">
+                    <p><em>HTTP_CONFLICT.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_GONE</td>
+                <td class="last">
+                    <p><em>HTTP_GONE.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_LENGTH_REQUIRED</td>
+                <td class="last">
+                    <p><em>HTTP_LENGTH_REQUIRED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_PRECONDITION_FAILED</td>
+                <td class="last">
+                    <p><em>HTTP_PRECONDITION_FAILED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_REQUEST_ENTITY_TOO_LARGE</td>
+                <td class="last">
+                    <p><em>HTTP_REQUEST_ENTITY_TOO_LARGE.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_REQUEST_URI_TOO_LONG</td>
+                <td class="last">
+                    <p><em>HTTP_REQUEST_URI_TOO_LONG.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_UNSUPPORTED_MEDIA_TYPE</td>
+                <td class="last">
+                    <p><em>HTTP_UNSUPPORTED_MEDIA_TYPE.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_REQUESTED_RANGE_NOT_SATISFIABLE</td>
+                <td class="last">
+                    <p><em>HTTP_REQUESTED_RANGE_NOT_SATISFIABLE.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_EXPECTATION_FAILED</td>
+                <td class="last">
+                    <p><em>HTTP_EXPECTATION_FAILED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_I_AM_A_TEAPOT</td>
+                <td class="last">
+                    <p><em>HTTP_I_AM_A_TEAPOT (RFC2324).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_MISDIRECTED_REQUEST</td>
+                <td class="last">
+                    <p><em>HTTP_MISDIRECTED_REQUEST (RFC7540).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_UNPROCESSABLE_ENTITY</td>
+                <td class="last">
+                    <p><em>HTTP_UNPROCESSABLE_ENTITY (RFC4918).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_LOCKED</td>
+                <td class="last">
+                    <p><em>HTTP_LOCKED (RFC4918).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_FAILED_DEPENDENCY</td>
+                <td class="last">
+                    <p><em>HTTP_FAILED_DEPENDENCY (RFC4918).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL</td>
+                <td class="last">
+                    <p><em>HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL (RFC2817).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_UPGRADE_REQUIRED</td>
+                <td class="last">
+                    <p><em>HTTP_UPGRADE_REQUIRED (RFC2817).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_PRECONDITION_REQUIRED</td>
+                <td class="last">
+                    <p><em>HTTP_PRECONDITION_REQUIRED (RFC6585).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_TOO_MANY_REQUESTS</td>
+                <td class="last">
+                    <p><em>HTTP_TOO_MANY_REQUESTS (RFC6585).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE</td>
+                <td class="last">
+                    <p><em>HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE (RFC6585).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_UNAVAILABLE_FOR_LEGAL_REASONS</td>
+                <td class="last">
+                    <p><em>HTTP_UNAVAILABLE_FOR_LEGAL_REASONS.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_INTERNAL_SERVER_ERROR</td>
+                <td class="last">
+                    <p><em>HTTP_INTERNAL_SERVER_ERROR.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_NOT_IMPLEMENTED</td>
+                <td class="last">
+                    <p><em>HTTP_NOT_IMPLEMENTED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_BAD_GATEWAY</td>
+                <td class="last">
+                    <p><em>HTTP_BAD_GATEWAY.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_SERVICE_UNAVAILABLE</td>
+                <td class="last">
+                    <p><em>HTTP_SERVICE_UNAVAILABLE.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_GATEWAY_TIMEOUT</td>
+                <td class="last">
+                    <p><em>HTTP_GATEWAY_TIMEOUT.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_VERSION_NOT_SUPPORTED</td>
+                <td class="last">
+                    <p><em>HTTP_VERSION_NOT_SUPPORTED.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL</td>
+                <td class="last">
+                    <p><em>HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL (RFC2295).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_INSUFFICIENT_STORAGE</td>
+                <td class="last">
+                    <p><em>HTTP_INSUFFICIENT_STORAGE (RFC4918).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_LOOP_DETECTED</td>
+                <td class="last">
+                    <p><em>HTTP_LOOP_DETECTED (RFC5842).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_NOT_EXTENDED</td>
+                <td class="last">
+                    <p><em>HTTP_NOT_EXTENDED (RFC2774).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTTP_NETWORK_AUTHENTICATION_REQUIRED</td>
+                <td class="last">
+                    <p><em>HTTP_NETWORK_AUTHENTICATION_REQUIRED (RFC6585).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Leevel/Http/IResponse.html"><abbr title="Leevel\Http\IResponse">IResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $content = &#039;&#039;, int $status = 200, array $headers = [])
+        
+                                            <p>创建一个响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCookieResolver">setCookieResolver</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $cookieResolver = null)
+        
+                                            <p>设置 COOKIE Resolver.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Leevel/Cookie/ICookie.html"><abbr title="Leevel\Cookie\ICookie">ICookie</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveCookie">resolveCookie</a>()
+        
+                                            <p>返回 COOKIE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_send">send</a>()
+        
+                                            <p>发送 HTTP 响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendHeaders">sendHeaders</a>()
+        
+                                            <p>发送响应头.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendContent">sendContent</a>()
+        
+                                            <p>发送响应内容.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContent">setContent</a>(mixed $content)
+        
+                                            <p>设置内容.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_appendContent">appendContent</a>(string $content = null)
+        
+                                            <p>附加内容.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHeader">setHeader</a>(string $key, string $value, bool $replace = true)
+        
+                                            <p>设置响应头.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withHeaders">withHeaders</a>(array $headers)
+        
+                                            <p>批量设置响应头.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cookie">cookie</a>(string $name, string $value = &#039;&#039;, array $option = [])
+        
+                                            <p>设置 COOKIE 别名.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCookie">setCookie</a>(string $name, string $value = &#039;&#039;, array $option = [])
+        
+                                            <p>设置 COOKIE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withCookies">withCookies</a>(array $cookies, array $option = [])
+        
+                                            <p>批量设置 COOKIE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCookies">getCookies</a>()
+        
+                                            <p>获取 COOKIE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getData">getData</a>(bool $assoc = true, int $depth = 512)
+        
+                                            <p>取回 JSON 数据.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setData">setData</a>(mixed $data = [], int|null $encodingOptions = null)
+        
+                                            <p>设置 JSON 数据.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContent">getContent</a>()
+        
+                                            <p>获取内容.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_content">content</a>()
+        
+                                            <p>获取内容.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOriginal">getOriginal</a>()
+        
+                                            <p>获取原始内容.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProtocolVersion">setProtocolVersion</a>(string $protocolVersion)
+        
+                                            <p>设置 HTTP 协议版本 (1.0 or 1.1).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProtocolVersion">getProtocolVersion</a>()
+        
+                                            <p>获取 HTTP 协议版本.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStatusCode">setStatusCode</a>(int $code, mixed $text = null)
+        
+                                            <p>设置相应状态码</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_status">status</a>()
+        
+                                            <p>获取状态码</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStatusCode">getStatusCode</a>()
+        
+                                            <p>获取状态码</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCharset">setCharset</a>(string $charset)
+        
+                                            <p>编码设置.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_charset">charset</a>(string $charset)
+        
+                                            <p>编码设置.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCharset">getCharset</a>()
+        
+                                            <p>获取编码</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExpires">setExpires</a>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $datetime = null)
+        
+                                            <p>设置过期时间.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLastModified">setLastModified</a>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $datetime = null)
+        
+                                            <p>设置最后修改时间.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCache">setCache</a>(int $minutes)
+        
+                                            <p>设置缓存.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNotModified">setNotModified</a>()
+        
+                                            <p>设置响应未修改.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContentType">setContentType</a>(string $contentType, string $charset = null)
+        
+                                            <p>设置响应内容类型.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContentLength">setContentLength</a>(int $contentLength)
+        
+                                            <p>设置响应内容长度.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEtag">setEtag</a>(string $etag)
+        
+                                            <p>设置自定义标识符.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isJson">isJson</a>()
+        
+                                            <p>响应是否为 JSON.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isInvalid">isInvalid</a>()
+        
+                                            <p>响应是否正确.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isInformational">isInformational</a>()
+        
+                                            <p>是否为信息性响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSuccessful">isSuccessful</a>()
+        
+                                            <p>是否为正确响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isRedirection">isRedirection</a>()
+        
+                                            <p>是否为重定向响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isClientError">isClientError</a>()
+        
+                                            <p>是否为客户端错误响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isServerError">isServerError</a>()
+        
+                                            <p>是否为服务端错误响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isOk">isOk</a>()
+        
+                                            <p>是否为正常响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isForbidden">isForbidden</a>()
+        
+                                            <p>是否为受限响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNotFound">isNotFound</a>()
+        
+                                            <p>是否为 404 NOT FOUND.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isRedirect">isRedirect</a>(string $location = null)
+        
+                                            <p>是否为表单重定向响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isEmpty">isEmpty</a>()
+        
+                                            <p>是否为空响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 483</div>
+        <code>        static            <a href="../../Leevel/Http/IResponse.html"><abbr title="Leevel\Http\IResponse">IResponse</abbr></a>
+    <strong>create</strong>(string $content = &#039;&#039;, int $status = 200, array $headers = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建一个响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Http/IResponse.html"><abbr title="Leevel\Http\IResponse">IResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCookieResolver">
+        <div class="location">at         line 490</div>
+        <code>        static            
+    <strong>setCookieResolver</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $cookieResolver = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 COOKIE Resolver.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$cookieResolver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveCookie">
+        <div class="location">at         line 497</div>
+        <code>        static            <a href="../../Leevel/Cookie/ICookie.html"><abbr title="Leevel\Cookie\ICookie">ICookie</abbr></a>
+    <strong>resolveCookie</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回 COOKIE.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Leevel/Cookie/ICookie.html"><abbr title="Leevel\Cookie\ICookie">ICookie</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send">
+        <div class="location">at         line 504</div>
+        <code>                    $this
+    <strong>send</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>发送 HTTP 响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendHeaders">
+        <div class="location">at         line 511</div>
+        <code>                    $this
+    <strong>sendHeaders</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>发送响应头.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendContent">
+        <div class="location">at         line 518</div>
+        <code>                    $this
+    <strong>sendContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>发送响应内容.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContent">
+        <div class="location">at         line 527</div>
+        <code>                    $this
+    <strong>setContent</strong>(mixed $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置内容.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_appendContent">
+        <div class="location">at         line 536</div>
+        <code>                    $this
+    <strong>appendContent</strong>(string $content = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>附加内容.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHeader">
+        <div class="location">at         line 547</div>
+        <code>                    $this
+    <strong>setHeader</strong>(string $key, string $value, bool $replace = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置响应头.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$replace</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withHeaders">
+        <div class="location">at         line 556</div>
+        <code>                    $this
+    <strong>withHeaders</strong>(array $headers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>批量设置响应头.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cookie">
+        <div class="location">at         line 567</div>
+        <code>                    $this
+    <strong>cookie</strong>(string $name, string $value = &#039;&#039;, array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 COOKIE 别名.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCookie">
+        <div class="location">at         line 578</div>
+        <code>                    $this
+    <strong>setCookie</strong>(string $name, string $value = &#039;&#039;, array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 COOKIE.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withCookies">
+        <div class="location">at         line 588</div>
+        <code>                    $this
+    <strong>withCookies</strong>(array $cookies, array $option = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>批量设置 COOKIE.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$cookies</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCookies">
+        <div class="location">at         line 595</div>
+        <code>                    array
+    <strong>getCookies</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取 COOKIE.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getData">
+        <div class="location">at         line 605</div>
+        <code>                    mixed
+    <strong>getData</strong>(bool $assoc = true, int $depth = 512)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回 JSON 数据.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$assoc</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$depth</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setData">
+        <div class="location">at         line 615</div>
+        <code>                    $this
+    <strong>setData</strong>(mixed $data = [], int|null $encodingOptions = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 JSON 数据.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$encodingOptions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContent">
+        <div class="location">at         line 622</div>
+        <code>                    string
+    <strong>getContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取内容.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_content">
+        <div class="location">at         line 629</div>
+        <code>                    string
+    <strong>content</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取内容.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOriginal">
+        <div class="location">at         line 636</div>
+        <code>                    string
+    <strong>getOriginal</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取原始内容.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProtocolVersion">
+        <div class="location">at         line 645</div>
+        <code>                    $this
+    <strong>setProtocolVersion</strong>(string $protocolVersion)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置 HTTP 协议版本 (1.0 or 1.1).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$protocolVersion</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProtocolVersion">
+        <div class="location">at         line 652</div>
+        <code>                    string
+    <strong>getProtocolVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取 HTTP 协议版本.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStatusCode">
+        <div class="location">at         line 662</div>
+        <code>                    $this
+    <strong>setStatusCode</strong>(int $code, mixed $text = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置相应状态码</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_status">
+        <div class="location">at         line 669</div>
+        <code>                    int
+    <strong>status</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取状态码</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStatusCode">
+        <div class="location">at         line 676</div>
+        <code>                    int
+    <strong>getStatusCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取状态码</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCharset">
+        <div class="location">at         line 685</div>
+        <code>                    $this
+    <strong>setCharset</strong>(string $charset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>编码设置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$charset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_charset">
+        <div class="location">at         line 694</div>
+        <code>                    $this
+    <strong>charset</strong>(string $charset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>编码设置.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$charset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCharset">
+        <div class="location">at         line 701</div>
+        <code>                    string
+    <strong>getCharset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>获取编码</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setExpires">
+        <div class="location">at         line 710</div>
+        <code>                    $this
+    <strong>setExpires</strong>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $datetime = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置过期时间.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+                <td>$datetime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLastModified">
+        <div class="location">at         line 719</div>
+        <code>                    $this
+    <strong>setLastModified</strong>(<a target="_blank" href="http://php.net/DateTime">DateTime</a> $datetime = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置最后修改时间.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+                <td>$datetime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCache">
+        <div class="location">at         line 728</div>
+        <code>                    $this
+    <strong>setCache</strong>(int $minutes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置缓存.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$minutes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNotModified">
+        <div class="location">at         line 735</div>
+        <code>                    $this
+    <strong>setNotModified</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置响应未修改.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContentType">
+        <div class="location">at         line 745</div>
+        <code>                    $this
+    <strong>setContentType</strong>(string $contentType, string $charset = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置响应内容类型.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$contentType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$charset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContentLength">
+        <div class="location">at         line 754</div>
+        <code>                    $this
+    <strong>setContentLength</strong>(int $contentLength)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置响应内容长度.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$contentLength</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEtag">
+        <div class="location">at         line 763</div>
+        <code>                    $this
+    <strong>setEtag</strong>(string $etag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置自定义标识符.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$etag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isJson">
+        <div class="location">at         line 770</div>
+        <code>                    bool
+    <strong>isJson</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>响应是否为 JSON.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isInvalid">
+        <div class="location">at         line 777</div>
+        <code>                    bool
+    <strong>isInvalid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>响应是否正确.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isInformational">
+        <div class="location">at         line 784</div>
+        <code>                    bool
+    <strong>isInformational</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为信息性响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSuccessful">
+        <div class="location">at         line 791</div>
+        <code>                    bool
+    <strong>isSuccessful</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为正确响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isRedirection">
+        <div class="location">at         line 798</div>
+        <code>                    bool
+    <strong>isRedirection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为重定向响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isClientError">
+        <div class="location">at         line 805</div>
+        <code>                    bool
+    <strong>isClientError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为客户端错误响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isServerError">
+        <div class="location">at         line 812</div>
+        <code>                    bool
+    <strong>isServerError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为服务端错误响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isOk">
+        <div class="location">at         line 819</div>
+        <code>                    bool
+    <strong>isOk</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为正常响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isForbidden">
+        <div class="location">at         line 826</div>
+        <code>                    bool
+    <strong>isForbidden</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为受限响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNotFound">
+        <div class="location">at         line 833</div>
+        <code>                    bool
+    <strong>isNotFound</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为 404 NOT FOUND.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isRedirect">
+        <div class="location">at         line 840</div>
+        <code>                    bool
+    <strong>isRedirect</strong>(string $location = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为表单重定向响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEmpty">
+        <div class="location">at         line 847</div>
+        <code>                    bool
+    <strong>isEmpty</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>是否为空响应.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

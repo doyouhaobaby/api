@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Leevel\Database\Ddd\IUnitOfWork | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="class" data-name="class:Leevel_Database_Ddd_IUnitOfWork" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                        <li><a href="../../../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../../../Leevel/Database.html">Database</a></li><li class="backslash">\</li><li><a href="../../../Leevel/Database/Ddd.html">Ddd</a></li><li class="backslash">\</li><li>IUnitOfWork</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            IUnitOfWork
+                
+        </h1>
+    </div>
+
+    <p>    interface
+    <strong>IUnitOfWork</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>工作单元接口.</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>STATE_MANAGED</td>
+                <td class="last">
+                    <p><em>已经被管理的实体状态.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATE_NEW</td>
+                <td class="last">
+                    <p><em>尚未被管理的实体状态.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATE_DETACHED</td>
+                <td class="last">
+                    <p><em>已经持久化并且脱落管理的实体状态.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATE_REMOVED</td>
+                <td class="last">
+                    <p><em>被标识为删除的实体状态.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Leevel/Database/Ddd/IUnitOfWork.html"><abbr title="Leevel\Database\Ddd\IUnitOfWork">IUnitOfWork</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_make">make</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $rootEntity = null, mixed $connect = null)
+        
+                                            <p>创建一个工作单元.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flush">flush</a>()
+        
+                                            <p>执行数据库事务.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_persist">persist</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>保持实体.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_remove">remove</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>移除实体.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>注册新建实体.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_created">created</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>实体是否已经注册新增.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>注册更新实体.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updated">updated</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>实体是否已经注册更新.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replace">replace</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>注册不存在则新增否则更新实体.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaced">replaced</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>实体是否已经注册不存在则新增否则更新.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>注册删除实体.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleted">deleted</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>实体是否已经注册删除.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registered">registered</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>实体是否已经注册.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_refresh">refresh</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>刷新实体.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerManaged">registerManaged</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        
+                                            <p>注册实体为管理状态.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRootEntity">setRootEntity</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $rootEntity)
+        
+                                            <p>设置根实体.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConnect">setConnect</a>(mixed $connect)
+        
+                                            <p>设置连接.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Leevel/Database/IConnect.html"><abbr title="Leevel\Database\IConnect">IConnect</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connect">connect</a>()
+        
+                                            <p>返回数据库连接.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_beginTransaction">beginTransaction</a>()
+        
+                                            <p>启动事物.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rollBack">rollBack</a>()
+        
+                                            <p>事务回滚.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_commit">commit</a>()
+        
+                                            <p>事务自动提交.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_transaction">transaction</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $action)
+        
+                                            <p>执行数据库事务</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>()
+        
+                                            <p>清理工作单元.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>()
+        
+                                            <p>关闭.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Leevel/Database/Ddd/IRepository.html"><abbr title="Leevel\Database\Ddd\IRepository">IRepository</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_repository">repository</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a>|string $entity)
+        
+                                            <p>取得实体仓储.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEntityState">getEntityState</a>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity, int|null $defaults = null)
+        
+                                            <p>取得实体状态.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_make">
+        <div class="location">at         line 73</div>
+        <code>        static            <a href="../../../Leevel/Database/Ddd/IUnitOfWork.html"><abbr title="Leevel\Database\Ddd\IUnitOfWork">IUnitOfWork</abbr></a>
+    <strong>make</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $rootEntity = null, mixed $connect = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>创建一个工作单元.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$rootEntity</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Leevel/Database/Ddd/IUnitOfWork.html"><abbr title="Leevel\Database\Ddd\IUnitOfWork">IUnitOfWork</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flush">
+        <div class="location">at         line 78</div>
+        <code>                    
+    <strong>flush</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>执行数据库事务.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_persist">
+        <div class="location">at         line 87</div>
+        <code>                    $this
+    <strong>persist</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>保持实体.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove">
+        <div class="location">at         line 96</div>
+        <code>                    $this
+    <strong>remove</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>移除实体.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 105</div>
+        <code>                    $this
+    <strong>create</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册新建实体.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_created">
+        <div class="location">at         line 114</div>
+        <code>                    bool
+    <strong>created</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实体是否已经注册新增.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         line 123</div>
+        <code>                    $this
+    <strong>update</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册更新实体.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updated">
+        <div class="location">at         line 132</div>
+        <code>                    bool
+    <strong>updated</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实体是否已经注册更新.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replace">
+        <div class="location">at         line 141</div>
+        <code>                    $this
+    <strong>replace</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册不存在则新增否则更新实体.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaced">
+        <div class="location">at         line 150</div>
+        <code>                    bool
+    <strong>replaced</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实体是否已经注册不存在则新增否则更新.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at         line 159</div>
+        <code>                    $this
+    <strong>delete</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册删除实体.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleted">
+        <div class="location">at         line 168</div>
+        <code>                    bool
+    <strong>deleted</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实体是否已经注册删除.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registered">
+        <div class="location">at         line 177</div>
+        <code>                    bool
+    <strong>registered</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>实体是否已经注册.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_refresh">
+        <div class="location">at         line 186</div>
+        <code>                    $this
+    <strong>refresh</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>刷新实体.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerManaged">
+        <div class="location">at         line 193</div>
+        <code>                    
+    <strong>registerManaged</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>注册实体为管理状态.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRootEntity">
+        <div class="location">at         line 202</div>
+        <code>                    $this
+    <strong>setRootEntity</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $rootEntity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置根实体.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$rootEntity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConnect">
+        <div class="location">at         line 209</div>
+        <code>                    
+    <strong>setConnect</strong>(mixed $connect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>设置连接.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$connect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connect">
+        <div class="location">at         line 216</div>
+        <code>                    <a href="../../../Leevel/Database/IConnect.html"><abbr title="Leevel\Database\IConnect">IConnect</abbr></a>
+    <strong>connect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回数据库连接.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Leevel/Database/IConnect.html"><abbr title="Leevel\Database\IConnect">IConnect</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_beginTransaction">
+        <div class="location">at         line 221</div>
+        <code>                    
+    <strong>beginTransaction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>启动事物.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rollBack">
+        <div class="location">at         line 226</div>
+        <code>                    
+    <strong>rollBack</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>事务回滚.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commit">
+        <div class="location">at         line 231</div>
+        <code>                    
+    <strong>commit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>事务自动提交.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transaction">
+        <div class="location">at         line 240</div>
+        <code>                    mixed
+    <strong>transaction</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $action)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>执行数据库事务</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at         line 245</div>
+        <code>                    
+    <strong>clear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>清理工作单元.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">at         line 250</div>
+        <code>                    
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>关闭.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_repository">
+        <div class="location">at         line 259</div>
+        <code>                    <a href="../../../Leevel/Database/Ddd/IRepository.html"><abbr title="Leevel\Database\Ddd\IRepository">IRepository</abbr></a>
+    <strong>repository</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a>|string $entity)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得实体仓储.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a>|string</td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Leevel/Database/Ddd/IRepository.html"><abbr title="Leevel\Database\Ddd\IRepository">IRepository</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEntityState">
+        <div class="location">at         line 269</div>
+        <code>                    int
+    <strong>getEntityState</strong>(<a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a> $entity, int|null $defaults = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得实体状态.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Leevel/Database/Ddd/IEntity.html"><abbr title="Leevel\Database\Ddd\IEntity">IEntity</abbr></a></td>
+                <td>$entity</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$defaults</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

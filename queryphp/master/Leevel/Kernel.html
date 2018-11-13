@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Leevel\Kernel | QueryPHP API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/queryphp.css" />
+
+    
+    </head>
+
+    <body id="namespace" data-name="namespace:Leevel_Kernel" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">QueryPHP API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                <div class="namespace-breadcrumbs">
+        <ol class="breadcrumb">
+            <li><span class="label label-default">Namespace</span></li>
+                    <li><a href="../Leevel.html">Leevel</a></li><li class="backslash">\</li><li><a href="../Leevel/Kernel.html">Kernel</a></li><li class="backslash">\</li>
+        </ol>
+    </div>
+            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Leevel\Kernel</h1>
+    </div>
+
+    
+            <h2>Classes</h2>
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Leevel/Kernel/BadRequestHttpException.html"><abbr title="Leevel\Kernel\BadRequestHttpException">BadRequestHttpException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    错误请求
+服务器不理解请求的语法: 400.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Leevel/Kernel/ForbiddenHttpException.html"><abbr title="Leevel\Kernel\ForbiddenHttpException">ForbiddenHttpException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    禁止
+服务器拒绝请求: 403.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Leevel/Kernel/HttpException.html"><abbr title="Leevel\Kernel\HttpException">HttpException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    HTTP 异常.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Leevel/Kernel/InternalServerErrorHttpException.html"><abbr title="Leevel\Kernel\InternalServerErrorHttpException">InternalServerErrorHttpException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    服务器内部错误
+服务器遇到错误，无法完成请求: 500.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Leevel/Kernel/MethodNotAllowedHttpException.html"><abbr title="Leevel\Kernel\MethodNotAllowedHttpException">MethodNotAllowedHttpException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    方法禁用
+禁用请求中指定的方法: 405.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Leevel/Kernel/NotFoundHttpException.html"><abbr title="Leevel\Kernel\NotFoundHttpException">NotFoundHttpException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    未找到
+用户发出的请求针对的是不存在的记录: 404.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Leevel/Kernel/TooManyRequestsHttpException.html"><abbr title="Leevel\Kernel\TooManyRequestsHttpException">TooManyRequestsHttpException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    请求过于频繁异常
+用户在给定的时间内发送了太多的请求: 429.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Leevel/Kernel/UnauthorizedHttpException.html"><abbr title="Leevel\Kernel\UnauthorizedHttpException">UnauthorizedHttpException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    未授权
+对于需要登录的网页，服务器可能返回此响应: 401.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Leevel/Kernel/UnprocessableEntityHttpException.html"><abbr title="Leevel\Kernel\UnprocessableEntityHttpException">UnprocessableEntityHttpException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    无法处理的实体
+请求格式正确，但是由于含有语义错误，无法响应: 422.
+                </div>
+            </div>
+            </div>
+    
+            <h2>Interfaces</h2>
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="../Leevel/Kernel/IKernel.html"><abbr title="Leevel\Kernel\IKernel">IKernel</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    内核执行接口.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="../Leevel/Kernel/IKernelConsole.html"><abbr title="Leevel\Kernel\IKernelConsole">IKernelConsole</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    命令行内核执行接口.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="../Leevel/Kernel/IProject.html"><abbr title="Leevel\Kernel\IProject">IProject</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    IProject 接口.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="../Leevel/Kernel/IRuntime.html"><abbr title="Leevel\Kernel\IRuntime">IRuntime</abbr></a></em>
+                                            
+                </div>
+                <div class="col-md-6">
+                    异常接口.
+                </div>
+            </div>
+            </div>
+    
+            <h2>Exceptions</h2>
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../Leevel/Kernel/HandleException.html"><abbr title="Leevel\Kernel\HandleException">HandleException</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    用户操作异常.
+                </div>
+            </div>
+            </div>
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
