@@ -13,5 +13,5 @@ composer install
 You can publish your modify by use the command:
 
 ```
-php vendor/sami/sami/sami.php render config/config.php --force
+php vendor/sami/sami/sami.php update config/config.php
 ```

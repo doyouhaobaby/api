@@ -3,3 +3,4 @@ composer.lock
 docs/
 cache
 .deploy*/
+.DS_Store

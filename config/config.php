@@ -1,16 +1,14 @@
 <?php
 
-$dir = __DIR__ . '/../docs';
+$dir = '/data/codes/queryphp/vendor/hunzhiwange/framework/src';
 
 $iterator = Symfony\Component\Finder\Finder::create()
     ->files()
     ->name('*.php')
-    ->exclude('build')
-    ->exclude('tests')
     ->in($dir);
 
-$versions = Sami\Version\GitVersionCollection::create($dir)
-    ->add('4.0', 'Master');
+// $versions = Sami\Version\GitVersionCollection::create($dir)
+//     ->add('1.0', 'Master');
 
 $options = [
     'theme'                => 'queryphp', // default
