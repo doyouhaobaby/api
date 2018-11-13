@@ -14,4 +14,5 @@ You can publish your modify by use the command:
 
 ```
 php vendor/sami/sami/sami.php update config/config.php
+sh ./deploy.sh
 ```
