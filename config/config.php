@@ -13,8 +13,8 @@ $iterator = Symfony\Component\Finder\Finder::create()
 $options = [
     'theme'                => 'queryphp', // default
     'title'                => 'QueryPHP API Documentation',
-    'build_dir'            => __DIR__ . '/../.deploy_git/queryphp/%version%',
-    'cache_dir'            => __DIR__ . '/../cache/queryphp/%version%',
+    'build_dir'            => __DIR__ . '/../.deploy_git/%version%',
+    'cache_dir'            => __DIR__ . '/../cache/%version%',
 ];
 
 $sami = new Sami\Sami($iterator, $options);
